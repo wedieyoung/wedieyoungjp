@@ -851,6 +851,82 @@ ul { list-style: none; }
   object-fit: cover;
   border: 1px solid var(--line);
   background: var(--panel2);
+  cursor: zoom-in;
+  transition: opacity .2s;
+}
+.em-gallery img:hover { opacity: .8; }
+
+/* ============ 写真ライトボックス ============ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 3, 5, .94);
+  backdrop-filter: blur(6px);
+}
+.lightbox.open { display: flex; }
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  animation: pageIn .25s ease both;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  background: var(--void);
+  border: 1px solid var(--line);
+  color: var(--bone);
+  cursor: pointer;
+  z-index: 2;
+  transition: all .2s;
+}
+.lightbox-close:hover { background: var(--red); border-color: var(--red); color: var(--void); }
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 34px;
+  line-height: 1;
+  width: 52px;
+  height: 72px;
+  background: rgba(9, 9, 11, .6);
+  border: 1px solid var(--line);
+  color: var(--bone);
+  cursor: pointer;
+  z-index: 2;
+  transition: all .2s;
+}
+.lightbox-nav:hover { background: var(--red); border-color: var(--red); color: var(--void); }
+.lightbox-nav.prev { left: 16px; }
+.lightbox-nav.next { right: 16px; }
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: var(--ash);
+}
+
+@media (max-width: 640px) {
+  .lightbox-nav { width: 42px; height: 58px; font-size: 26px; }
+  .lightbox-nav.prev { left: 8px; }
+  .lightbox-nav.next { right: 8px; }
 }
 
 /* ============ ニュース ============ */

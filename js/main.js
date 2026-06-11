@@ -161,7 +161,6 @@
 
   $("#event-modal-close").addEventListener("click", closeEventModal);
   $("#event-modal-backdrop").addEventListener("click", closeEventModal);
-  addEventListener("keydown", (ev) => { if (ev.key === "Escape") closeEventModal(); });
 
   // レポートボタンはカード再描画のたびに付け直す（イベント委任）
   document.addEventListener("click", (ev) => {
@@ -169,6 +168,63 @@
     if (!btn) return;
     const e = EVENTS.find((x) => x.name === btn.dataset.event);
     if (e) openEventModal(e);
+  });
+
+  /* ---------- 写真ライトボックス（ギャラリー写真をクリックで拡大） ---------- */
+  const lightbox = $("#lightbox");
+  const lbImg = $("#lightbox-img");
+  let lbList = [];   // 現在のギャラリーのサムネイルURL一覧
+  let lbIndex = 0;
+
+  // サムネイル(-1024x576等)から高解像度版(-scaled)のURLを導出
+  const fullSizeUrl = (thumb) => thumb.replace(/-\d+x\d+(\.\w+)$/, "-scaled$1");
+
+  const showLightbox = (i) => {
+    lbIndex = (i + lbList.length) % lbList.length;
+    const thumb = lbList[lbIndex];
+    lbImg.src = fullSizeUrl(thumb);
+    // 高解像度版が無い場合はサムネイルにフォールバック
+    lbImg.onerror = () => { lbImg.onerror = null; lbImg.src = thumb; };
+    $("#lightbox-counter").textContent = `${lbIndex + 1} / ${lbList.length}`;
+    $("#lightbox-prev").style.display = lbList.length > 1 ? "" : "none";
+    $("#lightbox-next").style.display = lbList.length > 1 ? "" : "none";
+  };
+
+  const openLightbox = (list, i) => {
+    lbList = list;
+    showLightbox(i);
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    lbImg.src = "";
+  };
+
+  $("#lightbox-close").addEventListener("click", closeLightbox);
+  $("#lightbox-prev").addEventListener("click", (ev) => { ev.stopPropagation(); showLightbox(lbIndex - 1); });
+  $("#lightbox-next").addEventListener("click", (ev) => { ev.stopPropagation(); showLightbox(lbIndex + 1); });
+  lightbox.addEventListener("click", (ev) => { if (ev.target === lightbox) closeLightbox(); });
+
+  // ギャラリー写真クリックで拡大（イベント委任）
+  document.addEventListener("click", (ev) => {
+    const img = ev.target.closest(".em-gallery img");
+    if (!img) return;
+    const imgs = $$(".em-gallery img");
+    openLightbox(imgs.map((x) => x.getAttribute("src")), imgs.indexOf(img));
+  });
+
+  // キーボード操作: Escは「ライトボックス → モーダル」の順に閉じる / ←→で写真送り
+  addEventListener("keydown", (ev) => {
+    if (lightbox.classList.contains("open")) {
+      if (ev.key === "Escape") closeLightbox();
+      if (ev.key === "ArrowLeft") showLightbox(lbIndex - 1);
+      if (ev.key === "ArrowRight") showLightbox(lbIndex + 1);
+      return;
+    }
+    if (ev.key === "Escape") closeEventModal();
   });
 
   const renderEvents = (mode) => {
@@ -276,6 +332,7 @@
 
   const route = () => {
     closeEventModal();
+    closeLightbox();
     const hash = (location.hash || "#home").replace("#", "");
     const page = pages.includes(hash) ? hash : "home";
     $$(".page").forEach((p) => p.classList.toggle("active", p.id === `page-${page}`));
