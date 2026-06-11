@@ -151,7 +151,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol6-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第6弾。",
     links: {
-      stream: "https://www.submithub.com/link/we-die-young-vol-6"
+      stream: "https://www.submithub.com/link/we-die-young-vol-6",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-6"
     }
   },
   {
@@ -162,7 +163,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol5-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第5弾。",
     links: {
-      stream: "https://www.submithub.com/link/we-die-young-vol-5"
+      stream: "https://www.submithub.com/link/we-die-young-vol-5",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-5"
     }
   },
   {
@@ -173,7 +175,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol4-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第4弾。",
     links: {
-      stream: "https://www.submithub.com/link/we-die-young-vol-4"
+      stream: "https://www.submithub.com/link/we-die-young-vol-4",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-4"
     }
   },
   {
@@ -184,7 +187,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol3-1024x1024.jpg",
     description: "サイバーな質感で異彩を放つ、日本発Trap/Bassコンピレーション第3弾。",
     links: {
-      stream: "https://www.submithub.com/link/we-die-young-vol-3"
+      stream: "https://www.submithub.com/link/we-die-young-vol-3",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-3"
     }
   },
   {
@@ -195,7 +199,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol2-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第2弾。",
     links: {
-      stream: "https://www.submithub.com/link/we-die-young-vol-2"
+      stream: "https://www.submithub.com/link/we-die-young-vol-2",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-2"
     }
   },
   {
@@ -206,7 +211,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol1-1024x1024.jpg",
     description: "すべてはここから始まった。レーベルコンピレーション第1弾。",
     links: {
-      stream: "https://www.submithub.com/link/we-die-young-vol-1"
+      stream: "https://www.submithub.com/link/we-die-young-vol-1",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-1"
     }
   },
 
@@ -362,7 +368,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-022-artwork-scaled.jpg",
     description: "澄んだメロディラインと厚みのある低音を操るECLAIRのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/eclair-need-you"
+      stream: "https://www.submithub.com/link/eclair-need-you",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/need-you"
     }
   },
   {
@@ -373,7 +380,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_starfall.jpg",
     description: "rejectionとWATARUによるコラボシングル。",
     links: {
-      stream: "https://www.submithub.com/link/starfall"
+      stream: "https://www.submithub.com/link/starfall",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/starfall"
     }
   },
   {
@@ -384,7 +392,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DEFINED.jpg",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/mtgd-defined"
+      stream: "https://www.submithub.com/link/mtgd-defined",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/defined"
     }
   },
   {
@@ -395,7 +404,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_reality.jpg",
     description: "Xenoのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/xeno-reality"
+      stream: "https://www.submithub.com/link/xeno-reality",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/reality"
     }
   },
   {
@@ -406,7 +416,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-ANGELvoid.jpg",
     description: "WE DIE YOUNG中心メンバーvishnu okunoのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/angelvoid"
+      stream: "https://www.submithub.com/link/angelvoid",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/angelvoid"
     }
   },
   {
@@ -417,7 +428,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_RUN-DAT.jpg",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/run-dat"
+      stream: "https://www.submithub.com/link/run-dat",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/run-dat"
     }
   },
   {
@@ -428,7 +440,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_Karma-Strike.jpg",
     description: "Violet.MKIIとGREEDによるコラボシングル。",
     links: {
-      stream: "https://www.submithub.com/link/karma-strike"
+      stream: "https://www.submithub.com/link/karma-strike",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/karma-strike"
     }
   },
   {
@@ -439,7 +452,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-WITH-ME-NOW.jpg",
     description: "MOSHIMOSHのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/with-me-now"
+      stream: "https://www.submithub.com/link/with-me-now",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/with-me-now"
     }
   },
   {
@@ -450,7 +464,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DROP-IT.jpg",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/mtgd-drop-it"
+      stream: "https://www.submithub.com/link/mtgd-drop-it",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/drop-it"
     }
   },
   {
@@ -461,7 +476,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Mental.jpg",
     description: "Douji Wiixのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/douji-wiix-mental"
+      stream: "https://www.submithub.com/link/douji-wiix-mental",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/mental"
     }
   },
   {
@@ -472,7 +488,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_SIRENS.jpg",
     description: "VOLTAのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/volta-sirens"
+      stream: "https://www.submithub.com/link/volta-sirens",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/sirens"
     }
   },
   {
@@ -483,7 +500,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_we-fall-again.jpg",
     description: "vishnu okunoのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/we-fall-again"
+      stream: "https://www.submithub.com/link/we-fall-again",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/we-fall-again"
     }
   },
   {
@@ -494,7 +512,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_Radiance.jpg",
     description: "Exodynamixのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/exodynamix-radiance"
+      stream: "https://www.submithub.com/link/exodynamix-radiance",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/radiance"
     }
   },
   {
@@ -505,7 +524,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_U-FEEL-THE-SAME.jpg",
     description: "sh0wtimeのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/sh0wtime-u-feel-the-same"
+      stream: "https://www.submithub.com/link/sh0wtime-u-feel-the-same",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/u-feel-the-same"
     }
   },
   {
@@ -516,7 +536,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_IRISCTRL.jpg",
     description: "The Herb Shopのシングル。",
     links: {
-      stream: "https://www.submithub.com/link/the-herb-shop-iris-ctrl"
+      stream: "https://www.submithub.com/link/the-herb-shop-iris-ctrl",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/iris-ctrl"
     }
   },
   {
@@ -527,7 +548,8 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Heart-AttackFar-East.jpg",
     description: "レーベルオーナーrejectionによるシングル。",
     links: {
-      stream: "https://www.submithub.com/link/rejection-heart-attack-far-east"
+      stream: "https://www.submithub.com/link/rejection-heart-attack-far-east",
+      bandcamp: "https://wedieyoung.bandcamp.com/album/heart-attack-far-east"
     }
   },
 
