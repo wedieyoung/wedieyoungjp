@@ -846,14 +846,56 @@ const NEWS = [
     category: "RELEASE",
     title: "21SWINGS – SURGE EP 配信開始",
     body: "世界中のクラブやフェスでプレイされるEDMアーティスト21SWINGSが、WE DIE YOUNGからEP「SURGE」をデジタルリリース。",
-    link: "https://www.submithub.com/link/21swings-surge"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2026/04/WDY036-ver2-brown-scaled.png",
+    article: [
+      "2026年4月10日、21SWINGSがWE DIE YOUNGからEP「SURGE」をデジタルリリースしました。",
+      "On April 10, 2026, 21SWINGS released the EP “SURGE” digitally from WE DIE YOUNG.",
+      "【プロフィール】21SWINGS",
+      "21SWINGSは、ピークタイムのクラブやフェスのメインステージに直結した、アグレッシブでジャンルレスな楽曲やリミックスで知られるEDMアーティスト。Waterbomb Seoul、Zouk Singapore、PITT Club Kuala Lumpur、EDCなど世界中のクラブやフェスでプレイされている。",
+      "フェスティバルEDM、ベースミュージック、モダンクラブサウンドを融合し、最大限のフロアエネルギーを生み出す楽曲を制作。オリジナルとリミックスの両軸で、21SWINGSはグローバルEDMシーンに新たな勢いをもたらしている。",
+      "【BIOGRAPHY】21SWINGS",
+      "21SWINGS is a rising high-energy EDM artist known for delivering aggressive, genre-blending productions and remixes built for peak-time clubs and festival mainstages. His music has earned strong international DJ support, with tracks played across major global venues and festivals including Waterbomb Seoul, Zouk Singapore, PITT Club Kuala Lumpur, and EDC.",
+      "Fusing festival EDM with bass-driven power and modern club influences, 21SWINGS consistently crafts high-impact records designed for maximum crowd energy. Driven by explosive originals and high-impact remixes, 21SWINGS is rapidly making his mark as a new force in the global EDM scene."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/21swings-surge" },
+      { label: "21SWINGS (Instagram)", url: "https://www.instagram.com/21swings/" }
+    ]
   },
   {
     date: "2026-03-27",
     category: "RELEASE",
     title: "Viticz & Namya – Rangda 配信開始",
     body: "シンガポールのViticzとインドネシアのNamyaによるコラボシングル「Rangda」をデジタルリリース。",
-    link: "https://www.submithub.com/link/rangda"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2026/03/WDY035-scaled.jpg",
+    article: [
+      "2026年3月27日、Viticz & NamyaがWE DIE YOUNGからシングル「Rangda」をデジタルリリースしました。",
+      "On March 27, 2026, Viticz & Namya released the single “Rangda” digitally from WE DIE YOUNG.",
+      "【プロフィール】Viticz",
+      "VITICZ（Suherman）は、シンガポールを拠点に活動するミュージシャン、アーティスト、サウンドデザイナー。9歳で音楽活動を始め、15歳でキャリアをスタートさせ、複数のシングルやEPをネットレーベルからリリースしながら、シーン内の様々なアーティストとコラボレーションを行ってきた。",
+      "創作への強い情熱に突き動かされ、ほぼ独学でスキルを磨きながら、自身のルーツとなるサウンドとエレクトロニックミュージックを融合し、ジャンルにとらわれない大胆な音楽性を展開している。",
+      "2018年にDJデビューを果たすと、瞬く間にローカルシーンで存在感を確立。同時期にはVanille A、10SAI、Bentai、Rina、roxwindyらと共にコレクティブを結成。アニメカルチャーとベースミュージックへの共通の愛を軸に、roxwindyと共にイベントシリーズ「cawfeeMIX!!」を立ち上げた。",
+      "その後、日本でのcawfeeMIX!!ツアーを成功させたことで注目を集め、MOGRAやCIRCUS Tokyoといった著名な会場に加え、近年ではZOUK Singaporeにも出演。多様なスタイルとダイナミックなパフォーマンスで知られるVITICZは、現在も幅広い音楽プロジェクトを通じて、その表現の可能性を広げ続けている。",
+      "【プロフィール】Namya",
+      "Namyaはインドネシア出身のプロデューサーで、ベースミュージックを軸としたエレクトロニックミュージックを制作している。ハードに効かせた低域とキックを中心に構築された高エネルギーなトラックを特徴とし、ダンスフロアでのインパクトを重視したサウンドを展開している。その音楽はリズムや衝撃、身体的なグルーヴを強調しており、ヘッドホンでもライブでも同様に強く響くよう設計されている。",
+      "2024年に音楽制作をスタートして以来、ソロ作品やコラボレーションを通じて着実にスタイルを確立。ani-kura projectsのリミックスコンピレーションに複数参加するほか、PT TBHとしても活動している。また、STACKNATIONやVibetronicといったコレクティブにも所属し、オンラインのダンスミュージックシーンの中で存在感を高めている。",
+      "主にAbletonを使用しながら、サウンドデザインや楽曲構成を磨き続け、プロダクションのクオリティを追求。現在は勢いを増しつつあり、攻撃的でありながらダンサブルなトラックを通じて、ベースミュージックシーンで確固たる地位を築くことを目指している。",
+      "【BIOGRAPHY】Viticz",
+      "VITICZ (Suherman) is a Singapore-based musician, artist, and sound designer. He began his musical journey at the age of 9 and officially started his career at 15, releasing multiple singles and EPs through various netlabels while collaborating with artists across the scene. Driven by an obsessive passion for creativity, VITICZ is largely self-taught and known for fusing electronic music with the sounds that shaped his upbringing, fearlessly exploring new ideas and genres.",
+      "Making his official DJ debut in 2018, VITICZ quickly became an active figure in the local scene. During this time, he formed a collective with like-minded artists including Vanille A, 10SAI, Bentai, Rina, and roxwindy. Sharing a strong affinity for anime culture and bass-driven dance music, he co-founded the ongoing event series cawfeeMIX!! with roxwindy.",
+      "Following a successful first mini tour in Japan with the cawfeeMIX!! group, VITICZ gained wider recognition, performing at renowned venues such as MOGRA and CIRCUS Tokyo, and more recently at ZOUK Singapore. Known for his versatility and dynamic performances, VITICZ continues to push boundaries through diverse music projects and a deep passion for sound.",
+      "【BIOGRAPHY】Namya",
+      "Namya is a producer from Indonesia, focused on bass-driven electronic music, crafting high-energy tracks built around hard hitting low-end kicks. With a sound rooted in dancefloor intensity, his music emphasizes rhythm, impact, and movement, designed to hit just as hard in headphones as it does in a live setting.",
+      "Starting his production journey in 2024, Namya has steadily developed his style through both solo work and collaborative projects. He has contributed to multiple remix compilation projects on ani-kura projects, while also working closely with his circle under the group name PT TBH. Alongside this, he is an active member of the collectives STACKNATION and Vibetronic, continuing to grow within the online electronic dance music scene.",
+      "Working primarily in Ableton, Namya focuses on refining his sound design, composition and pushing his production quality forward. As he builds momentum, his goal is to establish himself as a recognized name in the bass music space, delivering tracks that are both aggressive and danceable."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/rangda" },
+      { label: "Viticz (Official)", url: "https://www.viticz.com/" },
+      { label: "Namya (Instagram)", url: "https://www.instagram.com/djnamya/" }
+    ]
   },
   {
     date: "2026-03-16",
@@ -867,35 +909,118 @@ const NEWS = [
     category: "RELEASE",
     title: "21SWINGS – BREAK THE BASS 配信開始",
     body: "フェスティバルEDMとベースミュージックを融合する21SWINGSのシングル「BREAK THE BASS」をデジタルリリース。",
-    link: "https://www.submithub.com/link/break-the-bass"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2026/02/WDY034-v1-scaled.png",
+    article: [
+      "2026年1月30日、21SWINGSがWE DIE YOUNGからシングル「BREAK THE BASS」をデジタルリリースしました。",
+      "On January 30, 2026, 21SWINGS released the single “BREAK THE BASS” digitally from WE DIE YOUNG.",
+      "【プロフィール】21SWINGS",
+      "21SWINGSは、ピークタイムのクラブやフェスのメインステージに直結した、アグレッシブでジャンルレスな楽曲やリミックスで知られるEDMアーティスト。Waterbomb Seoul、Zouk Singapore、PITT Club Kuala Lumpur、EDCなど世界中のクラブやフェスでプレイされている。",
+      "フェスティバルEDM、ベースミュージック、モダンクラブサウンドを融合し、最大限のフロアエネルギーを生み出す楽曲を制作。オリジナルとリミックスの両軸で、21SWINGSはグローバルEDMシーンに新たな勢いをもたらしている。",
+      "【BIOGRAPHY】21SWINGS",
+      "21SWINGS is a rising high-energy EDM artist known for delivering aggressive, genre-blending productions and remixes built for peak-time clubs and festival mainstages. His music has earned strong international DJ support, with tracks played across major global venues and festivals including Waterbomb Seoul, Zouk Singapore, PITT Club Kuala Lumpur, and EDC.",
+      "Fusing festival EDM with bass-driven power and modern club influences, 21SWINGS consistently crafts high-impact records designed for maximum crowd energy. Driven by explosive originals and high-impact remixes, 21SWINGS is rapidly making his mark as a new force in the global EDM scene."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/break-the-bass" },
+      { label: "21SWINGS (Instagram)", url: "https://www.instagram.com/21swings/" }
+    ]
   },
   {
     date: "2026-01-09",
     category: "RELEASE",
     title: "Voxelkana – digital[F10W] 配信開始",
     body: "中国を拠点にアトモスフェリックかつフューチャリスティックなサウンドを追求するVoxelkanaのシングル「digital[F10W]」をデジタルリリース。",
-    link: "https://www.submithub.com/link/digitalf10w"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2026/01/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.png",
+    article: [
+      "2026年1月9日、VoxelkanaがWE DIE YOUNGからシングル「digital[F10W]」をデジタルリリースしました。",
+      "On January 9, 2026, Voxelkana released the single “digital[F10W]” digitally from WE DIE YOUNG.",
+      "【プロフィール】Voxelkana",
+      "2024年より活動を開始したVoxelkanaは、中国を拠点に活動するプロデューサーで、アトモスフェリックかつフューチャリスティックなサウンドを追求している。同人サークル「ExFusion」名義でアルバムをリリースする一方、近年は複数のレーベルからも楽曲を発表し、活動の幅を広げている。",
+      "【BIOGRAPHY】Voxelkana",
+      "Active since 2024, Voxelkana is a China-based producer dedicated to atmospheric and futuristic sounds. While dropping albums under his doujin circle ExFusion, he has also begun releasing music through various labels."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/digitalf10w" },
+      { label: "Voxelkana (X)", url: "https://x.com/voxelkana" }
+    ]
   },
   {
     date: "2025-12-19",
     category: "RELEASE",
     title: "WE DIE YOUNG vol.7 配信開始",
     body: "レーベルコンピレーションアルバム「WE DIE YOUNG vol.7」がデジタルリリース。Trap/Hardwave等のBass Musicを軸に全21曲を収録した\"Cyber-Modern EDM Trap\"コンセプトアルバム。",
-    link: "https://www.submithub.com/link/wedieyoung-vol7"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
+    article: [
+      "2025年12月19日、WE DIE YOUNGのレーベルコンピレーションアルバム「WE DIE YOUNG vol.7」がデジタルリリースされました。",
+      "On December 19, 2025, WE DIE YOUNG released its label compilation album “WE DIE YOUNG vol.7”.",
+      "インディペンデント・ベースミュージックレーベル WE DIE YOUNG は、最新コンピレーションアルバム『WE DIE YOUNG vol.7』をリリースした。Trap / Hardwave 等のBass Musicを軸に、ジャンルの持つアグレッシブさ・メロディ・実験性を高次元で昇華させた全21曲を収録。",
+      "【本アルバムについて】[文: rejection (レーベルオーナー)]",
+      "コンピレーションアルバム７作目となる今作は、Trapを主軸とするBass Musicコンピレーションという点ではこれまでのアルバムシリーズを引き継ぐものですが、一点だけ他のアルバムとは異なる点があります。それは、HardwaveやTrance等に影響を受けた”Cyber”テイストが全曲に散りばめられていることです。これは僕がこれまでとの差別化として全アーティストに共有し理解していただいたもので、いわばvol.7は”Cyber-Modern EDM Trap”コンセプトアルバムということになります。",
+      "そして、実は同様のコンセプトアルバムとしてvol.3がありました。vol.3は全曲を通したサイバーな質感によってこれまでのタイトルの中で異質な存在感を放ち、未だ多くのファンを抱えています。僕はもう一度CyberテイストのTrapコンピレーションをリバイバルしたいと思い立ち、vol.7はその精神的続編として企画をスタートさせました。",
+      "vol.7をすでに聴いていただいた方なら納得して頂けると思いますが、結果として本アルバムはただのvol.3焼き増しではなく、どのアルバムにも無い完成度を誇るアルバムとなりました。間違いなくこれまでのシリーズで最も自信を持って一番だと言えるアルバムです。全ては参加していただいたアーティストの皆さんの力あってこそで、本当に感謝しています。",
+      "【About This Album】Written by rejection (Label Owner)",
+      "As the seventh installment in the WE DIE YOUNG compilation series, this release continues the label’s tradition as a bass music compilation centered around Trap. However, there is one key aspect that sets this album apart from the previous entries. That difference lies in the strong “Cyber” aesthetic woven throughout every track, influenced by genres such as Hardwave and Trance. This concept was clearly shared and understood by all participating artists as a point of differentiation, making WE DIE YOUNG vol.7 a true “Cyber-Modern EDM Trap” concept album.",
+      "Interestingly, a similar concept had been explored before in vol.3. That album stood out within the series due to its consistent cyber texture across all tracks, and it continues to hold a strong fanbase to this day. Wanting to revive that cyber-infused Trap sound once again, I began planning vol.7 as a spiritual successor to vol.3.",
+      "Those who have already listened to vol.7 will likely agree that the result is far more than a simple rehash of vol.3. Instead, this album achieves a level of completeness and refinement unmatched by any other release in the series. Without a doubt, it is the album I am most confident in calling the best we have released so far. This achievement is entirely thanks to the incredible contributions of the artists involved, and for that, I am truly grateful.",
+      "🎧 TRACKLIST\n01. Exodynamix – SOURCE\n02. vishnu okuno – i don’t need (play it again!)\n03. icesawder & moyu – leave me again\n04. REXY=DEXY – HARD LIFE\n05. SMWLAYY – Without You\n06. MOSHIMOSH & BHM – TELLME2DANCE\n07. The Herb Shop – In Dreams\n08. ECLAIR – SUNRAYS\n09. CONF!RM – Chamber\n10. crp. – give u\n11. rejection – Nothing To Lose\n12. ZiXS – The Call\n13. Tohrchu – Goldship\n14. Diat – switch the beat\n15. sh0wtime – caughtUP! (dontneedu)\n16. SineVorteX & MTGD – Overdrive\n17. HaLuna – Sci-bar Collapse\n18. Douji Wiix – PULLUP!\n19. eeyrith. – Believe\n20. Xeno & senjou – BREAK IT DOWN\n21. KO3 – INNOCENCE\n\nARTWORK – kyasya"
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/wedieyoung-vol7" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-7" }
+    ]
   },
   {
     date: "2025-12-12",
     category: "RELEASE",
     title: "Yuzac – feel it 配信開始",
     body: "RL GrimeやSkrillexに影響を受けた東京拠点のプロデューサーYuzacのシングル「feel it」をデジタルリリース。",
-    link: "https://www.submithub.com/link/yuzac-feel-it"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY032-artwork-scaled.png",
+    article: [
+      "2025年12月12日、YuzacがWE DIE YOUNGからシングル「feel it」をデジタルリリースしました。",
+      "On December 12, 2025, Yuzac released the single “feel it” digitally from WE DIE YOUNG.",
+      "【プロフィール】Yuzac",
+      "Yuzacは、東京を拠点に活動するエレクトロニック・ミュージックプロデューサー。Trap EDM、Festival Trap、Bass Houseを軸に、RL GrimeやSkrillexから影響を受けたダークでエモーショナル、かつパワフルなサウンドを特徴としている。クラブからフェスティバルまでを想定したインパクトあるトラックを制作しつつ、アンダーグラウンドの感性を宿したユニークな音作りで独自の存在感を放つ。TrapからBass Houseまでジャンルを横断しながら、自身のルーツであるエモーショナルな世界観を貫いたサウンドデザインとエネルギッシュなドロップが際立っている。",
+      "【BIOGRAPHY】Yuzac",
+      "Yuzac is an electronic music producer based in Tokyo. Centered around Trap EDM, Festival Trap, and Bass House, his sound is dark, emotional, and powerful, drawing strong inspiration from artists such as RL Grime and Skrillex. He creates impactful tracks designed for both clubs and festival stages, while maintaining a unique presence through sound design rooted in an underground sensibility. Blending genres from Trap to Bass House, Yuzac’s music is defined by emotional soundscapes that reflect his roots, combined with energetic, hard-hitting drops."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/yuzac-feel-it" },
+      { label: "Yuzac (Instagram)", url: "https://www.instagram.com/yuzacmusic/" }
+    ]
   },
   {
     date: "2025-12-05",
     category: "RELEASE",
     title: "KANAKA & LAGnaf – DONTPLAY 配信開始",
     body: "ハワイ出身LA拠点のKANAKAと韓国のLAGnafによるコラボシングル「DONTPLAY」をデジタルリリース。",
-    link: "https://wedieyoung.bandcamp.com/track/dontplay"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY031_Artwork_fix-scaled.png",
+    article: [
+      "2025年12月5日、LAGnaf & KANAKAがWE DIE YOUNGからシングル「DONTPLAY」をデジタルリリースしました。",
+      "On December 5, 2025, LAGnaf & KANAKA released the single “DONTPLAY” digitally from WE DIE YOUNG.",
+      "【プロフィール】KANAKA",
+      "ハワイ出身で現在ロサンゼルスを拠点とする新進アーティストKANAKAは、Jawns、RL Grime、そしてSable Valley所属アーティストたちの革新的なサウンドから強く影響を受けながら、エレクトロニック・ミュージックにおいて独自の道を切り開いている。",
+      "Trap、Wave、Technoをシームレスに融合させた彼の音楽は、シネマティックでありながらハードヒットなサウンド、緻密なベースライン、幽玄なメロディ、そして高エネルギーなドロップが強みである。大きな世界観を構築することに重点を置き、聴き手をダークで神秘的な空間へと誘い、そこから荒々しいベースの奔流へ突き落とすような体験を生み出す。",
+      "TrapとWaveの進化系ともいえるサウンドは、フェスティバル級のエネルギーを持つ影響元からの要素を受け継ぎつつ、KANAKA独自のクリエイティビティを注ぎ込んだものだ。Alison Wonderland、Rossy、Juelz、Lookas、Tisoki、REXY=DEXY、REAPER、PHIBESなど、多くのアーティストからサポートを受けている。",
+      "【プロフィール】LAGnaf",
+      "LAGnafは韓国出身のBass／Trapプロデューサー・DJで、力強くエネルギーに満ちたトラックを制作するアーティスト。フェスで鳴り響くようなパワフルなドロップ、攻撃的なベースデザイン、鋭いリズムワークを融合し、独自のサウンドを確立している。",
+      "K-Popリミックスの高いスキルで知られており、誰もが知るメロディをクラブ向けのヘビーなトラックへ再構築することで、多くのリスナーを惹きつけている。ステージではTrap、Hybrid Trap、Bassジャンルを縦横無尽に行き来し、ダイナミックな存在感を放つ。LAGnafが作り出すのは単なるクラブトラックではなく、爆発的で忘れられない瞬間そのものである。韓国から世界へと台頭する次世代プロデューサーとして、グローバルなベースミュージックシーンで独自の存在感を築き続けている。",
+      "【BIOGRAPHY】KANAKA",
+      "An emerging artist from Hawai’i and now residing in Los Angeles, KANAKA is carving a unique path in the electronic music world, drawing heavy inspiration from the boundary-pushing sounds of artists like Jawns, RL Grime, and the powerhouse roster of Sable Valley. With a seamless blend of Trap, Wave, and Techno, KANAKA delivers music that’s both cinematic and hard-hitting, combining intricate basslines, haunting melodies, and high-octane drops.",
+      "With a focus on building atmosphere, KANAKA creates tracks that transport listeners into dark, ethereal worlds before dropping them into gritty, bass-fueled chaos. Their music is a testament to the evolution of trap and wave, pulling from the festival-ready energy of their influences while injecting their own creative twist. Supported by artists from Alison Wonderland, Rossy, Juelz, Lookas, Tisoki, REXY=DEXY, REAPER, PHIBES and others.",
+      "【BIOGRAPHY】LAGnaf",
+      "LAGnaf is a bass and trap music producer and DJ from South Korea, crafting high-energy tracks filled with bold, uplifting vibes. His sound blends powerful festival-ready drops, gritty bass design, and sharp rhythmic ideas that define his signature style.",
+      "Known for his strong talent in K-Pop remixes, he reimagines familiar melodies into heavy club-oriented tracks, attracting a wide range of listeners. On stage, he moves seamlessly through trap, hybrid trap, and bass genres, bringing an undeniably dynamic presence. LAGnaf aims to create more than just club tracks — he builds explosive moments and unforgettable experiences. As a producer rising from Korea, he continues shaping his own unique identity within the global bass music scene."
+    ],
+    articleLinks: [
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/dontplay" },
+      { label: "KANAKA (Instagram)", url: "https://www.instagram.com/knks/" },
+      { label: "LAGnaf (Instagram)", url: "https://www.instagram.com/lagnaf_music/" }
+    ]
   },
   {
     date: "2025-11-24",
@@ -909,28 +1034,87 @@ const NEWS = [
     category: "RELEASE",
     title: "Kawashiii – Medication 配信開始",
     body: "サイバーな質感を軸に制作する東京在住プロデューサーKawashiiiのシングル「Medication」をデジタルリリース。",
-    link: "https://www.submithub.com/link/kawashiii-medication"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY-028-Artwork.png",
+    article: [
+      "2025年11月16日、KawashiiiがWE DIE YOUNGからシングル「Medication」をデジタルリリースしました。",
+      "On November 16, 2025, Kawashiii released the single “Medication” digitally from WE DIE YOUNG.",
+      "【プロフィール】Kawashiii",
+      "主に SoundCloud で活動している、東京在住の音楽プロデューサー／トラックメイカー。サイバーな質感を軸に、さまざまなジャンルの楽曲を制作している。",
+      "【BIOGRAPHY】Kawashiii",
+      "kawashiii is a Tokyo-based music producer and trackmaker, mainly active on SoundCloud. Creates a variety of genres with a cyber-styled sound."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/kawashiii-medication" },
+      { label: "Kawashiii (X)", url: "https://x.com/kawashiii_music" }
+    ]
   },
   {
     date: "2025-10-28",
     category: "GOODS",
     title: "WE DIE YOUNG vol.7 Tee 発売",
     body: "最新コンピレーション「WE DIE YOUNG vol.7」デザインのTシャツが数量限定で発売。Size: FREE (XL) / ¥4,000。",
-    link: "https://wedieyoung.bandcamp.com/merch/we-die-young-vol-7-tee-2025"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00729-scaled.jpg",
+    article: [
+      "2025年10月28日、WE DIE YOUNGから新しいグッズが販売！新たに出たコンピレーション “WE DIE YOUNG vol.7” デザインとなっております。数量限定発売の為、お早めにお求めください。",
+      "WE DIE YOUNG vol.7 Tee [2025]\nsize: FREE (XL) / ¥4,000",
+      "On October 28, 2025, WE DIE YOUNG released new merch! This item features the design of the latest compilation, “WE DIE YOUNG vol.7”. Available in limited quantities — grab yours before it’s gone!",
+      "Model: rejection\nT-Shirts Design, Photo, Edit: mika"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00719-scaled.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00670-scaled.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00636-scaled.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00643-scaled.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00626-scaled.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00781-scaled-e1761546544167.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00784-scaled.jpg"
+    ],
+    articleLinks: [
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/merch/we-die-young-vol-7-tee-2025" },
+      { label: "BASE", url: "https://wedieyoung.base.shop/" }
+    ]
   },
   {
     date: "2025-10-27",
     category: "RELEASE",
     title: "WE DIE YOUNG vol.7 リリース（CD）",
     body: "THE NEW AGE RESONATES — サイバーサウンドを吸収し更に進化した、日本発Trap/Bassコンピレーション第7弾。M3秋2025にて早期販売、Diverse Direct / TANO*C STORE / Bandcampで展開。",
-    link: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-7"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
+    article: [
+      "2025年10月27日、WE DIE YOUNGからコンピレーションアルバム「WE DIE YOUNG vol.7」が発売決定＆予約開始しました。本アルバムは、2025年10月26日に行われるM3秋2025 東京流通センター 第一展示場（※カタログ購入必須）にて早期購入が可能。",
+      "会場価格・Bandcamp: 3,000円 / 通販価格: 3,500円",
+      "THE NEW AGE RESONATES\nアジアのEDMの未来はWE DIE YOUNGが切り拓く！サイバーサウンドを吸収し更に進化した、日本発Trap/Bassコンピレーション第7弾！",
+      "THE NEW AGE RESONATES\nWE DIE YOUNG is leading the future of Asian EDM. Absorbing cybernetic sound aesthetics while evolving even further, the long-awaited 7th installment of Japan’s premier Trap / Bass compilation has arrived.",
+      "🎧 TRACKLIST\n01. Exodynamix – SOURCE\n02. vishnu okuno – i don’t need (play it again!)\n03. icesawder & moyu – leave me again\n04. REXY=DEXY – HARD LIFE\n05. SMWLAYY – Without You\n06. MOSHIMOSH & BHM – TELLME2DANCE\n07. The Herb Shop – In Dreams\n08. ECLAIR – SUNRAYS\n09. CONF!RM – Chamber\n10. crp. – give u\n11. rejection – Nothing To Lose\n12. ZiXS – The Call\n13. Tohrchu – Goldship\n14. Diat – switch the beat\n15. sh0wtime – caughtUP! (dontneedu)\n16. SineVorteX & MTGD – Overdrive\n17. HaLuna – Sci-bar Collapse\n18. Douji Wiix – PULLUP!\n19. eeyrith. – Believe\n20. Xeno & senjou – BREAK IT DOWN\n21. KO3 – INNOCENCE\n\nARTWORK – kyasya"
+    ],
+    articleLinks: [
+      { label: "Diverse Direct", url: "https://www.diverse.direct/we-die-young/wdy-029/" },
+      { label: "TANO*C STORE", url: "https://www.tanocstore.net/shop/shopdetail.html?brandcode=000000004243" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-7" }
+    ]
   },
   {
     date: "2025-10-27",
     category: "RELEASE",
     title: "RAVEMODE vol.1 リリース（CD）",
     body: "ENTER THE RAVE — 新コンセプトのコンピレーションシリーズが始動。聴く者を強制的に踊らせるRAVEサウンド全8曲を収録。",
-    link: "https://wedieyoung.bandcamp.com/album/ravemode-vol-1"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/RAVEMODEvol1-Artwork.png",
+    article: [
+      "2025年10月27日、WE DIE YOUNGから新たなコンセプトのコンピレーションアルバム「RAVEMODE vol.1」が発売決定＆予約開始しました。本アルバムは、2025年10月26日に行われるM3秋2025 東京流通センター 第一展示場（※カタログ購入必須）にて早期購入が可能。",
+      "会場価格・Bandcamp: 2,000円 / 通販価格: 2,500円",
+      "ENTER THE RAVE\nWE DIE YOUNGが送る、新コンピレーションシリーズが始動！聴く者を強制的に踊らせるRAVEサウンドで内なる衝動を解放せよ",
+      "ENTER THE RAVE\nA brand new compilation series from WE DIE YOUNG begins! Unleash your inner impulse with relentless RAVE sounds that will make you move whether you want to or not.",
+      "🎧 TRACKLIST\n01. rejection – FREE\n02. NECROSiS – BASS SLUT\n03. Redsign – DARK CIRCLES\n04. NGHTHYP – Acid Dash\n05. vishnu okuno – sickOVERLOAD\n06. The Herb Shop – Turn It Up\n07. ECLAIR – Confusion\n08. crp. – Onyx\n\nARTWORK – kyasya / RAVEMODE LOGO – SELDO"
+    ],
+    articleLinks: [
+      { label: "Diverse Direct", url: "https://www.diverse.direct/we-die-young/wdy-030/" },
+      { label: "TANO*C STORE", url: "https://www.tanocstore.net/shopdetail/000000004244/2025" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/ravemode-vol-1" }
+    ]
   },
   {
     date: "2025-10-03",
@@ -944,7 +1128,20 @@ const NEWS = [
     category: "RELEASE",
     title: "rejection – HANDS UP 配信開始",
     body: "レーベルオーナーrejectionによるシングル「HANDS UP」をデジタルリリース。",
-    link: "https://www.submithub.com/link/rejection-hands-up"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/09/WDY-027-Artwork.png",
+    article: [
+      "2025年9月19日、rejectionがWE DIE YOUNGからシングル「HANDS UP」をデジタルリリースしました。",
+      "On September 19, 2025, rejection released the single “HANDS UP” digitally from WE DIE YOUNG.",
+      "【プロフィール】rejection",
+      "東京を拠点に活動するProducer/DJ。その大胆かつ緻密に練られた楽曲と、ライブパフォーマンスの高いエナジーによって2020年頃より国内ダンスミュージックシーンに頭角を現す。自身がオーナーを務めるレーベルWE DIE YOUNGと共に日本国内で新しいBass Musicのムーブメントを巻き起こしている。",
+      "【BIOGRAPHY】rejection",
+      "Producer/DJ based in Tokyo. Emerging in Japan’s dance music scene around 2020 with bold yet meticulously crafted tracks and high-energy live performances. Together with his own label WE DIE YOUNG, he is sparking a new Bass Music movement in Japan."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/rejection-hands-up" },
+      { label: "rejection (X)", url: "https://x.com/rejectiondj" }
+    ]
   },
   {
     date: "2025-09-19",
@@ -979,21 +1176,60 @@ const NEWS = [
     category: "RELEASE",
     title: "XeroC'tok – Ballade 配信開始",
     body: "韓国を拠点にGarageとTrapを制作するXeroC'tokのデビューシングル「Ballade」をデジタルリリース。",
-    link: "https://www.submithub.com/link/xeroctok-ballade"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/08/XeroCtok-BALLADE.jpg",
+    article: [
+      "2025年8月22日、XeroC’tokがWE DIE YOUNGから初のシングル「Ballade」をデジタルリリースしました。",
+      "On August 22, 2025, XeroC’tok released his debut single “Ballade” via WE DIE YOUNG.",
+      "【プロフィール】XeroC’tok",
+      "XeroC’tok（読み方:ゼロシートク)は韓国を拠点とする音楽プロデューサー。主にGarageとTrapを制作している。",
+      "【BIOGRAPHY】XeroC’tok",
+      "XeroC’tok (Pronunce: zero-C-tok) is a korea-based music producer, mainly making garage and trap genre."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/xeroctok-ballade" },
+      { label: "XeroC’tok (X)", url: "https://x.com/XeroC_tok" }
+    ]
   },
   {
     date: "2025-08-09",
     category: "RELEASE",
     title: "ZiXS – One More 配信開始",
     body: "タイ出身のEDMプロデューサーZiXSのデビューシングル「One More」をデジタルリリース。WE DIE YOUNG vol.5収録曲「MAKE ME FEEL LIKE YOU」以来のリリース。",
-    link: "https://www.submithub.com/link/zixs-one-more"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/08/a3054737185_10.jpg",
+    article: [
+      "2025年8月9日、ZiXSがWE DIE YOUNGから初のシングル「One More」をデジタルリリースしました。本作は、WE DIE YOUNG vol.5収録曲「MAKE ME FEEL LIKE YOU」以来のリリースです。",
+      "On August 9, 2025, ZiXS released his debut single “One More” via WE DIE YOUNG. This marks his first release since “MAKE ME FEEL LIKE YOU,” featured on WE DIE YOUNG vol.5.",
+      "【プロフィール】ZiXS",
+      "ZiXS（読み方：シック、本名 Prohmmin Pisutthipong）は、タイ出身のEDMプロデューサー。ジャンルにとらわれず、特にベースミュージックを好んで制作。タイのVTuber、アーティスト、アイドルなど、多彩な分野の楽曲制作も行っている。",
+      "【BIOGRAPHY】ZiXS",
+      "ZiXS (pronounced Sick), also known as Prohmmin Pisutthipong, is a Thailand EDM Producer with no genre restrictions, but he especially likes to make bass music. He also makes tracks for Thai VTubers, Thai artists, Thai idols and many more."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/zixs-one-more" },
+      { label: "ZiXS (X)", url: "https://x.com/ZiXS_BLOOMii" }
+    ]
   },
   {
     date: "2025-07-26",
     category: "RELEASE",
     title: "Lactar1uz – Falling 4 U 配信開始",
     body: "TrapやDrum'n'Bassを軸に制作する日本在住プロデューサーLactar1uzのデビューシングル「Falling 4 U」をデジタルリリース。",
-    link: "https://www.submithub.com/link/falling-4-u"
+    link: "",
+    image: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-024-fixed-scaled.png",
+    article: [
+      "2025年7月26日、Lactar1uzがWE DIE YOUNGから初のシングル「Falling 4 U」をデジタルリリースしました。",
+      "On July 26, 2025, Lactar1uz released his debut single “Falling 4 U” via WE DIE YOUNG.",
+      "【プロフィール】Lactar1uz",
+      "主にsoundcloudで活動している日本在住の音楽プロデューサー/トラックメイカー。TrapやDrum’n’Bassなど、ベースミュージックをメインで制作している。",
+      "【BIOGRAPHY】Lactar1uz",
+      "Lactar1uz is a Japan-based producer and trackmaker, mainly active on soundcloud. His music blends heavy bass vibes from genres like Trap and Drum’n’Bass."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/falling-4-u" },
+      { label: "Lactar1uz (X)", url: "https://x.com/lactar1uz_" }
+    ]
   },
   {
     date: "2025-07-24",

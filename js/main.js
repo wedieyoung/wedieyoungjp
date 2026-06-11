@@ -249,19 +249,48 @@
     : `<p class="empty">New events will be announced soon</p>`;
 
   /* ---------- ニュース描画 ---------- */
-  const newsItem = (n) => `
+  const newsItem = (n, i) => `
     <article class="news-item reveal">
       <span class="news-date">${fmtDate(n.date)}</span>
       <span class="news-cat">${esc(n.category)}</span>
       <div>
         <h3 class="news-title">${esc(n.title)}</h3>
         ${n.body ? `<p class="news-body">${esc(n.body)}</p>` : ""}
-        ${n.link ? `<a class="news-link" href="${esc(n.link)}" target="_blank" rel="noopener">READ MORE →</a>` : ""}
+        ${n.article && n.article.length
+          ? `<button class="news-link news-article-btn" data-news="${i}">READ MORE →</button>`
+          : n.link ? `<a class="news-link" href="${esc(n.link)}" target="_blank" rel="noopener">READ MORE →</a>` : ""}
       </div>
     </article>`;
 
   $("#news-list").innerHTML = NEWS.map(newsItem).join("") || `<p class="empty">No news yet</p>`;
   $("#home-news").innerHTML = NEWS.slice(0, 3).map(newsItem).join("") || `<p class="empty">No news yet</p>`;
+
+  /* ---------- ニュース記事モーダル（旧サイトの記事本文） ---------- */
+  const openNewsModal = (n) => {
+    $("#event-modal-body").innerHTML = `
+      <p class="event-date-big">${fmtDate(n.date)} — ${esc(n.category)}</p>
+      <h2 class="em-title" id="em-title">${esc(n.title)}</h2>
+      ${n.image ? `<figure class="em-cover"><img src="${esc(n.image)}" alt="${esc(n.title)}" loading="lazy"></figure>` : ""}
+      ${(n.article || []).map((p) =>
+        /^【.+】/.test(p)
+          ? `<h3 class="em-h">${esc(p)}</h3>`
+          : `<p class="em-text">${esc(p).replace(/\n/g, "<br>")}</p>`
+      ).join("")}
+      ${(n.gallery && n.gallery.length) ? `<div class="em-gallery">${n.gallery.map((g) => `<img src="${esc(g)}" alt="${esc(n.title)} photo" loading="lazy">`).join("")}</div>` : ""}
+      ${(n.articleLinks && n.articleLinks.length) ? `<div class="release-links em-links">${n.articleLinks.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}
+    `;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    $(".event-modal-panel").scrollTop = 0;
+  };
+
+  document.addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".news-article-btn");
+    if (!btn) return;
+    const n = NEWS[+btn.dataset.news];
+    if (n) openNewsModal(n);
+  });
 
   /* ---------- About描画 ---------- */
   const leadWords = ABOUT.lead.split(" ");

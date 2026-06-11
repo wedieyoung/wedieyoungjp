@@ -825,6 +825,26 @@ ul { list-style: none; }
 .em-text { font-size: 14.5px; color: #c9c9cf; line-height: 1.9; margin-bottom: 16px; }
 .em-video { margin: 8px 0 18px; padding: 11px 24px; font-size: 11px; }
 
+.em-cover {
+  max-width: 380px;
+  margin: 0 0 24px;
+}
+.em-cover img {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--panel2);
+}
+
+.em-h {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  margin: 22px 0 10px;
+  color: var(--bone);
+}
+
+.em-links { margin-top: 22px; }
+
 .em-credits {
   border-top: 1px solid var(--line);
   margin-top: 18px;
@@ -971,6 +991,14 @@ ul { list-style: none; }
   margin-top: 8px;
 }
 .news-link:hover { text-decoration: underline; }
+
+/* 記事モーダルを開くボタン（リンクと同じ見た目） */
+button.news-article-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
 /* ============ About ============ */
 .about-lead {
