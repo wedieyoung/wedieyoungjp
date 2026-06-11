@@ -195,6 +195,14 @@ python3 -m http.server 8765
 
 ## 📝 更新履歴
 
+### 2026-06-11（その5）
+- **リリースカテゴリの訂正** — Heart Attack / Far East・IRIS/CTRL・DEFINED を
+  SINGLE→**EP**に、ANGELvoid を新設の**ALBUM**カテゴリに変更（紹介文も合わせて修正）
+- **Buy CDボタンを追加** — COMPILATION・ALBUMの全11作品に、Diverse Direct
+  （CD通販）へのリンクをSTREAM・BANDCAMPの横に表示。リンクはSubmitHubページと
+  Diverse Directレーベルページから取得し、全URL生存確認済み
+  （vol.8 = wdy-037、AFTERLIFE vol.1 = wdy-038 もCD販売ページを発見して追加）
+
 ### 2026-06-11（その4）
 - **全リリースにBandcampボタンを追加** — SubmitHubの各作品ページからBandcampリンクを
   取得し、未設定だった22作品（コンピvol.1〜6・旧シングル16作）に追加。

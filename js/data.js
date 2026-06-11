@@ -103,7 +103,8 @@ const RELEASES = [
     cover: "https://f4.bcbits.com/img/a0311867667_10.jpg",
     description: "WE DIE YOUNGの新コンセプト・コンピレーションアルバム。",
     links: {
-      bandcamp: "https://wedieyoung.bandcamp.com/album/afterlifevol-1"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/afterlifevol-1",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-038/"
     }
   },
   {
@@ -114,7 +115,8 @@ const RELEASES = [
     cover: "https://f4.bcbits.com/img/a0656935817_10.jpg",
     description: "日本発Trap/Bassコンピレーション第8弾。",
     links: {
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-8"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-8",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-037/"
     }
   },
   {
@@ -127,7 +129,7 @@ const RELEASES = [
     links: {
       stream:   "https://www.submithub.com/link/wedieyoung-vol7",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-7",
-      cd:       "https://www.diverse.direct/we-die-young/wdy-029/"
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-029/"
     }
   },
   {
@@ -140,7 +142,7 @@ const RELEASES = [
     links: {
       stream:   "https://www.submithub.com/link/ravemode-vol1",
       bandcamp: "https://wedieyoung.bandcamp.com/album/ravemode-vol-1",
-      cd:       "https://www.diverse.direct/we-die-young/wdy-030/"
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-030/"
     }
   },
   {
@@ -152,7 +154,8 @@ const RELEASES = [
     description: "日本発Trap/Bassコンピレーション第6弾。",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-6",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-6"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-6",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-017/"
     }
   },
   {
@@ -164,7 +167,8 @@ const RELEASES = [
     description: "日本発Trap/Bassコンピレーション第5弾。",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-5",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-5"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-5",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-011/"
     }
   },
   {
@@ -176,7 +180,8 @@ const RELEASES = [
     description: "日本発Trap/Bassコンピレーション第4弾。",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-4",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-4"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-4",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-006/"
     }
   },
   {
@@ -188,7 +193,8 @@ const RELEASES = [
     description: "サイバーな質感で異彩を放つ、日本発Trap/Bassコンピレーション第3弾。",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-3",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-3"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-3",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-004/"
     }
   },
   {
@@ -200,7 +206,8 @@ const RELEASES = [
     description: "日本発Trap/Bassコンピレーション第2弾。",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-2",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-2"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-2",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-002/"
     }
   },
   {
@@ -212,7 +219,8 @@ const RELEASES = [
     description: "すべてはここから始まった。レーベルコンピレーション第1弾。",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-1",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-1"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-1",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-001/"
     }
   },
 
@@ -387,10 +395,10 @@ const RELEASES = [
   {
     title: "DEFINED",
     artist: "MTGD",
-    type: "SINGLE",
+    type: "EP",
     date: "2025-06-20",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DEFINED.jpg",
-    description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
+    description: "台湾在住のDJ/ProducerであるMTGDのEP。",
     links: {
       stream: "https://www.submithub.com/link/mtgd-defined",
       bandcamp: "https://wedieyoung.bandcamp.com/album/defined"
@@ -411,13 +419,14 @@ const RELEASES = [
   {
     title: "ANGELvoid",
     artist: "vishnu okuno",
-    type: "SINGLE",
+    type: "ALBUM",
     date: "2025-05-31",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-ANGELvoid.jpg",
-    description: "WE DIE YOUNG中心メンバーvishnu okunoのシングル。",
+    description: "WE DIE YOUNG中心メンバーvishnu okunoのアルバム。",
     links: {
       stream: "https://www.submithub.com/link/angelvoid",
-      bandcamp: "https://wedieyoung.bandcamp.com/album/angelvoid"
+      bandcamp: "https://wedieyoung.bandcamp.com/album/angelvoid",
+      "buy cd": "https://www.diverse.direct/we-die-young/wdy-018/"
     }
   },
   {
@@ -531,10 +540,10 @@ const RELEASES = [
   {
     title: "IRIS/CTRL",
     artist: "The Herb Shop",
-    type: "SINGLE",
+    type: "EP",
     date: "2024-03-02",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_IRISCTRL.jpg",
-    description: "The Herb Shopのシングル。",
+    description: "The Herb ShopのEP。",
     links: {
       stream: "https://www.submithub.com/link/the-herb-shop-iris-ctrl",
       bandcamp: "https://wedieyoung.bandcamp.com/album/iris-ctrl"
@@ -543,10 +552,10 @@ const RELEASES = [
   {
     title: "Heart Attack / Far East",
     artist: "rejection",
-    type: "SINGLE",
+    type: "EP",
     date: "2023-09-19",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Heart-AttackFar-East.jpg",
-    description: "レーベルオーナーrejectionによるシングル。",
+    description: "レーベルオーナーrejectionによるEP。",
     links: {
       stream: "https://www.submithub.com/link/rejection-heart-attack-far-east",
       bandcamp: "https://wedieyoung.bandcamp.com/album/heart-attack-far-east"
