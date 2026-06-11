@@ -24,7 +24,6 @@ wedieyoungjp/
 │   ├── logo-black.png      ← 黒ロゴ（予備）
 │   ├── ogp.png             ← SNSシェア時の画像（1200×630）
 │   ├── releases/           ← ジャケット画像置き場（正方形推奨）
-│   ├── artists/            ← アーティスト写真置き場（縦長 4:5 推奨）
 │   └── events/             ← フライヤー画像置き場（A4縦比率推奨）
 └── README.md           ← このファイル
 ```
@@ -80,11 +79,39 @@ git push
 **日付が今日以降なら UPCOMING、過去なら ARCHIVE に自動で振り分けられます。**
 チケットリンクは `ticketUrl` に、終売後は `""` に戻せばボタンが消えます。
 
-### 4. アーティストを追加する
-`data.js` の `ARTISTS` にブロックを追加（写真はURL直接指定 or `assets/images/artists/`）。
+各イベントには**レポート記事と写真ギャラリー**を付けられます（イベントカードの
+「VIEW REPORT」ボタンからモーダルで表示されます）:
 
-### 5. キャッチコピー・SNSリンク・メールアドレスを変える
+```js
+{
+  name: "イベント名",
+  date: "2026-09-01",
+  timeNote: "OPEN 23:00",          // 任意（""で非表示）
+  venue: "会場名",
+  lineup: ["DJ A", "DJ B"],
+  flyer: "https://...（フライヤー画像URL）",
+  ticketUrl: "",                   // チケットリンク（開催前のみ表示）
+  videoUrl: "",                    // アフタームービー等のYouTubeリンク
+  report: [                        // レポート本文（段落ごとに1つ。[]なら非表示）
+    "段落1…",
+    "段落2…"
+  ],
+  credits: [                       // クレジット（[]なら非表示）
+    "Organizer: xxx",
+    "Photo: xxx"
+  ],
+  gallery: [                       // 写真URL一覧（[]なら非表示）
+    "https://...photo1.jpg",
+    "https://...photo2.jpg"
+  ]
+},
+```
+
+### 4. キャッチコピー・SNSリンク・メールアドレスを変える
 `data.js` の一番上の `SITE` ブロックを書き換えるだけです。
+
+### 5. ABOUTページの背景画像を変える
+`data.js` の `ABOUT` ブロック内 `backgroundImage` のURLを書き換えます（`""` で背景なし）。
 
 ### 6. サイトの配色を変える
 `css/style.css` の冒頭 `:root { ... }` の色コードを変更（例: `--red: #ff2a3c;`）。
@@ -133,3 +160,21 @@ python3 -m http.server 8765
 
 を実行し、ブラウザで http://localhost:8765 を開きます（終了は `Ctrl+C`）。
 `index.html` をダブルクリックで直接開いても表示できます。
+
+---
+
+## 📝 更新履歴
+
+### 2026-06-11
+- 旧サイト（wedieyoung.jp）の全コンテンツを移植
+  - リリース39作品（コンピレーション10作・EP/シングル28作・サンプルパック1点）を配信リンク付きで掲載
+  - ニュース26件（リリース告知・イベントレポート・グッズ・お知らせ）
+  - イベント7件（フライヤー画像付き）
+  - レーベル紹介文（日英）、SNS/ストア/Discordリンク、メールアドレス
+- **イベントレポート機能を追加** — 旧サイトの各イベント記事の本文・クレジット・写真
+  （計116枚）を移植し、イベントカードの「VIEW REPORT」ボタンからモーダルで閲覧可能に
+  （`data.js` の `report` / `credits` / `gallery` / `videoUrl` で編集）
+- **ARTISTSページを削除** — ナビゲーション・本文ともに撤去。
+  rejectionの写真はABOUTページの背景画像として使用（`ABOUT.backgroundImage` で変更可）
+- 画像は旧サイト（wedieyoung.jp）とBandcampのURLを直接参照する方式
+- GitHub Pagesで公開、READMEに更新手順を整備

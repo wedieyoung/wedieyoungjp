@@ -66,6 +66,9 @@ const ABOUT = {
   // ▼ 見出し下のリード文
   lead: "The New Age Resonates.",
 
+  // ▼ ABOUTページの背景画像（""にすると背景なし）
+  backgroundImage: "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-211-scaled.jpg",
+
   // ▼ 本文（段落ごとに "..." を1つ。段落を増やす場合はカンマで追加）
   paragraphs: [
     "WE DIE YOUNGはProducer/DJであるrejectionが2022年に立ち上げた日本発のトラップ/ベースミュージックレーベル。",
@@ -544,26 +547,7 @@ const RELEASES = [
 
 
 /* ------------------------------------------------------------
-   4. ARTISTS（アーティスト一覧）
-   ------------------------------------------------------------
-   ★ 写真は URL 直接指定 or assets/images/artists/ に入れる
-   ★ ブロックをコピー＆ペーストで追加できます
-   ------------------------------------------------------------ */
-const ARTISTS = [
-  {
-    name: "rejection",
-    role: "DJ / Producer / Label Owner",
-    photo: "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-211-scaled.jpg",
-    bio: "東京を拠点に活動するProducer/DJ。その大胆かつ緻密に練られた楽曲と、ライブパフォーマンスの高いエナジーによって2020年頃より国内ダンスミュージックシーンに頭角を現す。自身がオーナーを務めるレーベルWE DIE YOUNGと共に日本国内で新しいBass Musicのムーブメントを巻き起こしている。",
-    socials: {
-      x: "https://x.com/rejectiondj"
-    }
-  }
-];
-
-
-/* ------------------------------------------------------------
-   5. EVENTS（イベント一覧）
+   4. EVENTS（イベント一覧）
    ------------------------------------------------------------
    ★ 日付が今日以降 → UPCOMING / 過去 → ARCHIVE に自動で振り分け
    ★ フライヤー画像は URL 直接指定 or assets/images/events/ に入れる
@@ -576,7 +560,16 @@ const EVENTS = [
     venue: "ZEROTOKYO（新宿）",
     lineup: ["JUELZ", "WE DIE YOUNG (rejection, vishnu okuno, crp.)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2026/03/HDSZDPhaYAA-Xa8.jpeg",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "",
+    report: [
+      "2026年3月20日(金・祝日)、新宿ZERO TOKYOにて開催されるBeginning ZERO \"JUELZ TOKYO RETURN\"にWE DIE YOUNG(rejection, vishnu okuno, crp.)が出演。フロアはZ HALL、360°セットで開催。",
+      "ゲストのJUELZはもちろん、国内のTrap/Bassアーティストが集結するBass Musicの一夜となった。"
+    ],
+    credits: [
+      "DJ: WE DIE YOUNG（rejection、vishnu okuno、crp.）"
+    ],
+    gallery: []
   },
   {
     name: "WE DIE YOUNG ON THE FLOOR 2025",
@@ -585,7 +578,52 @@ const EVENTS = [
     venue: "ROPPONGI CUBE（六本木）",
     lineup: ["MTGD (from Taiwan)", "crp.", "Douji Wiix", "ECLAIR", "KO3", "Redsign", "rejection", "vishnu okuno", "WE DIE YOUNG B2B", "Vocal: XiN", "VJ: COCOA* / SoU"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY-OTF-2025flyer_v2-scaled.jpg",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "",
+    report: [
+      "2025年11月2日、東京・ROPPONGI CUBEにて開催された「WE DIE YOUNG」。コンピレーションアルバム『WE DIE YOUNG vol.7』のリリースを記念し、現行シーンを牽引するアーティストたちが集結した。",
+      "出演者は、WE DIE YOUNG B2B、ECLAIR、Redsign、Douji Wiix、crp.、vishnu okuno、KO3、MTGD (from Taiwan)、そしてrejection。日本と台湾を繋ぐ国際的なラインナップが実現した。",
+      "オープニングはWE DIE YOUNG B2B。最新モードを詰め込んだセットで空気をベース仕様へ変換し、続くECLAIRは澄んだメロディラインと厚みのある低音を、Redsignは重厚なベースで観客を圧倒した。Douji Wiixとcrp.はそれぞれの個性をぶつけ合いながらも、イベント全体の流れを見事にコントロールしていた。",
+      "後半にはvishnu okuno、KO3が登場。『vol.7』収録曲を中心に最新トラックを惜しみなく披露し、観客を歓声とともに揺らし続けた。",
+      "MTGD (from Taiwan) の出演も大きなハイライトとなり、国境を越えたベースミュージックの結束を感じさせ、最後に登場したrejectionは、圧倒的熱量のベースミュージックで一気にクライマックスを作り上げ、圧巻の締めを見せつけた。"
+    ],
+    credits: [
+      "Organizer: rejection",
+      "Main DJ: crp.、Douji Wiix、ECLAIR、KO3、MTGD、Redsign、rejection、vishnu okuno、WE DIE YOUNG B2B",
+      "Vocal: XiN",
+      "VJ: COCOA*、SoU",
+      "Photo: mika"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00796-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00828-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00871-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00931-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00863-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00843-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00856-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00909-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01192-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01126-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01567-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01258-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01815-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01796-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02002-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01940-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02234-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02292-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02443-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02660-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02745-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02753-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02869-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03005-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02914-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03170-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03226-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03249-1024x576.jpg"
+    ]
   },
   {
     name: "PARTY HARD!! feat. Darren Styles — SUPPORT",
@@ -594,7 +632,36 @@ const EVENTS = [
     venue: "ZEROTOKYO（新宿）",
     lineup: ["WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/09/Gxj4dXvagAAjkUg.jpeg",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "https://www.youtube.com/watch?v=LSUGdlfKpS8",
+    report: [
+      "2025年9月5日(Fri)、WE DIE YOUNGがついにZEROTOKYOのZ HALLに初出演を果たした。ステージにはrejection、KO3、vishnu okunoの3人が登場し、熱心なリスナーやベースミュージックを求めるオーディエンスでフロアは序盤から熱気を帯びていた。彼らは揃って新曲を次々と投下し、セット全体がフレッシュかつ攻撃的なムードに包まれていた。",
+      "rejectionは重量感のある低音で空気を震わせ、セットの要となる存在感を示す。KO3は緻密なビルドアップとキレのあるドロップで流れを組み立て、観客を引き込み続け、vishnu okunoは巧みな選曲とフロアを操るような煽りで存在感を増し、会場のヴァイブスを一段と引き上げていた。",
+      "WE DIE YOUNGを追いかけるリスナーも多数駆けつけ、その熱いリアクションがイベントをさらに特別なものへと押し上げた。メンバー自身も、この後に控えるDarren Stylesの公演を心待ちにしながら、最後までフロアと一体になって楽しんでいた。初めてのZ HALL公演は、シーンとの繋がりの強さと、WE DIE YOUNGの次なる展開を予感させる夜であった。"
+    ],
+    credits: [
+      "DJ: WE DIE YOUNG（KO3、rejection、vishnu okuno）",
+      "Photo: mika",
+      "Video Edit: rejection"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3307-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3228-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3167-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3221-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3193-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3201-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3219-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3230-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3206-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3200-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3237-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3244-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3308-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3274-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3190-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3222-1-1024x683.jpg"
+    ]
   },
   {
     name: "Sel Octagon Tokyo 6th Anniversary \"SPACE LACES\" — SUPPORT",
@@ -603,7 +670,28 @@ const EVENTS = [
     venue: "Sel Octagon Tokyo（六本木）",
     lineup: ["WE DIE YOUNG (Redsign, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/0717octagon.jpeg",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "",
+    report: [
+      "2025年7月17日(Thu)、六本木・Sel Octagon Tokyoで開催された6周年イベントに、WE DIE YOUNG crewが「SPACE LACES」のサポートとして出演した。出演したのはrejection、Redsign、vishnu okunoの3人。",
+      "序盤は華やかなパーティームードでイベントは幕を開けたが、ピークタイムに近づくにつれてベースミュージックを求めるリスナーが最前に集まり、WE DIE YOUNGのセットがスタートすると重低音に飢えたオーディエンスが熱狂的に反応する空間へと変貌していった。",
+      "中でも存在感を放ったのはRedsign。緻密な構成と大胆なドロップを織り交ぜたプレイは、鋭さと重さを兼ね備え、フロアを一段と深いグルーヴへ導いた。rejectionは安定感ある重低音で土台を固め、vishnu okunoはフロアのツボを押さえた煽りと選曲で観客を自然に巻き込んでいった。",
+      "WE DIE YOUNG crew、WATARU、そしてSPACE LACESと容赦なく重低音は鳴り響き、最終的にフロアに残ったのは音楽好きたち。彼らの歓声と熱狂が交錯し、煌びやかな空間がベースミュージックの聖域へと変わった瞬間だった。"
+    ],
+    credits: [
+      "DJ: WE DIE YOUNG（Redsign、rejection、vishnu okuno）",
+      "Photo: mika"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-255-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-228-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-217-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-267-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-251-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-247-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-263-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-278-1024x576.jpg"
+    ]
   },
   {
     name: "Do D4 Bass #Do_D4_Bass",
@@ -612,7 +700,39 @@ const EVENTS = [
     venue: "MIRAINAGOYA（名古屋）",
     lineup: ["WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/dod4bass.jpeg",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "",
+    report: [
+      "2025年7月5日(Sat)、名古屋・MIRAINAGOYAにて開催された\"Do D4 Bass\"にWE DIE YOUNG（KO3、rejection、vishnu okuno）が出演した。"
+    ],
+    credits: [
+      "Organizer: 秋月/ AutuMxxxN",
+      "DJ: WE DIE YOUNG（KO3、rejection、vishnu okuno）",
+      "Photo: 小南めぐる",
+      "Video / Video Edit: mika"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-36-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-40-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-41-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-59-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-61-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-63-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-64-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-65-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-67-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-68-576x1024.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-71-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-76-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-83-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-93-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-97-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-101-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-109-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-113-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-121-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-125-1024x576.jpg"
+    ]
   },
   {
     name: "World DJ Festival JAPAN 2025 — WATARU B2B WE DIE YOUNG",
@@ -621,7 +741,42 @@ const EVENTS = [
     venue: "幕張メッセ",
     lineup: ["WATARU", "WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDJF2025.png",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "https://www.youtube.com/watch?v=HAyQS43M2eI",
+    report: [
+      "2025年6月28日、幕張メッセで開催された「World DJ Festival 2025 JP NIGHT STAGE」。この日のステージに登場したのは、WATARUと、WE DIE YOUNGからrejection、KO3、vishnu okunoの3名。",
+      "B2B形式で展開されたこのセットは、4人それぞれのスタイルがぶつかり合いながらも絶妙に絡み合い、ジャンルや境界を曖昧にしたスリリングな展開で、オーディエンスを次第に引き込んでいった。開始直後からじわじわと人が集まり始め、曲が進むにつれてフロアの熱が上昇。ビートに合わせて体を揺らす観客たちのエネルギーが一体感を作り、徐々に\"ここが一番アツい場所だ\"という空気が、確実に広がっていった。",
+      "先頭を切ったWATARUが強靭なビートで会場の熱を上げていく。そこにrejectionが空気を切り裂くような重低音を放つ。KO3は独自のグルーヴでテンポを引き上げ、Trap〜Bass Houseを自在に行き来し、vishnu okunoが感情のエッジを立てるようなサウンドで加勢する。",
+      "そして中盤、自然とフロアの中央にモッシュピットが出現。観客同士が勢いよくぶつかり合う、むき出しの衝突がはじまる。押し合いへし合いの波がうねる中、一部では船漕ぎモッシュまで巻き起こり、特設ステージは完全に戦場と化した。気づけば、ステージを囲う柵の外にまで人が溢れ、立ち止まって聴き入る者、踊り出す者が続出。",
+      "WATARUとWE DIE YOUNGの4人が繰り出すセットは、単なるB2Bに留まらず、LIVEとDJをかけ合わせたような、ストーリー的かつ予測不能な構成を刻み続けた。ベースミュージックを主軸に、ジャンルの壁も演出の縛りも軽々と超えてみせたこのステージは、間違いなくこの日のJP NIGHT STAGEで最も\"肉体を揺らした瞬間\"として刻まれた。"
+    ],
+    credits: [
+      "DJ: WATARU B2B WE DIE YOUNG（KO3、rejection、vishnu okuno）",
+      "Photo: mika",
+      "Video Edit: mika"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-006-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-039-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-077-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-066-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-033-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-074-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-091-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-103-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-047-1-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-043-1-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-188-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-147-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-109-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-056-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-114-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-002-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-041-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-062-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-042-1024x576.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-202-scaled.jpg"
+    ]
   },
   {
     name: "THE BASS — wavforme & WE DIE YOUNG Bass Music Party",
@@ -630,13 +785,56 @@ const EVENTS = [
     venue: "ROPPONGI CUBE（六本木）",
     lineup: ["Redsign", "ESAI", "MK", "vishnu okuno", "crayvxn", "VOLTA", "Letsu", "Dubscribe", "rejection & KO3", "Vocal: XiN"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/06/52143FD9-F6E3-4E0B-95C5-AE5C2216CC2C.jpg",
-    ticketUrl: ""
+    ticketUrl: "",
+    videoUrl: "https://www.youtube.com/watch?v=bUIHl26jgw0",
+    report: [
+      "2025年5月4日、六本木CUBEにて「THE BASS \"wavforme & WE DIE YOUNG\" Bass Music Party」が開催された。開場前にはすでに長蛇の列ができ、期待感が入り口から高まっていた。",
+      "先にオープンしたラウンジフロアは、SoUのDJでスタート。オープニングからすでに人であふれかえり、その盛り上がりは一日中続いた。続くaki、DJ Hide、B♭sic、HaLuna、ELVON、FELONE、ATMKは、それぞれが持ち込むベースミュージックの解釈を立体的に展開し、ラウンジという枠を超えた濃密なグルーヴを構築した。",
+      "続くメインフロアでは、Redsignが幕を開けた瞬間に人が押し寄せ、会場は満員状態に。エッジの効いた選曲と構成力で完全に空間の支配権を握り、メインフロアの幕開けにふさわしい強烈なインパクトを残した。そこからESAI、MK、vishnu okuno、crayvxn、VOLTA、Letsu、DubscribeがTrap・Dubstep・Bass House・Waveを横断する多彩な低音でフロアを揺らし続けた。",
+      "最後を飾ったrejection & KO3はWE DIE YOUNG vol.6にボーカルとして参加したXiNを招き、\"BEST GOAT\"、\"In The Cloud\"をライブ披露。張りつめた空気を一瞬で染め変えるような、XiNの儚くも芯のある声がビートに重なった瞬間、フロアの熱量はさらに跳ね上がった。",
+      "ラウンジとメイン、両フロアがそれぞれ異なる色を放ちながらも、共通していたのは\"底知れぬ重低音\"とフロア全体を覆う熱気。メインフロアでは音だけでなく、VJによる映像演出もフロアを支配し、レーザー演出が天井から鋭く交差し、光の網の中で音が暴れまわるような錯覚を生む場面も。一夜を通じて出演者と観客が一体となり、まぎれもなく\"THE BASS\"の名にふさわしい高揚感と熱量を体現したイベントとなった。"
+    ],
+    credits: [
+      "Organizer: wavforme、WE DIE YOUNG",
+      "Lounge DJ: aki、ATMK、B♭sic、DJ Hide、ELVON、FELONE、HaLuna、SoU",
+      "Main DJ: crayvxn、Dubscribe、ESAI、MK、Redsign、rejection & KO3、vishnu okuno、VOLTA、Letsu",
+      "Vocal: XiN",
+      "VJ: COCOA*、SoU",
+      "Photo: 佐藤瑞起",
+      "Video Edit: rejection"
+    ],
+    gallery: [
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9464-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9469-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9667-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9831-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9944-684x1024.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0071-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0234-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0239-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0398-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9515-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9544-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9742-684x1024.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9881-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9998-1-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0088-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0186-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0325-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0443-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0645-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0656-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9752-1024x683.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0498-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0591-1024x684.jpg",
+      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0699-1024x684.jpg"
+    ]
   }
 ];
 
 
 /* ------------------------------------------------------------
-   6. NEWS（ニュース / お知らせ）
+   5. NEWS（ニュース / お知らせ）
    ------------------------------------------------------------
    ★ 新しい記事を一番上に追加してください（上から順に表示されます）
    ★ category は自由ですが "RELEASE" / "EVENT" / "MEDIA" / "GOODS" / "INFO" を推奨

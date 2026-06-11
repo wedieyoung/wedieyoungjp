@@ -117,21 +117,6 @@
   );
   renderReleases("ALL");
 
-  /* ---------- アーティスト描画 ---------- */
-  $("#artist-grid").innerHTML =
-    ARTISTS.map(
-      (a) => `
-    <article class="artist-card reveal">
-      <div class="artist-photo"><img src="${esc(a.photo)}" alt="${esc(a.name)}" loading="lazy"></div>
-      <div class="artist-body">
-        <h3 class="artist-name">${esc(a.name)}</h3>
-        <p class="artist-role">${esc(a.role)}</p>
-        ${a.bio ? `<p class="artist-bio">${esc(a.bio)}</p>` : ""}
-        <div class="artist-socials">${linkBtns(a.socials)}</div>
-      </div>
-    </article>`
-    ).join("") || `<p class="empty">Artists coming soon</p>`;
-
   /* ---------- イベント描画（日付で自動振り分け） ---------- */
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = EVENTS.filter((e) => e.date >= today).sort((a, b) => a.date.localeCompare(b.date));
@@ -146,8 +131,45 @@
         <div class="event-meta"><span><b>VENUE</b> — ${esc(e.venue)}</span></div>
         <div class="event-lineup">${(e.lineup || []).map((n) => `<span>${esc(n)}</span>`).join("")}</div>
         ${!isPast && e.ticketUrl ? `<a class="btn" href="${esc(e.ticketUrl)}" target="_blank" rel="noopener">Tickets</a>` : ""}
+        ${(e.report && e.report.length) || (e.gallery && e.gallery.length) ? `<button class="btn ghost event-report-btn" data-event="${esc(e.name)}">VIEW REPORT</button>` : ""}
       </div>
     </article>`;
+
+  /* ---------- イベントレポート モーダル ---------- */
+  const modal = $("#event-modal");
+
+  const openEventModal = (e) => {
+    $("#event-modal-body").innerHTML = `
+      <p class="event-date-big">${fmtDate(e.date)}${e.timeNote ? ` / ${esc(e.timeNote)}` : ""} — ${esc(e.venue)}</p>
+      <h2 class="em-title" id="em-title">${esc(e.name)}</h2>
+      ${(e.report || []).map((p) => `<p class="em-text">${esc(p)}</p>`).join("")}
+      ${e.videoUrl ? `<a class="btn em-video" href="${esc(e.videoUrl)}" target="_blank" rel="noopener">▶ AFTERMOVIE</a>` : ""}
+      ${(e.credits && e.credits.length) ? `<div class="em-credits">${e.credits.map((c) => `<p>${esc(c)}</p>`).join("")}</div>` : ""}
+      ${(e.gallery && e.gallery.length) ? `<div class="em-gallery">${e.gallery.map((g) => `<img src="${esc(g)}" alt="${esc(e.name)} photo" loading="lazy">`).join("")}</div>` : ""}
+    `;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    $(".event-modal-panel").scrollTop = 0;
+  };
+
+  const closeEventModal = () => {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  $("#event-modal-close").addEventListener("click", closeEventModal);
+  $("#event-modal-backdrop").addEventListener("click", closeEventModal);
+  addEventListener("keydown", (ev) => { if (ev.key === "Escape") closeEventModal(); });
+
+  // レポートボタンはカード再描画のたびに付け直す（イベント委任）
+  document.addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".event-report-btn");
+    if (!btn) return;
+    const e = EVENTS.find((x) => x.name === btn.dataset.event);
+    if (e) openEventModal(e);
+  });
 
   const renderEvents = (mode) => {
     const list = mode === "upcoming" ? upcoming : past;
@@ -195,6 +217,12 @@
   $("#about-pillars").innerHTML = ABOUT.pillars
     .map((p) => `<div class="pillar reveal"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p></div>`)
     .join("");
+
+  // ABOUTページの背景画像（data.jsのbackgroundImageで指定）
+  if (ABOUT.backgroundImage) {
+    $("#page-about").style.background =
+      `linear-gradient(rgba(9,9,11,.86), rgba(9,9,11,.96)), url("${ABOUT.backgroundImage}") center top / cover no-repeat`;
+  }
 
   /* ---------- ソーシャルリンク（ヒーロー/Contact/フッター） ---------- */
   const socialsHtml = linkBtns(SITE.socials);
@@ -244,9 +272,10 @@
   });
 
   /* ---------- ハッシュルーティング（ページ切り替え） ---------- */
-  const pages = ["home", "about", "releases", "artists", "events", "news", "contact"];
+  const pages = ["home", "about", "releases", "events", "news", "contact"];
 
   const route = () => {
+    closeEventModal();
     const hash = (location.hash || "#home").replace("#", "");
     const page = pages.includes(hash) ? hash : "home";
     $$(".page").forEach((p) => p.classList.toggle("active", p.id === `page-${page}`));

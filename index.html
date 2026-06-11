@@ -40,7 +40,6 @@
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
       <a href="#releases">RELEASES</a>
-      <a href="#artists">ARTISTS</a>
       <a href="#events">EVENTS</a>
       <a href="#news">NEWS</a>
       <a href="#contact">CONTACT</a>
@@ -184,17 +183,6 @@
     </div>
   </section>
 
-  <!-- ============ ARTISTS ============ -->
-  <section class="page" id="page-artists">
-    <div class="wrap">
-      <header class="page-head">
-        <span class="eyebrow">Roster</span>
-        <h1 class="h-display">Artists</h1>
-      </header>
-      <div class="artist-grid" id="artist-grid"></div>
-    </div>
-  </section>
-
   <!-- ============ EVENTS ============ -->
   <section class="page" id="page-events">
     <div class="wrap">
@@ -270,6 +258,15 @@
     </div>
   </section>
   </main>
+
+  <!-- ============ イベントレポート モーダル ============ -->
+  <div class="event-modal" id="event-modal" aria-hidden="true">
+    <div class="event-modal-backdrop" id="event-modal-backdrop"></div>
+    <div class="event-modal-panel" role="dialog" aria-modal="true" aria-labelledby="em-title">
+      <button class="event-modal-close" id="event-modal-close" aria-label="閉じる">CLOSE ✕</button>
+      <div class="event-modal-body" id="event-modal-body"></div>
+    </div>
+  </div>
 
   <!-- ============ フッター ============ -->
   <footer>
