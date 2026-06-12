@@ -101,8 +101,9 @@ const RELEASES = [
     type: "COMPILATION",
     date: "2026-04-27",
     cover: "https://f4.bcbits.com/img/a0311867667_10.jpg",
-    description: "WE DIE YOUNGの新コンセプト・コンピレーションアルバム。",
+    description: "WE DIE YOUNGの新コンセプト・コンピレーションアルバム。Future Bass / Wave / Garage等のメロディックなサウンドを軸にした全12曲収録。",
     links: {
+      stream:   "https://www.submithub.com/link/afterlife-vol1",
       bandcamp: "https://wedieyoung.bandcamp.com/album/afterlifevol-1",
       "buy cd": "https://www.diverse.direct/we-die-young/wdy-038/"
     }
@@ -113,8 +114,9 @@ const RELEASES = [
     type: "COMPILATION",
     date: "2026-04-27",
     cover: "https://f4.bcbits.com/img/a0656935817_10.jpg",
-    description: "日本発Trap/Bassコンピレーション第8弾。",
+    description: "日本発Trap/Bassコンピレーション第8弾。Trap / Dubstep / Bass House等のBass Musicを軸にした全16曲収録。",
     links: {
+      stream:   "https://www.submithub.com/link/we-die-young-vol-8",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-8",
       "buy cd": "https://www.diverse.direct/we-die-young/wdy-037/"
     }
@@ -872,6 +874,46 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-04-27",
+    category: "RELEASE",
+    title: "AFTERLIFE vol.1 リリース",
+    body: "WE DIE YOUNGの新コンセプト・コンピレーションアルバム「AFTERLIFE vol.1」がリリース。Future Bass / Wave / Garage等のメロディックなサウンドを軸にした全12曲収録。",
+    link: "",
+    image: "https://f4.bcbits.com/img/a0311867667_10.jpg",
+    article: [
+      "2026年4月27日、WE DIE YOUNGの新コンセプト・コンピレーションアルバム「AFTERLIFE vol.1」がリリースされました。",
+      "On April 27, 2026, WE DIE YOUNG released its new concept compilation album “AFTERLIFE vol.1”.",
+      "本作はWE DIE YOUNGが新たに始動させたコンピレーションシリーズ「AFTERLIFE」の第1弾。Future Bass / Wave / Garage等のメロディックなサウンドを軸に、これまでのシリーズとは異なるエモーショナルな世界観を描いた全12曲を収録。",
+      "“AFTERLIFE” marks the beginning of a brand-new compilation series from WE DIE YOUNG. Centered around melodic sounds such as Future Bass, Wave, and Garage, this first installment features 12 tracks that explore an emotional soundscape distinct from the label’s previous series.",
+      "🎧 TRACKLIST\n01. rejection – Good Time\n02. mahziel – In the Air\n03. Tsuyoshi A. – Faded Rain (feat. wind flower)\n04. Renge – DON’T LET ME GO\n05. crp. – let u\n06. De_N – Spr. haze\n07. vishnu okuno – final call (shake that)\n08. X2lowline – Waiting\n09. SLEEPYHEVD – pray\n10. yugaku – if only u\n11. Exodynamix – wasting time\n12. shiraishi – flagile"
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/afterlife-vol1" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/afterlifevol-1" },
+      { label: "Buy CD", url: "https://www.diverse.direct/we-die-young/wdy-038/" }
+    ]
+  },
+  {
+    date: "2026-04-27",
+    category: "RELEASE",
+    title: "WE DIE YOUNG vol.8 リリース",
+    body: "レーベルコンピレーションアルバム「WE DIE YOUNG vol.8」がリリース。Trap / Dubstep / Bass House等のBass Musicを軸にした、日本発Trap/Bassコンピレーション第8弾。全16曲収録。",
+    link: "",
+    image: "https://f4.bcbits.com/img/a0656935817_10.jpg",
+    article: [
+      "2026年4月27日、WE DIE YOUNGのレーベルコンピレーションアルバム「WE DIE YOUNG vol.8」がリリースされました。",
+      "On April 27, 2026, WE DIE YOUNG released its label compilation album “WE DIE YOUNG vol.8”.",
+      "レーベルの看板シリーズ第8弾となる本作は、Trap / Dubstep / Bass House等のBass Musicを軸に、国内外のアーティストが集結した全16曲を収録。フロア直結のアグレッシブなサウンドでシリーズの最前線を更新する一枚。",
+      "As the eighth installment of the label’s flagship compilation series, this release features 16 tracks built around Trap, Dubstep, Bass House, and other bass-driven sounds, bringing together artists from Japan and abroad. A floor-ready, aggressive record that pushes the series to its next stage.",
+      "🎧 TRACKLIST\n01. Redsign – Get Down\n02. Xeno & ADAM KALI – Want Me\n03. eeyrith. – Replace You\n04. vishnu okuno – swag2k26\n05. crp. – don’t stop\n06. TRYDENY – Keep it goin\n07. KO3 – GETTING HIGH\n08. MTGD – SCREAM\n09. SMWLAYY & CONF!RM – Burnout\n10. ZiXS – THROW IT BACK\n11. Diat – Make Me Go\n12. ECLAIR – Stepped Through\n13. rejection & The Herb Shop – FM/AM\n14. MOSHIMOSH & morethanahalf – selecta\n15. Douji Wiix – your voice\n16. Exodynamix & crp. – Slipstream"
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/we-die-young-vol-8" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-8" },
+      { label: "Buy CD", url: "https://www.diverse.direct/we-die-young/wdy-037/" }
+    ]
+  },
   {
     date: "2026-04-10",
     category: "RELEASE",
