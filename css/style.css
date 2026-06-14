@@ -210,6 +210,16 @@ ul { list-style: none; }
     radial-gradient(ellipse 35% 30% at 15% 80%, rgba(56,197,255,.07), transparent 70%),
     var(--void);
 }
+/* ライブ写真をヒーロー背面にうっすら敷く（差し替えは assets/images/hero-bg.jpg） */
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/images/hero-bg.jpg") center center / cover no-repeat;
+  opacity: .22;
+  filter: saturate(1.05) contrast(1.02);
+  pointer-events: none;
+}
 /* スキャンライン + ビネット */
 .hero-bg::after {
   content: "";
@@ -441,6 +451,28 @@ ul { list-style: none; }
 .featured-links a { font-size: 11.5px; padding: 9px 18px; }
 
 /* ============ ジャンルウォール ============ */
+/* ============ VIDEO（YouTube埋め込み） ============ */
+.video-section {
+  position: relative;
+  padding: 96px 0 20px;
+}
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .genres {
   position: relative;
   padding: 96px 0 20px;
@@ -1200,4 +1232,170 @@ footer {
   .news-item { grid-template-columns: 1fr; gap: 8px; }
   .news-cat { justify-self: start; }
   .page-head { padding-top: 110px; }
+}
+
+/* ============ アーティスト（Artists） ============ */
+.artist-block { margin-bottom: 84px; }
+.artist-block:last-child { margin-bottom: 0; }
+
+.section-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .18em;
+  color: var(--ash);
+  white-space: nowrap;
+}
+
+/* ---- 共通: 写真 / 頭文字アバター ---- */
+.owner-photo, .artist-photo {
+  position: relative;
+  overflow: hidden;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+}
+.owner-photo img, .artist-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.owner-photo.is-initials, .artist-photo.is-initials {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg,
+      hsl(var(--h, 0) 60% 20%) 0%,
+      color-mix(in srgb, var(--void) 55%, hsl(var(--h, 0) 60% 14%)) 100%);
+}
+.owner-photo.is-initials span, .artist-photo.is-initials span {
+  font-family: var(--font-display);
+  color: var(--bone);
+  line-height: 1;
+  letter-spacing: .02em;
+  opacity: .92;
+}
+.owner-photo.is-initials span { font-size: 64px; }
+.artist-photo.is-initials span { font-size: 46px; }
+
+/* ---- Owner ---- */
+.owner-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.owner-photo {
+  width: 280px;
+  aspect-ratio: 1 / 1;
+  clip-path: var(--slash);
+  align-self: start;
+}
+.owner-photo:hover img { transform: scale(1.04); }
+.owner-info { align-self: start; }
+.owner-name {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: .95;
+  text-transform: lowercase;
+  margin: 6px 0 12px;
+}
+.owner-bio {
+  color: var(--ash);
+  font-size: 15px;
+  margin: 14px 0 22px;
+  max-width: 60ch;
+}
+.artist-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+/* ---- Featured グリッド ---- */
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+.artist-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  transition: transform .25s ease, border-color .25s;
+}
+.artist-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,42,60,.5);
+}
+.artist-photo {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+.artist-card:hover .artist-photo.has-photo img { transform: scale(1.05); }
+.artist-card-body { padding: 20px 22px 24px; }
+.artist-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.artist-card-body .artist-meta { margin-bottom: 12px; }
+.artist-bio {
+  color: var(--ash);
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* ---- SNSリンクボタン ---- */
+.artist-socials { display: flex; flex-wrap: wrap; gap: 8px; }
+.artist-socials a {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  color: var(--ash);
+  transition: border-color .2s, color .2s, background .2s;
+}
+.artist-socials a:hover {
+  border-color: var(--red);
+  color: var(--bone);
+}
+
+/* ---- Roster ---- */
+.roster-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.roster-chip {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 11px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  transition: border-color .2s, transform .2s;
+}
+.roster-chip:hover { border-color: rgba(123,91,255,.5); transform: translateY(-2px); }
+.roster-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+}
+.roster-note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  color: var(--ash);
+}
+
+@media (max-width: 680px) {
+  .artist-block { margin-bottom: 60px; }
+  .section-note { display: none; }
+  .owner-card { grid-template-columns: 1fr; gap: 22px; }
+  .owner-photo { max-width: 240px; }
+  .owner-photo.is-initials span { font-size: 52px; }
 }

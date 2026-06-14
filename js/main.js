@@ -80,21 +80,27 @@
     sortedReleases.slice(0, 3).map(releaseCard).join("") ||
     `<p class="empty">Releases coming soon</p>`;
 
-  // HOME: ジャンルウォール
-  const genreNames = (SITE.genres && SITE.genres.length)
-    ? SITE.genres
-    : ["TRAP", "BASS MUSIC", "UK DUBSTEP", "HARDWAVE", "HARD TECHNO", "HYPERPOP"];
-  $("#genre-list").innerHTML = genreNames
-    .map(
-      (g) => `
-    <li class="reveal">
-      <div class="g-row">
-        <span class="g-tag">WDY /// SOUND</span>
-        <span class="g-name">${esc(g)}</span>
-      </div>
-    </li>`
-    )
-    .join("");
+  // HOME: VIDEO（YouTube埋め込み）
+  // 各種YouTube URL形式から動画IDを取り出す（watch?v= / youtu.be/ / embed/ / shorts/）
+  const youtubeId = (url) => {
+    if (!url) return "";
+    const m = String(url).match(
+      /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{11})/
+    );
+    return m ? m[1] : "";
+  };
+  const videoSection = document.querySelector(".video-section");
+  const vid = youtubeId(SITE.featuredVideo);
+  if (vid) {
+    $("#home-video").innerHTML =
+      `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" title="WE DIE YOUNG video" ` +
+      `loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ` +
+      `referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    const ytLink = $("#video-yt-link");
+    if (ytLink) ytLink.href = (SITE.socials && SITE.socials.youtube) || `https://www.youtube.com/watch?v=${vid}`;
+  } else if (videoSection) {
+    videoSection.style.display = "none";   // URL未設定/不正なら欄ごと非表示
+  }
 
   // RELEASESページ + フィルター
   const renderReleases = (type) => {
@@ -309,6 +315,72 @@
       `linear-gradient(rgba(9,9,11,.86), rgba(9,9,11,.96)), url("${ABOUT.backgroundImage}") center top / cover no-repeat`;
   }
 
+  /* ---------- Artists描画 ---------- */
+  // SNSキー → 表示ラベル
+  const SOCIAL_LABELS = {
+    instagram: "Instagram", x: "X", soundcloud: "SoundCloud",
+    spotify: "Spotify", bandcamp: "Bandcamp", youtube: "YouTube",
+    linktree: "Links", website: "Website"
+  };
+
+  const artistSocials = (socials) =>
+    Object.entries(socials || {})
+      .filter(([k, url]) => url && SOCIAL_LABELS[k])
+      .map(([k, url]) =>
+        `<a href="${esc(url)}" target="_blank" rel="noopener">${SOCIAL_LABELS[k]}</a>`
+      )
+      .join("");
+
+  // 写真が無い場合のフォールバック: 名前の頭文字＋名前から決まる色のアバター
+  const artistAvatar = (a, cls) => {
+    if (a.photo) {
+      return `<div class="${cls} has-photo"><img src="${esc(a.photo)}" alt="${esc(a.name)}" loading="lazy"></div>`;
+    }
+    const letters = (a.name.match(/[A-Za-z0-9]/g) || [a.name[0] || "?"]).slice(0, 2).join("").toUpperCase();
+    let hash = 0;
+    for (let i = 0; i < a.name.length; i++) hash = (hash * 31 + a.name.charCodeAt(i)) >>> 0;
+    const hue = hash % 360;
+    const style = `--h:${hue}`;
+    return `<div class="${cls} is-initials" style="${style}"><span>${esc(letters)}</span></div>`;
+  };
+
+  if (typeof ARTISTS !== "undefined" && ARTISTS) {
+    // Owner
+    const o = ARTISTS.owner;
+    if (o) {
+      $("#artist-owner").innerHTML = `
+        ${artistAvatar(o, "owner-photo")}
+        <div class="owner-info reveal">
+          <span class="eyebrow">${esc(o.role || "Founder")}</span>
+          <h3 class="owner-name">${esc(o.name)}</h3>
+          ${o.location ? `<p class="artist-meta">${esc(o.location)}${o.works ? ` &nbsp;/&nbsp; ${esc(o.works)}` : ""}</p>` : ""}
+          ${o.bio ? `<p class="owner-bio">${esc(o.bio)}</p>` : ""}
+          <div class="artist-socials">${artistSocials(o.socials)}</div>
+        </div>`;
+    }
+
+    // Featured
+    const featuredCard = (a) => `
+      <article class="artist-card reveal">
+        ${artistAvatar(a, "artist-photo")}
+        <div class="artist-card-body">
+          <h3 class="artist-name">${esc(a.name)}</h3>
+          <p class="artist-meta">${[a.location, a.works].filter(Boolean).map(esc).join(" / ")}</p>
+          ${a.bio ? `<p class="artist-bio">${esc(a.bio)}</p>` : ""}
+          <div class="artist-socials">${artistSocials(a.socials)}</div>
+        </div>
+      </article>`;
+    $("#artist-featured").innerHTML =
+      (ARTISTS.featured || []).map(featuredCard).join("") ||
+      `<p class="empty">Coming soon</p>`;
+
+    // Roster
+    $("#artist-roster").innerHTML =
+      (ARTISTS.roster || [])
+        .map((a) => `<div class="roster-chip reveal"><span class="roster-name">${esc(a.name)}</span>${a.note ? `<span class="roster-note">${esc(a.note)}</span>` : ""}</div>`)
+        .join("") || `<p class="empty">Coming soon</p>`;
+  }
+
   /* ---------- ソーシャルリンク（ヒーロー/Contact/フッター） ---------- */
   const socialsHtml = linkBtns(SITE.socials);
   $("#contact-socials").innerHTML = socialsHtml;
@@ -357,7 +429,7 @@
   });
 
   /* ---------- ハッシュルーティング（ページ切り替え） ---------- */
-  const pages = ["home", "about", "releases", "events", "news", "contact"];
+  const pages = ["home", "about", "artists", "releases", "events", "news", "contact"];
 
   const route = () => {
     closeEventModal();

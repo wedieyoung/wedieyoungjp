@@ -53,6 +53,11 @@ const SITE = {
   //    まだ無い場合は "" のままでOK → メールリンクとして動作します
   formEndpoint: "",
 
+  // ▼ ホームの「VIDEO」欄に埋め込むYouTube動画
+  //    YouTubeのURLをそのまま貼り付けるだけ（watch?v=… / youtu.be/… どちらでもOK）
+  //    動画を変えたい時はこのURLを書き換えるだけ。""にすると欄ごと非表示になります
+  featuredVideo: "https://www.youtube.com/watch?v=fW-frTKQJP4",
+
   // ▼ トップページの「GENRES」セクションに大きく表示されるジャンル一覧
   //    （追加・削除・並び替え自由）
   genres: ["TRAP", "BASS MUSIC", "HARDWAVE", "DUBSTEP", "BASS HOUSE", "RAVE"]
@@ -586,6 +591,29 @@ const RELEASES = [
    ★ フライヤー画像は URL 直接指定 or assets/images/events/ に入れる
    ------------------------------------------------------------ */
 const EVENTS = [
+  {
+    name: "I CAN FRY",
+    date: "2026-06-20",
+    timeNote: "OPEN 23:00 / DOOR ¥2,500（2D付・前売なし）",
+    venue: "Another Dimension",
+    lineup: [
+      "Acrocanthosaurus",
+      "CONNECT CREW (AMANO, Bowne, DVIKI)",
+      "DJ Heero Yuy & BOMAYE",
+      "Hideout Sounds (kens:k & Hisaki)",
+      "melo & Oblongar",
+      "Relect & 和馬",
+      "re:pop",
+      "WE DIE YOUNG (KO3, rejection, Redsign)",
+      "みのむし"
+    ],
+    flyer: "https://pbs.twimg.com/media/HHJyXa2akAAD91e.jpg?name=large",
+    ticketUrl: "",
+    videoUrl: "",
+    report: [],
+    credits: [],
+    gallery: []
+  },
   {
     name: "Beginning ZERO \"JUELZ TOKYO RETURN\"",
     date: "2026-03-20",
@@ -1333,3 +1361,283 @@ const NEWS = [
     link: ""
   }
 ];
+
+
+/* ------------------------------------------------------------
+   6. ARTISTS（アーティスト紹介）
+   ------------------------------------------------------------
+   ★ ホームの「Artists」セクションに表示されます。
+   ★ owner   … レーベルオーナー（rejection）
+     featured … 4作品以上に参加した主要アーティスト（写真＋SNS付き）
+     roster   … これまで参加した全アーティスト（名前＋参加数）
+
+   ▼ 写真（photo）の追加・差し替え方法
+     - photo に画像URL（または assets/images/artists/xxx.jpg）を入れると写真表示
+     - photo を "" にすると、自動でアーティスト名の頭文字アバターを表示します
+       （※写真が未設定のアーティストは、各自のSNSのプロフィール画像URL等を
+         photo に貼り付ければOK。Instagram等の画像は直接URLにできないため、
+         画像を保存して assets/images/artists/ に入れる方法を推奨）
+
+   ▼ SNSリンク（socials）
+     - 各キーにURLを入れると、その分だけボタンが表示されます（""や未記載は非表示）
+     - 使えるキー: instagram / x / soundcloud / spotify / bandcamp / youtube /
+                   linktree / website
+   ------------------------------------------------------------ */
+const ARTISTS = {
+
+  /* ===== OWNER（レーベルオーナー） ===== */
+  owner: {
+    name: "rejection",
+    role: "Founder / Producer / DJ",
+    location: "Fukuoka → Tokyo, Japan",
+    works: "WE DIE YOUNG 主宰",
+    bio: "WE DIE YOUNGの創設者。福岡出身・東京拠点のProducer/DJで、2022年にレーベルを立ち上げた。MEGAREXのメンバーとしても活動し、重低音を軸にしたアグレッシブなトラックと、フロアを支配する圧巻のDJセットでベースミュージックシーンを牽引。コンピレーションvol.1からAFTERLIFEまで全作品に参加し、レーベルの中心として国内外へサウンドを発信し続けている。",
+    photo: "https://i.scdn.co/image/ab676161000051748ca7306348dfd39448ef4643",
+    socials: {
+      instagram:  "https://www.instagram.com/rejection_dj/",
+      x:          "https://x.com/rejectiondj",
+      soundcloud: "https://soundcloud.com/rejectionjp",
+      spotify:    "https://open.spotify.com/artist/0S23vj2YyvxsVlhqqSohrk"
+    }
+  },
+
+  /* ===== FEATURED（4作品以上に参加した主要アーティスト） ===== */
+  featured: [
+    {
+      name: "vishnu okuno",
+      works: "10作品参加",
+      location: "Japan",
+      bio: "WE DIE YOUNGの中心メンバー。エモーショナルなメロディとモダンなTrap/Bassを融合させたサウンドで、コンピレーションvol.2以降の常連として活躍。アルバム『ANGELvoid』も発表している。",
+      photo: "",
+      socials: {
+        instagram:  "https://www.instagram.com/vish.rar/",
+        x:          "https://x.com/yesVishnuhere",
+        soundcloud: "https://soundcloud.com/vishnu_okuno",
+        spotify:    "https://open.spotify.com/artist/4mBN53sDUkcGUWvrv7Ofao"
+      }
+    },
+    {
+      name: "The Herb Shop",
+      works: "9作品参加",
+      location: "Japan",
+      bio: "Dubstepを軸に、アニメカルチャーとベースミュージックの感性を併せ持つ日本のProducer/DJ。vol.1から長く参加し、EP『IRIS/CTRL』もリリース。幅広い質感のサウンドを操る。",
+      photo: "",
+      socials: {
+        x:          "https://x.com/HBVR_ths",
+        soundcloud: "https://soundcloud.com/hbvrths"
+      }
+    },
+    {
+      name: "crp.",
+      works: "8作品参加",
+      location: "Sapporo, Japan",
+      bio: "札幌拠点のProducer/DJ。中毒性のあるフックとうねるベースライン、心地よいグルーヴが持ち味。vol.3以降コンスタントに参加し、レーベルを支える存在のひとり。",
+      photo: "https://f4.bcbits.com/img/0026194323_21.jpg",
+      socials: {
+        instagram:  "https://www.instagram.com/its_me_crp/",
+        x:          "https://x.com/its_me_crp",
+        soundcloud: "https://soundcloud.com/madebycrp",
+        bandcamp:   "https://madebycrp.bandcamp.com/"
+      }
+    },
+    {
+      name: "Redsign",
+      works: "8作品参加",
+      location: "Japan",
+      bio: "“Dubstep Otaku from Japan”を掲げるプロデューサー。Trap/Wave/Dubstepを横断する重厚なベースデザインが特徴で、vol.1から数多くの作品に参加してきた。",
+      photo: "",
+      socials: {
+        instagram:  "https://www.instagram.com/redsignjp/",
+        soundcloud: "https://soundcloud.com/redsignjp"
+      }
+    },
+    {
+      name: "Exodynamix",
+      works: "6作品参加",
+      location: "Canada",
+      bio: "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
+      photo: "https://f4.bcbits.com/img/0044840831_21.jpg",
+      socials: {
+        bandcamp:   "https://exodynamix.bandcamp.com/"
+      }
+    },
+    {
+      name: "MTGD",
+      works: "6作品参加",
+      location: "Taiwan",
+      bio: "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フロア直結のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
+      photo: "",
+      socials: {
+        instagram:  "https://www.instagram.com/mtgd.als/",
+        soundcloud: "https://soundcloud.com/m_t_g_d"
+      }
+    },
+    {
+      name: "Ruxxi",
+      works: "5作品参加",
+      location: "Korea / Japan",
+      bio: "韓国・日本を拠点に活動するベースプロデューサー／ミュージックテクノロジスト。Tokyo Machine、San Holoらからもサポートを受け、ポップからダブステップまで幅広く制作する。",
+      photo: "https://i.scdn.co/image/ab6761610000517490e333c1acf68f31e20924b5",
+      socials: {
+        x:          "https://twitter.com/ianruxxi",
+        soundcloud: "https://soundcloud.com/ruxxi",
+        spotify:    "https://open.spotify.com/artist/39L4l4agjBB6Xl0Sl6AX4n",
+        youtube:    "https://www.youtube.com/c/Ruxxi"
+      }
+    },
+    {
+      name: "mahziel",
+      works: "5作品参加",
+      location: "Japan",
+      bio: "WE DIE YOUNGの黎明期から参加するプロデューサー。vol.1〜4、そしてAFTERLIFEまで、シリーズの節目を彩るトラックを提供してきた。",
+      photo: "",
+      socials: {
+        soundcloud: "https://soundcloud.com/mahziel",
+        spotify:    "https://open.spotify.com/artist/7LV8r3cwTq4dDUkt3Sex5p"
+      }
+    },
+    {
+      name: "KO3",
+      works: "5作品参加",
+      location: "Japan",
+      bio: "日本のProducer/DJ。緻密なビルドアップとキレのあるドロップでフロアを組み立てる。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
+      photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
+      socials: {
+        x:          "https://twitter.com/KO3_untitled",
+        soundcloud: "https://soundcloud.com/dj-ko3",
+        bandcamp:   "https://ko3untitled.bandcamp.com/"
+      }
+    },
+    {
+      name: "ECLAIR",
+      works: "5作品参加",
+      location: "Japan",
+      bio: "澄んだメロディラインと厚みのある低音を操るプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。ライブでも存在感を放つ。",
+      photo: "",
+      socials: {
+        soundcloud: "https://soundcloud.com/eclair_music"
+      }
+    },
+    {
+      name: "REXY=DEXY",
+      works: "4作品参加",
+      location: "Tokyo, Japan",
+      bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trap/Dubstep/Bass Houseを軸に、CAMELOTやWARP、MUSIC CIRCUSのメインステージなどでもプレイする若手注目株。",
+      photo: "",
+      socials: {
+        x:          "https://x.com/rexydexymusic",
+        soundcloud: "https://soundcloud.com/rexy_dexy_music"
+      }
+    },
+    {
+      name: "ZiXS",
+      works: "4作品参加",
+      location: "Thailand",
+      bio: "タイ出身のEDMプロデューサー。シングル『One More』でデビューし、vol.5以降のコンピレーションにも参加。エネルギッシュなフェスティバルサウンドが持ち味。",
+      photo: "",
+      socials: {}
+    },
+    {
+      name: "sh0wtime",
+      works: "4作品参加",
+      location: "Japan",
+      bio: "Trap/Bassを軸に制作するプロデューサー。シングル『U FEEL THE SAME!』をはじめ、vol.5〜7のコンピレーションにトラックを提供している。",
+      photo: "",
+      socials: {
+        soundcloud: "https://soundcloud.com/sh0wtimelol"
+      }
+    },
+    {
+      name: "Douji Wiix",
+      works: "4作品参加",
+      location: "Japan",
+      bio: "Bass House / Trapシーンで活動するプロデューサー。vol.6以降の常連で、シングル『Mental』も発表。アグレッシブかつキャッチーなサウンドを展開する。",
+      photo: "",
+      socials: {
+        linktree:   "https://linktr.ee/doujiwiix",
+        soundcloud: "https://soundcloud.com/doujiwiix"
+      }
+    }
+  ],
+
+  /* ===== ROSTER（これまで参加した全アーティスト） ===== */
+  /* ★ 名前と参加数（または代表作）のみ。多い順 → 名前順 */
+  roster: [
+    { name: "rejection",      note: "Owner / 全コンピ" },
+    { name: "vishnu okuno",   note: "10作品" },
+    { name: "The Herb Shop",  note: "9作品" },
+    { name: "crp.",           note: "8作品" },
+    { name: "Redsign",        note: "8作品" },
+    { name: "Exodynamix",     note: "6作品" },
+    { name: "MTGD",           note: "6作品" },
+    { name: "KO3",            note: "5作品" },
+    { name: "Ruxxi",          note: "5作品" },
+    { name: "mahziel",        note: "5作品" },
+    { name: "ECLAIR",         note: "5作品" },
+    { name: "REXY=DEXY",      note: "4作品" },
+    { name: "ZiXS",           note: "4作品" },
+    { name: "sh0wtime",       note: "4作品" },
+    { name: "Douji Wiix",     note: "4作品" },
+    { name: "Aiyru",          note: "3作品" },
+    { name: "yadosan",        note: "3作品" },
+    { name: "Diat",           note: "3作品" },
+    { name: "CONF!RM",        note: "3作品" },
+    { name: "SMWLAYY",        note: "3作品" },
+    { name: "VOLTA",          note: "3作品" },
+    { name: "Xeno",           note: "3作品" },
+    { name: "MOSHIMOSH",      note: "3作品" },
+    { name: "LAGnaf",         note: "3作品" },
+    { name: "21SWINGS",       note: "2作品" },
+    { name: "crayvxn",        note: "2作品" },
+    { name: "ZxNX",           note: "2作品" },
+    { name: "Müxek",          note: "2作品" },
+    { name: "reeload",        note: "2作品" },
+    { name: "ARKI",           note: "2作品" },
+    { name: "Zexnum",         note: "2作品" },
+    { name: "Tohrchu",        note: "2作品" },
+    { name: "HaLuna",         note: "2作品" },
+    { name: "ADAM KALI",      note: "2作品" },
+    { name: "eeyrith.",       note: "2作品" },
+    { name: "TRYDENY",        note: "2作品" },
+    { name: "Viticz",         note: "Rangda" },
+    { name: "Namya",          note: "Rangda" },
+    { name: "Voxelkana",      note: "digital[F10W]" },
+    { name: "Yuzac",          note: "feel it" },
+    { name: "KANAKA",         note: "DONTPLAY" },
+    { name: "Kawashiii",      note: "Medication" },
+    { name: "XeroC'tok",      note: "Ballade" },
+    { name: "Lactar1uz",      note: "Falling 4 U" },
+    { name: "Butterfly Zone", note: "Ghostmode" },
+    { name: "WATARU",         note: "Starfall" },
+    { name: "Violet.MKII",    note: "Karma Strike" },
+    { name: "GREED",          note: "Karma Strike" },
+    { name: "Miii",           note: "vol.1" },
+    { name: "poniyama",       note: "vol.1" },
+    { name: "Hylen",          note: "vol.2" },
+    { name: "GUANA",          note: "vol.3" },
+    { name: "celtix",         note: "vol.5" },
+    { name: "Asatsumei",      note: "vol.5" },
+    { name: "SIZ",            note: "vol.5" },
+    { name: "tion",           note: "vol.5" },
+    { name: "crowit.",        note: "vol.5" },
+    { name: "lixxy",          note: "vol.5" },
+    { name: "SIZZ",           note: "vol.6" },
+    { name: "Autodepth",      note: "vol.6" },
+    { name: "Leonardo",       note: "vol.6" },
+    { name: "icesawder",      note: "vol.7" },
+    { name: "moyu",           note: "vol.7" },
+    { name: "BHM",            note: "vol.7" },
+    { name: "SineVorteX",     note: "vol.7" },
+    { name: "senjou",         note: "vol.7" },
+    { name: "NECROSiS",       note: "RAVEMODE vol.1" },
+    { name: "NGHTHYP",        note: "RAVEMODE vol.1" },
+    { name: "morethanahalf",  note: "vol.8" },
+    { name: "Tsuyoshi A.",    note: "AFTERLIFE vol.1" },
+    { name: "Renge",          note: "AFTERLIFE vol.1" },
+    { name: "De_N",           note: "AFTERLIFE vol.1" },
+    { name: "X2lowline",      note: "AFTERLIFE vol.1" },
+    { name: "SLEEPYHEVD",     note: "AFTERLIFE vol.1" },
+    { name: "yugaku",         note: "AFTERLIFE vol.1" },
+    { name: "shiraishi",      note: "AFTERLIFE vol.1" }
+  ]
+};

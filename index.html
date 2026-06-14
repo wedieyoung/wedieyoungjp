@@ -39,6 +39,7 @@
     <div class="nav-links" id="nav-links">
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
+      <a href="#artists">ARTISTS</a>
       <a href="#releases">RELEASES</a>
       <a href="#events">EVENTS</a>
       <a href="#news">NEWS</a>
@@ -82,8 +83,8 @@
     <!-- ティッカー -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>WE DIE YOUNG <b>///</b> TOKYO <b>///</b> TRAP <b>///</b> BASS MUSIC <b>///</b> UK DUBSTEP <b>///</b> HARDWAVE <b>///</b> HARD TECHNO <b>///</b> HYPERPOP <b>///</b></span>
-        <span>WE DIE YOUNG <b>///</b> TOKYO <b>///</b> TRAP <b>///</b> BASS MUSIC <b>///</b> UK DUBSTEP <b>///</b> HARDWAVE <b>///</b> HARD TECHNO <b>///</b> HYPERPOP <b>///</b></span>
+        <span>WE DIE YOUNG <b>///</b> TOKYO <b>///</b> TRAP <b>///</b> BASS MUSIC <b>///</b> UK DUBSTEP <b>///</b> HARDWAVE <b>///</b> HARD TECHNO <b>///</b> GARAGE <b>///</b> FUTURE BASS <b>///</b></span>
+        <span>WE DIE YOUNG <b>///</b> TOKYO <b>///</b> TRAP <b>///</b> BASS MUSIC <b>///</b> UK DUBSTEP <b>///</b> HARDWAVE <b>///</b> HARD TECHNO <b>///</b> GARAGE <b>///</b> FUTURE BASS <b>///</b></span>
       </div>
     </div>
 
@@ -119,14 +120,14 @@
       </section>
     </div>
 
-    <!-- ジャンルウォール -->
-    <section class="genres">
+    <!-- VIDEO（YouTube埋め込み。動画URLは js/data.js の SITE.featuredVideo で変更） -->
+    <section class="video-section">
       <div class="wrap">
         <div class="section-bar">
-          <h2 class="h-section">Sounds We Push</h2>
-          <a href="#about">ABOUT →</a>
+          <h2 class="h-section">Video</h2>
+          <a id="video-yt-link" target="_blank" rel="noopener">YOUTUBE →</a>
         </div>
-        <ul class="genre-list" id="genre-list"></ul>
+        <div class="video-frame" id="home-video"></div>
       </div>
     </section>
 
@@ -168,6 +169,42 @@
       <p class="about-lead" id="about-lead"></p>
       <div class="about-text" id="about-text"></div>
       <div class="pillars" id="about-pillars"></div>
+    </div>
+  </section>
+
+  <!-- ============ ARTISTS ============ -->
+  <section class="page" id="page-artists">
+    <div class="wrap">
+      <header class="page-head">
+        <span class="eyebrow">Producers / DJs</span>
+        <h1 class="h-display">Artists</h1>
+      </header>
+
+      <!-- Owner -->
+      <section class="artist-block">
+        <div class="section-bar">
+          <h2 class="h-section">Owner</h2>
+        </div>
+        <div class="owner-card" id="artist-owner"></div>
+      </section>
+
+      <!-- Featured -->
+      <section class="artist-block">
+        <div class="section-bar">
+          <h2 class="h-section">Featured</h2>
+          <span class="section-note">4作品以上に参加したアーティスト</span>
+        </div>
+        <div class="artist-grid" id="artist-featured"></div>
+      </section>
+
+      <!-- Roster -->
+      <section class="artist-block">
+        <div class="section-bar">
+          <h2 class="h-section">WE DIE YOUNG Roster</h2>
+          <span class="section-note">これまで参加した全アーティスト</span>
+        </div>
+        <div class="roster-grid" id="artist-roster"></div>
+      </section>
     </div>
   </section>
 
