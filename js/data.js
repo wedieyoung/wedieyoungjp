@@ -1514,7 +1514,7 @@ const ARTISTS = {
       name: "KO3",
       works: "5作品参加",
       location: "Japan",
-      bio: "日本のProducer/DJ。緻密なビルドアップとキレのあるドロップでフロアを組み立てる。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
+      bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
       photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
       socials: {
         instagram:  "https://www.instagram.com/ko3_untitled/",
@@ -1528,7 +1528,7 @@ const ARTISTS = {
       name: "ECLAIR",
       works: "5作品参加",
       location: "Japan",
-      bio: "澄んだメロディラインと厚みのある低音を操るプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。ライブでも存在感を放つ。",
+      bio: "クリアかつ厚みのある独自のサウンドデザインを探求するプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。アンダーグラウンドシーンに頭角を表す。",
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/the_eclair_/",
@@ -1540,8 +1540,8 @@ const ARTISTS = {
     {
       name: "REXY=DEXY",
       works: "4作品参加",
-      location: "Tokyo, Japan",
-      bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trap/Dubstep/Bass Houseを軸に、CAMELOTやWARP、MUSIC CIRCUSのメインステージなどでもプレイする若手注目株。",
+      location: "Japan",
+      bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trapを軸に、ULTRA JAPANへの出演、Yellow Clawとのコラボなど数々の実績を果たす若手注目株。",
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/rexy_dexy_official/",
@@ -1554,7 +1554,7 @@ const ARTISTS = {
       name: "ZiXS",
       works: "4作品参加",
       location: "Thailand",
-      bio: "タイ出身のEDMプロデューサー。シングル『One More』でデビューし、vol.5以降のコンピレーションにも参加。エネルギッシュなフェスティバルサウンドが持ち味。",
+      bio: "タイ出身のEDMプロデューサー。vol.5以降のコンピレーションに参加し、シングル『One More』も発表。Dubstep出身の重厚なBassが持ち味。",
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/zixss_bloomii/",
@@ -1580,7 +1580,7 @@ const ARTISTS = {
       name: "Douji Wiix",
       works: "4作品参加",
       location: "Japan",
-      bio: "Bass House / Trapシーンで活動するプロデューサー。vol.6以降の常連で、シングル『Mental』も発表。アグレッシブかつキャッチーなサウンドを展開する。",
+      bio: "島根県を拠点に活動するDJ/プロデューサー。vol.6以降の常連で、シングル『Mental』も発表。\"Neo Kagura Vibes\"を掲げ唯一無二の和サウンドを取り入れる。",
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/doujiwiix/",
@@ -1631,6 +1631,7 @@ const ARTISTS = {
     { name: "ADAM KALI",      note: "2作品" },
     { name: "eeyrith.",       note: "2作品" },
     { name: "TRYDENY",        note: "2作品" },
+    { name: "SiZZ",           note: "2作品（旧SIZ）" },
     { name: "Viticz",         note: "Rangda" },
     { name: "Namya",          note: "Rangda" },
     { name: "Voxelkana",      note: "digital[F10W]" },
@@ -1649,11 +1650,9 @@ const ARTISTS = {
     { name: "GUANA",          note: "vol.3" },
     { name: "celtix",         note: "vol.5" },
     { name: "Asatsumei",      note: "vol.5" },
-    { name: "SIZ",            note: "vol.5" },
     { name: "tion",           note: "vol.5" },
     { name: "crowit.",        note: "vol.5" },
     { name: "lixxy",          note: "vol.5" },
-    { name: "SIZZ",           note: "vol.6" },
     { name: "Autodepth",      note: "vol.6" },
     { name: "Leonardo",       note: "vol.6" },
     { name: "icesawder",      note: "vol.7" },
