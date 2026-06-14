@@ -1408,7 +1408,7 @@ const ARTISTS = {
       works: "10作品参加",
       location: "Japan",
       bio: "WE DIE YOUNGの中心メンバー。エモーショナルなメロディとモダンなTrap/Bassを融合させたサウンドで、コンピレーションvol.2以降の常連として活躍。アルバム『ANGELvoid』も発表している。",
-      photo: "",
+      photo: "assets/images/artists/vishnu-okuno.jpg",
       socials: {
         instagram:  "https://www.instagram.com/vish.rar/",
         x:          "https://x.com/yesVishnuhere",
@@ -1434,7 +1434,7 @@ const ARTISTS = {
       works: "8作品参加",
       location: "Japan",
       bio: "札幌拠点のProducer/DJ。中毒性のあるフックとアンビエント、心地よいグルーヴが持ち味。vol.3以降コンスタントに参加し、レーベルを支える存在のひとり。",
-      photo: "https://f4.bcbits.com/img/0026194323_21.jpg",
+      photo: "assets/images/artists/crp.jpg",
       socials: {
         instagram:  "https://www.instagram.com/its_me_crp/",
         x:          "https://x.com/its_me_crp",
@@ -1448,7 +1448,8 @@ const ARTISTS = {
       works: "8作品参加",
       location: "Japan",
       bio: "緻密なサウンドデザインスキルで国内外Dubstepシーンの最先端を走るDJ/Producer. Trap/Dubstepを横断する重厚なベースデザインが特徴で、vol.1から数多くの作品に参加してきた。",
-      photo: "",
+      photo: "assets/images/artists/redsign.jpg",
+      photoPos: "center 18%",
       socials: {
         instagram:  "https://www.instagram.com/redsignjp/",
         x:          "https://x.com/redsign_jp",

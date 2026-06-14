@@ -334,7 +334,8 @@
   // 写真が無い場合のフォールバック: 名前の頭文字＋名前から決まる色のアバター
   const artistAvatar = (a, cls) => {
     if (a.photo) {
-      return `<div class="${cls} has-photo"><img src="${esc(a.photo)}" alt="${esc(a.name)}" loading="lazy"></div>`;
+      const pos = a.photoPos ? ` style="object-position:${esc(a.photoPos)}"` : "";
+      return `<div class="${cls} has-photo"><img src="${esc(a.photo)}" alt="${esc(a.name)}" loading="lazy"${pos}></div>`;
     }
     const letters = (a.name.match(/[A-Za-z0-9]/g) || [a.name[0] || "?"]).slice(0, 2).join("").toUpperCase();
     let hash = 0;
