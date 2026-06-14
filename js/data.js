@@ -1392,7 +1392,7 @@ const ARTISTS = {
     location: "Tokyo, Japan",
     works: "WE DIE YOUNG Owner",
     bio: "WE DIE YOUNGの創設者。福岡出身・東京拠点のProducer/DJで、2022年にレーベルを立ち上げた。MEGAREXのメンバーとしても活動し、メロディアスかつ重厚なトラックと、フロアを支配するDJパフォーマンスで国内ベースミュージックシーンを牽引。コンピレーションvol.1からAFTERLIFEまで全作品に参加し、レーベルの中心として国内外へサウンドを発信し続けている。",
-    photo: "https://i.scdn.co/image/ab676161000051748ca7306348dfd39448ef4643",
+    photo: "assets/images/artists/rejection.jpg",
     socials: {
       instagram:  "https://www.instagram.com/rejection_dj/",
       x:          "https://x.com/rejectiondj",
@@ -1462,7 +1462,8 @@ const ARTISTS = {
       works: "6作品参加",
       location: "Canada",
       bio: "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
-      photo: "https://f4.bcbits.com/img/0044840831_21.jpg",
+      photo: "assets/images/artists/Exodynamix.png",
+      photoPos: "center 12%",
       socials: {
         instagram:  "https://www.instagram.com/exodynamix64/",
         x:          "https://x.com/exodynamix",
@@ -1476,7 +1477,8 @@ const ARTISTS = {
       works: "6作品参加",
       location: "Taiwan",
       bio: "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フロア直結のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
-      photo: "",
+      photo: "assets/images/artists/MTGD.jpg",
+      photoPos: "center 12%",
       socials: {
         instagram:  "https://www.instagram.com/mtgd.als/",
         x:          "https://x.com/_mtgd24",
@@ -1503,7 +1505,7 @@ const ARTISTS = {
       works: "5作品参加",
       location: "Japan",
       bio: "WE DIE YOUNGの黎明期から参加するプロデューサー。vol.1〜4、そしてAFTERLIFEまで、シリーズの節目を彩るトラックを提供してきた。",
-      photo: "",
+      photo: "assets/images/artists/mahziel.png",
       socials: {
         instagram:  "https://www.instagram.com/mahziel/",
         x:          "https://x.com/mahziel_",
@@ -1530,7 +1532,7 @@ const ARTISTS = {
       works: "5作品参加",
       location: "Japan",
       bio: "クリアかつ厚みのある独自のサウンドデザインを探求するプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。アンダーグラウンドシーンに頭角を表す。",
-      photo: "",
+      photo: "assets/images/artists/ECLAIR.png",
       socials: {
         instagram:  "https://www.instagram.com/the_eclair_/",
         x:          "https://x.com/IamECLAIR",
@@ -1543,7 +1545,8 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Japan",
       bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trapを軸に、ULTRA JAPANへの出演、Yellow Clawとのコラボなど数々の実績を果たす若手注目株。",
-      photo: "",
+      photo: "assets/images/artists/REXY=DEXY.png",
+      photoPos: "center 12%",
       socials: {
         instagram:  "https://www.instagram.com/rexy_dexy_official/",
         x:          "https://x.com/rexydexymusic",
@@ -1556,7 +1559,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Thailand",
       bio: "タイ出身のEDMプロデューサー。vol.5以降のコンピレーションに参加し、シングル『One More』も発表。Dubstep出身の重厚なBassが持ち味。",
-      photo: "",
+      photo: "assets/images/artists/ZiXS.png",
       socials: {
         instagram:  "https://www.instagram.com/zixss_bloomii/",
         x:          "https://x.com/ZiXS_BLOOMii",
@@ -1569,7 +1572,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Japan",
       bio: "Trap/Bassを軸に制作するプロデューサー。シングル『U FEEL THE SAME!』をはじめ、vol.5〜7のコンピレーションにトラックを提供している。",
-      photo: "",
+      photo: "assets/images/artists/sh0wtime.png",
       socials: {
         instagram:  "https://www.instagram.com/sh0wtime.lol/",
         x:          "https://x.com/Sh0wtimeDTM",
@@ -1582,7 +1585,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Japan",
       bio: "島根県を拠点に活動するDJ/プロデューサー。vol.6以降の常連で、シングル『Mental』も発表。\"Neo Kagura Vibes\"を掲げ唯一無二の和サウンドを取り入れる。",
-      photo: "",
+      photo: "assets/images/artists/Douji Wiix.png",
       socials: {
         instagram:  "https://www.instagram.com/doujiwiix/",
         x:          "https://x.com/doujiwiix",
