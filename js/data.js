@@ -300,6 +300,7 @@ const RELEASES = [
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY031_Artwork_fix-scaled.png",
     description: "ハワイ出身LA拠点のKANAKAと韓国のLAGnafによるコラボシングル。",
     links: {
+      stream:   "https://www.submithub.com/link/kanaka-lagnaf-dontplay",
       bandcamp: "https://wedieyoung.bandcamp.com/track/dontplay"
     }
   },
