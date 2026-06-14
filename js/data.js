@@ -1421,7 +1421,7 @@ const ARTISTS = {
       works: "9作品参加",
       location: "Japan",
       bio: "ハウスビートを軸に、サブカルチャーとベースミュージックの感性を併せ持つ日本のProducer/DJ。vol.1から長く参加し、EP『IRIS/CTRL』もリリース。幅広い質感のサウンドを操る。",
-      photo: "",
+      photo: "assets/images/artists/the-herb-shop.jpg",
       socials: {
         instagram:  "https://www.instagram.com/hbvr_ths/",
         x:          "https://x.com/HBVR_ths",
