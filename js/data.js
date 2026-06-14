@@ -84,7 +84,7 @@ const ABOUT = {
   // ▼ コンセプトを短い言葉で（3つ程度推奨）
   pillars: [
     { title: "FOUNDED 2022",   text: "Producer/DJ rejectionが主宰。日本からアジア、世界へとベースミュージックを発信する。" },
-    { title: "BASS FORWARD",   text: "Trap / Bass / Hardwave / Rave。重低音を軸に、サイバーなサウンドへ進化を続けるコンピレーションシリーズを展開。" },
+    { title: "BASS FORWARD",   text: "Trap / Bass / Hardwave / Rave。重低音を軸に、モダンかつハイブリッドなサウンドへ進化を続けるコンピレーションシリーズを展開。" },
     { title: "ON THE FLOOR",   text: "年に一度の主催イベント「WE DIE YOUNG ON THE FLOOR」をはじめ、国内外のフロアでシーンを牽引する。" }
   ]
 };
@@ -1391,7 +1391,7 @@ const ARTISTS = {
     role: "Founder / Producer / DJ",
     location: "Fukuoka → Tokyo, Japan",
     works: "WE DIE YOUNG 主宰",
-    bio: "WE DIE YOUNGの創設者。福岡出身・東京拠点のProducer/DJで、2022年にレーベルを立ち上げた。MEGAREXのメンバーとしても活動し、重低音を軸にしたアグレッシブなトラックと、フロアを支配する圧巻のDJセットでベースミュージックシーンを牽引。コンピレーションvol.1からAFTERLIFEまで全作品に参加し、レーベルの中心として国内外へサウンドを発信し続けている。",
+    bio: "WE DIE YOUNGの創設者。福岡出身・東京拠点のProducer/DJで、2022年にレーベルを立ち上げた。MEGAREXのメンバーとしても活動し、メロディアスかつ重厚なトラックと、フロアを支配するDJパフォーマンスで国内ベースミュージックシーンを牽引。コンピレーションvol.1からAFTERLIFEまで全作品に参加し、レーベルの中心として国内外へサウンドを発信し続けている。",
     photo: "https://i.scdn.co/image/ab676161000051748ca7306348dfd39448ef4643",
     socials: {
       instagram:  "https://www.instagram.com/rejection_dj/",
@@ -1420,7 +1420,7 @@ const ARTISTS = {
       name: "The Herb Shop",
       works: "9作品参加",
       location: "Japan",
-      bio: "Dubstepを軸に、アニメカルチャーとベースミュージックの感性を併せ持つ日本のProducer/DJ。vol.1から長く参加し、EP『IRIS/CTRL』もリリース。幅広い質感のサウンドを操る。",
+      bio: "ハウスビートを軸に、サブカルチャーとベースミュージックの感性を併せ持つ日本のProducer/DJ。vol.1から長く参加し、EP『IRIS/CTRL』もリリース。幅広い質感のサウンドを操る。",
       photo: "",
       socials: {
         x:          "https://x.com/HBVR_ths",
@@ -1430,8 +1430,8 @@ const ARTISTS = {
     {
       name: "crp.",
       works: "8作品参加",
-      location: "Sapporo, Japan",
-      bio: "札幌拠点のProducer/DJ。中毒性のあるフックとうねるベースライン、心地よいグルーヴが持ち味。vol.3以降コンスタントに参加し、レーベルを支える存在のひとり。",
+      location: "Japan",
+      bio: "札幌拠点のProducer/DJ。中毒性のあるフックとアンビエント、心地よいグルーヴが持ち味。vol.3以降コンスタントに参加し、レーベルを支える存在のひとり。",
       photo: "https://f4.bcbits.com/img/0026194323_21.jpg",
       socials: {
         instagram:  "https://www.instagram.com/its_me_crp/",
@@ -1444,7 +1444,7 @@ const ARTISTS = {
       name: "Redsign",
       works: "8作品参加",
       location: "Japan",
-      bio: "“Dubstep Otaku from Japan”を掲げるプロデューサー。Trap/Wave/Dubstepを横断する重厚なベースデザインが特徴で、vol.1から数多くの作品に参加してきた。",
+      bio: "緻密なサウンドデザインスキルで国内外Dubstepシーンの最先端を走るDJ/Producer. Trap/Dubstepを横断する重厚なベースデザインが特徴で、vol.1から数多くの作品に参加してきた。",
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/redsignjp/",
