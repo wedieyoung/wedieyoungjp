@@ -1389,8 +1389,8 @@ const ARTISTS = {
   owner: {
     name: "rejection",
     role: "Founder / Producer / DJ",
-    location: "Fukuoka → Tokyo, Japan",
-    works: "WE DIE YOUNG 主宰",
+    location: "Tokyo, Japan",
+    works: "WE DIE YOUNG Owner",
     bio: "WE DIE YOUNGの創設者。福岡出身・東京拠点のProducer/DJで、2022年にレーベルを立ち上げた。MEGAREXのメンバーとしても活動し、メロディアスかつ重厚なトラックと、フロアを支配するDJパフォーマンスで国内ベースミュージックシーンを牽引。コンピレーションvol.1からAFTERLIFEまで全作品に参加し、レーベルの中心として国内外へサウンドを発信し続けている。",
     photo: "https://i.scdn.co/image/ab676161000051748ca7306348dfd39448ef4643",
     socials: {
@@ -1423,8 +1423,10 @@ const ARTISTS = {
       bio: "ハウスビートを軸に、サブカルチャーとベースミュージックの感性を併せ持つ日本のProducer/DJ。vol.1から長く参加し、EP『IRIS/CTRL』もリリース。幅広い質感のサウンドを操る。",
       photo: "",
       socials: {
+        instagram:  "https://www.instagram.com/hbvr_ths/",
         x:          "https://x.com/HBVR_ths",
-        soundcloud: "https://soundcloud.com/hbvrths"
+        soundcloud: "https://soundcloud.com/hbvrths",
+        spotify:    "https://open.spotify.com/artist/7gmvEVizRAidNO57aeUoTu"
       }
     },
     {
@@ -1437,6 +1439,7 @@ const ARTISTS = {
         instagram:  "https://www.instagram.com/its_me_crp/",
         x:          "https://x.com/its_me_crp",
         soundcloud: "https://soundcloud.com/madebycrp",
+        spotify:    "https://open.spotify.com/artist/4VilodtckyAZmMByds5zq6",
         bandcamp:   "https://madebycrp.bandcamp.com/"
       }
     },
@@ -1448,7 +1451,9 @@ const ARTISTS = {
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/redsignjp/",
-        soundcloud: "https://soundcloud.com/redsignjp"
+        x:          "https://x.com/redsign_jp",
+        soundcloud: "https://soundcloud.com/redsignjp",
+        spotify:    "https://open.spotify.com/artist/25kQoBdVZwk6M55jJifTeJ"
       }
     },
     {
@@ -1458,6 +1463,10 @@ const ARTISTS = {
       bio: "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
       photo: "https://f4.bcbits.com/img/0044840831_21.jpg",
       socials: {
+        instagram:  "https://www.instagram.com/exodynamix64/",
+        x:          "https://x.com/exodynamix",
+        soundcloud: "https://soundcloud.com/exodynamix",
+        spotify:    "https://open.spotify.com/artist/5LeIq4oznjWwvr7N8nQnJd",
         bandcamp:   "https://exodynamix.bandcamp.com/"
       }
     },
@@ -1469,16 +1478,19 @@ const ARTISTS = {
       photo: "",
       socials: {
         instagram:  "https://www.instagram.com/mtgd.als/",
-        soundcloud: "https://soundcloud.com/m_t_g_d"
+        x:          "https://x.com/_mtgd24",
+        soundcloud: "https://soundcloud.com/m_t_g_d",
+        spotify:    "https://open.spotify.com/artist/2yrXDsIl3e0y01ptasQ30w"
       }
     },
     {
       name: "Ruxxi",
       works: "5作品参加",
-      location: "Korea / Japan",
-      bio: "韓国・日本を拠点に活動するベースプロデューサー／ミュージックテクノロジスト。Tokyo Machine、San Holoらからもサポートを受け、ポップからダブステップまで幅広く制作する。",
+      location: "Korea",
+      bio: "韓国を拠点に活動するBass music Producer/DJ。Tokyo Machine、San Holoらからもサポートを受け、ポップからダブステップまで幅広く制作する。",
       photo: "https://i.scdn.co/image/ab6761610000517490e333c1acf68f31e20924b5",
       socials: {
+        instagram:  "https://www.instagram.com/im_ruxxi/",
         x:          "https://twitter.com/ianruxxi",
         soundcloud: "https://soundcloud.com/ruxxi",
         spotify:    "https://open.spotify.com/artist/39L4l4agjBB6Xl0Sl6AX4n",
@@ -1492,6 +1504,8 @@ const ARTISTS = {
       bio: "WE DIE YOUNGの黎明期から参加するプロデューサー。vol.1〜4、そしてAFTERLIFEまで、シリーズの節目を彩るトラックを提供してきた。",
       photo: "",
       socials: {
+        instagram:  "https://www.instagram.com/mahziel/",
+        x:          "https://x.com/mahziel_",
         soundcloud: "https://soundcloud.com/mahziel",
         spotify:    "https://open.spotify.com/artist/7LV8r3cwTq4dDUkt3Sex5p"
       }
@@ -1503,8 +1517,10 @@ const ARTISTS = {
       bio: "日本のProducer/DJ。緻密なビルドアップとキレのあるドロップでフロアを組み立てる。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
       photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
       socials: {
+        instagram:  "https://www.instagram.com/ko3_untitled/",
         x:          "https://twitter.com/KO3_untitled",
         soundcloud: "https://soundcloud.com/dj-ko3",
+        spotify:    "https://open.spotify.com/artist/1ioBfZldZvVAcqD3KXXTXy",
         bandcamp:   "https://ko3untitled.bandcamp.com/"
       }
     },
@@ -1515,7 +1531,10 @@ const ARTISTS = {
       bio: "澄んだメロディラインと厚みのある低音を操るプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。ライブでも存在感を放つ。",
       photo: "",
       socials: {
-        soundcloud: "https://soundcloud.com/eclair_music"
+        instagram:  "https://www.instagram.com/the_eclair_/",
+        x:          "https://x.com/IamECLAIR",
+        soundcloud: "https://soundcloud.com/eclair_music",
+        spotify:    "https://open.spotify.com/artist/5MOWFk4njjBKLC3KjdaBpJ"
       }
     },
     {
@@ -1525,8 +1544,10 @@ const ARTISTS = {
       bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trap/Dubstep/Bass Houseを軸に、CAMELOTやWARP、MUSIC CIRCUSのメインステージなどでもプレイする若手注目株。",
       photo: "",
       socials: {
+        instagram:  "https://www.instagram.com/rexy_dexy_official/",
         x:          "https://x.com/rexydexymusic",
-        soundcloud: "https://soundcloud.com/rexy_dexy_music"
+        soundcloud: "https://soundcloud.com/rexy_dexy_music",
+        spotify:    "https://open.spotify.com/artist/2dDxUopU3lpeumfdSzsICh"
       }
     },
     {
@@ -1535,7 +1556,12 @@ const ARTISTS = {
       location: "Thailand",
       bio: "タイ出身のEDMプロデューサー。シングル『One More』でデビューし、vol.5以降のコンピレーションにも参加。エネルギッシュなフェスティバルサウンドが持ち味。",
       photo: "",
-      socials: {}
+      socials: {
+        instagram:  "https://www.instagram.com/zixss_bloomii/",
+        x:          "https://x.com/ZiXS_BLOOMii",
+        soundcloud: "https://soundcloud.com/zixsszixss",
+        spotify:    "https://open.spotify.com/artist/2iyx25FsDfapixzrY9c8Bf"
+      }
     },
     {
       name: "sh0wtime",
@@ -1544,7 +1570,10 @@ const ARTISTS = {
       bio: "Trap/Bassを軸に制作するプロデューサー。シングル『U FEEL THE SAME!』をはじめ、vol.5〜7のコンピレーションにトラックを提供している。",
       photo: "",
       socials: {
-        soundcloud: "https://soundcloud.com/sh0wtimelol"
+        instagram:  "https://www.instagram.com/sh0wtime.lol/",
+        x:          "https://x.com/Sh0wtimeDTM",
+        soundcloud: "https://soundcloud.com/sh0wtimelol",
+        spotify:    "https://open.spotify.com/artist/5dyoUoZBKGFi2pJuB2dGqG"
       }
     },
     {
@@ -1554,8 +1583,11 @@ const ARTISTS = {
       bio: "Bass House / Trapシーンで活動するプロデューサー。vol.6以降の常連で、シングル『Mental』も発表。アグレッシブかつキャッチーなサウンドを展開する。",
       photo: "",
       socials: {
-        linktree:   "https://linktr.ee/doujiwiix",
-        soundcloud: "https://soundcloud.com/doujiwiix"
+        instagram:  "https://www.instagram.com/doujiwiix/",
+        x:          "https://x.com/doujiwiix",
+        soundcloud: "https://soundcloud.com/doujiwiix",
+        spotify:    "https://open.spotify.com/artist/0SrNofQjxXwL2Ob3QokvFJ",
+        linktree:   "https://linktr.ee/doujiwiix"
       }
     }
   ],
