@@ -154,6 +154,36 @@ ul { list-style: none; }
   cursor: pointer;
 }
 
+/* ロゴ以外（ナビリンク・言語切替・メニュー）を右側にまとめる */
+.nav-cluster {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* 言語切替ボタン（JP / EN） */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 6px 11px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .12em;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+.lang-toggle:hover { border-color: var(--ash); }
+.lang-toggle .sep { color: var(--ash); opacity: .5; }
+.lang-toggle [data-lang] {
+  color: var(--ash);
+  transition: color .2s;
+}
+.lang-toggle [data-lang].on { color: var(--red); font-weight: 600; }
+
 /* ============ イントロローダー ============ */
 #intro {
   position: fixed;
@@ -1214,6 +1244,8 @@ footer {
   .genre-list .g-tag { display: none; }
   .genre-list .g-row { padding: 14px 4px; }
   .nav-burger { display: block; }
+  .nav-cluster { gap: 12px; }
+  .lang-toggle { padding: 6px 9px; font-size: 11px; }
   .nav-links {
     display: none;
     position: absolute;

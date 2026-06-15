@@ -35,15 +35,21 @@
     <a class="nav-logo" href="#home" aria-label="WE DIE YOUNG home">
       <img src="assets/images/logo-white-nav.png" alt="WE DIE YOUNG">
     </a>
-    <button class="nav-burger" id="nav-burger" aria-label="メニューを開閉">MENU</button>
-    <div class="nav-links" id="nav-links">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#artists">ARTISTS</a>
-      <a href="#releases">RELEASES</a>
-      <a href="#events">EVENTS</a>
-      <a href="#news">NEWS</a>
-      <a href="#contact">CONTACT</a>
+    <div class="nav-cluster">
+      <div class="nav-links" id="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#artists">ARTISTS</a>
+        <a href="#releases">RELEASES</a>
+        <a href="#events">EVENTS</a>
+        <a href="#news">NEWS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <!-- 言語切替ボタン（日本語 / 英語） -->
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Language / 言語切替">
+        <span data-lang="ja">JP</span><span class="sep" aria-hidden="true">/</span><span data-lang="en">EN</span>
+      </button>
+      <button class="nav-burger" id="nav-burger" data-i18n-aria="burger" aria-label="メニューを開閉">MENU</button>
     </div>
   </nav>
 
@@ -192,7 +198,7 @@
       <section class="artist-block">
         <div class="section-bar">
           <h2 class="h-section">Featured</h2>
-          <span class="section-note">4作品以上に参加したアーティスト</span>
+          <span class="section-note" data-i18n="note-featured">4作品以上に参加したアーティスト</span>
         </div>
         <div class="artist-grid" id="artist-featured"></div>
       </section>
@@ -201,7 +207,7 @@
       <section class="artist-block">
         <div class="section-bar">
           <h2 class="h-section">WE DIE YOUNG Roster</h2>
-          <span class="section-note">これまで参加した全アーティスト</span>
+          <span class="section-note" data-i18n="note-roster">これまで参加した全アーティスト</span>
         </div>
         <div class="roster-grid" id="artist-roster"></div>
       </section>
@@ -256,29 +262,29 @@
       <div class="contact-grid">
         <form id="contact-form">
           <div class="form-field">
-            <label for="cf-category">お問い合わせ種別</label>
+            <label for="cf-category" data-i18n="form-category">お問い合わせ種別</label>
             <select id="cf-category" name="category" required>
-              <option value="demo">デモ応募（Demo Submission）</option>
-              <option value="booking">出演依頼（Booking）</option>
-              <option value="license">ライセンス相談（Licensing）</option>
-              <option value="other">その他（Other）</option>
+              <option value="demo" data-i18n="form-opt-demo">デモ応募（Demo Submission）</option>
+              <option value="booking" data-i18n="form-opt-booking">出演依頼（Booking）</option>
+              <option value="license" data-i18n="form-opt-license">ライセンス相談（Licensing）</option>
+              <option value="other" data-i18n="form-opt-other">その他（Other）</option>
             </select>
           </div>
           <div class="form-field">
-            <label for="cf-name">お名前 / Artist Name</label>
+            <label for="cf-name" data-i18n="form-name">お名前 / Artist Name</label>
             <input id="cf-name" type="text" name="name" required autocomplete="name">
           </div>
           <div class="form-field">
-            <label for="cf-email">メールアドレス</label>
+            <label for="cf-email" data-i18n="form-email">メールアドレス</label>
             <input id="cf-email" type="email" name="email" required autocomplete="email">
           </div>
           <div class="form-field">
-            <label for="cf-message">内容（デモの場合はSoundCloud等のリンクを記載）</label>
+            <label for="cf-message" data-i18n="form-message">内容（デモの場合はSoundCloud等のリンクを記載）</label>
             <textarea id="cf-message" name="message" required></textarea>
           </div>
-          <button class="btn" type="submit">Send Message</button>
+          <button class="btn" type="submit" data-i18n="form-submit">Send Message</button>
           <p class="form-note" id="form-status"></p>
-          <p class="form-note">※ デモ応募は非公開リンク（SoundCloud private link等）でお送りください。</p>
+          <p class="form-note" data-i18n="form-demo-note">※ デモ応募は非公開リンク（SoundCloud private link等）でお送りください。</p>
         </form>
 
         <aside class="contact-side">
@@ -300,17 +306,17 @@
   <div class="event-modal" id="event-modal" aria-hidden="true">
     <div class="event-modal-backdrop" id="event-modal-backdrop"></div>
     <div class="event-modal-panel" role="dialog" aria-modal="true" aria-labelledby="em-title">
-      <button class="event-modal-close" id="event-modal-close" aria-label="閉じる">CLOSE ✕</button>
+      <button class="event-modal-close" id="event-modal-close" data-i18n-aria="close" aria-label="閉じる">CLOSE ✕</button>
       <div class="event-modal-body" id="event-modal-body"></div>
     </div>
   </div>
 
   <!-- ============ 写真ライトボックス（クリックで拡大） ============ -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightbox-close" aria-label="閉じる">✕</button>
-    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="前の写真">‹</button>
+    <button class="lightbox-close" id="lightbox-close" data-i18n-aria="close" aria-label="閉じる">✕</button>
+    <button class="lightbox-nav prev" id="lightbox-prev" data-i18n-aria="prev" aria-label="前の写真">‹</button>
     <img id="lightbox-img" src="" alt="">
-    <button class="lightbox-nav next" id="lightbox-next" aria-label="次の写真">›</button>
+    <button class="lightbox-nav next" id="lightbox-next" data-i18n-aria="next" aria-label="次の写真">›</button>
     <p class="lightbox-counter" id="lightbox-counter"></p>
   </div>
 

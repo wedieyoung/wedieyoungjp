@@ -17,6 +17,126 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
+  /* ============================================================
+     言語切替（日本語 / 英語）
+     ★ data.js のテキストの隣に「項目名_en」を足すと英語表示で使われます。
+       例:  description: "日本語",  description_en: "English"
+       _en が無い項目は、英語表示でも日本語のまま表示されます（崩れません）。
+     ============================================================ */
+  const LANG = localStorage.getItem("wdy-lang") === "en" ? "en" : "ja";
+  document.documentElement.lang = LANG;
+
+  // data.jsの項目を、現在の言語に応じて取り出す（_enが無ければ日本語を返す）
+  // 文字列でも配列でもそのまま扱えます。
+  const t = (o, k) => {
+    if (!o) return "";
+    const v = LANG === "en" && o[k + "_en"] != null ? o[k + "_en"] : o[k];
+    return v == null ? "" : v;
+  };
+
+  // 画面のUI文言（ボタン・ラベル・空欄メッセージ等）の日英辞書
+  const UI = {
+    ja: {
+      "note-featured": "4作品以上に参加したアーティスト",
+      "note-roster": "これまで参加した全アーティスト",
+      "form-category": "お問い合わせ種別",
+      "form-opt-demo": "デモ応募（Demo Submission）",
+      "form-opt-booking": "出演依頼（Booking）",
+      "form-opt-license": "ライセンス相談（Licensing）",
+      "form-opt-other": "その他（Other）",
+      "form-name": "お名前 / Artist Name",
+      "form-email": "メールアドレス",
+      "form-message": "内容（デモの場合はSoundCloud等のリンクを記載）",
+      "form-submit": "送信する",
+      "form-demo-note": "※ デモ応募は非公開リンク（SoundCloud private link等）でお送りください。",
+      "burger": "メニューを開閉",
+      "close": "閉じる",
+      "prev": "前の写真",
+      "next": "次の写真",
+      "releases-soon": "リリースは近日公開",
+      "releases-none": "このカテゴリのリリースはまだありません",
+      "events-soon": "新しいイベントは近日発表",
+      "events-none-past": "過去のイベントはまだありません",
+      "news-none": "ニュースはまだありません",
+      "artists-soon": "近日公開",
+      "view-report": "レポートを見る",
+      "read-more": "もっと読む →",
+      "tickets": "チケット",
+      "aftermovie": "▶ アフタームービー",
+      "sent-ok": "送信しました。返信をお待ちください。",
+      "sent-fail": "送信に失敗しました。時間をおいて再度お試しください。",
+      "sent-fail-mail": "送信に失敗しました。メールでご連絡ください。",
+      "mail-name": "お名前", "mail-email": "メール", "mail-type": "種別",
+      "subj-demo": "デモ応募", "subj-booking": "出演依頼",
+      "subj-license": "ライセンス相談", "subj-other": "お問い合わせ"
+    },
+    en: {
+      "note-featured": "Artists featured on 4+ releases",
+      "note-roster": "Every artist who has taken part so far",
+      "form-category": "Inquiry type",
+      "form-opt-demo": "Demo Submission",
+      "form-opt-booking": "Booking",
+      "form-opt-license": "Licensing",
+      "form-opt-other": "Other",
+      "form-name": "Name / Artist Name",
+      "form-email": "Email address",
+      "form-message": "Message (for demos, include a SoundCloud link, etc.)",
+      "form-submit": "Send Message",
+      "form-demo-note": "* Please send demos as a private link (e.g. a SoundCloud private link).",
+      "burger": "Toggle menu",
+      "close": "Close",
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "releases-soon": "Releases coming soon",
+      "releases-none": "No releases in this category yet",
+      "events-soon": "New events will be announced soon",
+      "events-none-past": "No past events yet",
+      "news-none": "No news yet",
+      "artists-soon": "Coming soon",
+      "view-report": "VIEW REPORT",
+      "read-more": "READ MORE →",
+      "tickets": "Tickets",
+      "aftermovie": "▶ AFTERMOVIE",
+      "sent-ok": "Message sent. We'll be in touch soon.",
+      "sent-fail": "Failed to send. Please try again later.",
+      "sent-fail-mail": "Failed to send. Please reach us by email.",
+      "mail-name": "Name", "mail-email": "Email", "mail-type": "Type",
+      "subj-demo": "Demo Submission", "subj-booking": "Booking",
+      "subj-license": "Licensing", "subj-other": "Inquiry"
+    }
+  };
+  const ui = (k) => (UI[LANG] && UI[LANG][k] != null ? UI[LANG][k] : (UI.ja[k] || ""));
+
+  // 日本語の文字（ひらがな・カタカナ・漢字）を含むか判定
+  const hasJP = (s) => /[぀-ヿ一-鿿]/.test(s || "");
+
+  // ニュース記事本文の段落を、表示言語に合わせて選ぶ。
+  // ・article_en が指定されていればそれを使用
+  // ・無ければ、英語表示のときは日本語を含む段落を除外（英文・トラックリスト等は残す）
+  // ・日本語表示のときは article をそのまま表示
+  const newsArticle = (n) => {
+    const ja = (n && n.article) || [];
+    if (LANG !== "en") return ja;
+    if (n && n.article_en) return n.article_en;
+    return ja.filter((p) => !hasJP(p));
+  };
+
+  // 静的HTMLのdata-i18n要素に文言を反映
+  $$("[data-i18n]").forEach((el) => { el.textContent = ui(el.dataset.i18n); });
+  $$("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", ui(el.dataset.i18nAria)); });
+
+  // 言語切替ボタン：現在の言語をハイライトし、クリックで切替（保存して再読込）
+  const langToggle = $("#lang-toggle");
+  if (langToggle) {
+    $$("#lang-toggle [data-lang]").forEach((s) =>
+      s.classList.toggle("on", s.dataset.lang === LANG)
+    );
+    langToggle.addEventListener("click", () => {
+      localStorage.setItem("wdy-lang", LANG === "en" ? "ja" : "en");
+      location.reload();
+    });
+  }
+
   const fmtDate = (iso) => {
     if (!iso) return "";
     const [y, m, d] = iso.split("-");
@@ -33,22 +153,23 @@
       .join("");
 
   /* ---------- SEO: data.jsの内容をmetaに反映 ---------- */
-  document.title = `${SITE.siteName} | ${SITE.taglineSub}`;
+  document.title = `${SITE.siteName} | ${t(SITE, "taglineSub")}`;
   const setMeta = (sel, val) => { const el = $(sel); if (el && val) el.setAttribute("content", val); };
-  setMeta('meta[name="description"]', SITE.description);
-  setMeta('meta[property="og:title"]', `${SITE.siteName} | ${SITE.taglineSub}`);
-  setMeta('meta[property="og:description"]', SITE.description);
+  setMeta('meta[name="description"]', t(SITE, "description"));
+  setMeta('meta[property="og:title"]', `${SITE.siteName} | ${t(SITE, "taglineSub")}`);
+  setMeta('meta[property="og:description"]', t(SITE, "description"));
   setMeta('meta[property="og:url"]', SITE.siteUrl);
   setMeta('meta[property="og:image"]', SITE.siteUrl.replace(/\/$/, "") + "/assets/images/ogp.png");
   setMeta('meta[name="twitter:image"]', SITE.siteUrl.replace(/\/$/, "") + "/assets/images/ogp.png");
 
   /* ---------- ヒーロー ---------- */
-  $("#hero-sub").textContent = SITE.taglineSub;
-  const tg = SITE.tagline.split("—");
+  $("#hero-sub").textContent = t(SITE, "taglineSub");
+  const tagline = t(SITE, "tagline");
+  const tg = tagline.split("—");
   $("#hero-tagline").innerHTML =
     tg.length > 1
       ? `<em>${esc(tg[0].trim())}</em> — ${esc(tg.slice(1).join("—").trim())}`
-      : esc(SITE.tagline);
+      : esc(tagline);
 
   /* ---------- リリース描画 ---------- */
   const releaseCard = (r) => `
@@ -59,7 +180,7 @@
         <h3 class="release-title">${esc(r.title)}</h3>
         <p class="release-artist">${esc(r.artist)}</p>
         <p class="release-date">${fmtDate(r.date)}</p>
-        ${r.description ? `<p class="release-desc">${esc(r.description)}</p>` : ""}
+        ${t(r, "description") ? `<p class="release-desc">${esc(t(r, "description"))}</p>` : ""}
         <div class="release-links">${linkBtns(r.links)}</div>
       </div>
     </article>`;
@@ -73,12 +194,12 @@
     $("#featured-cover").alt = `${f.title} — ${f.artist}`;
     $("#featured-title").textContent = f.title;
     $("#featured-artist").innerHTML = `<b>${esc(f.artist)}</b> &nbsp;/&nbsp; ${esc(f.type)} &nbsp;/&nbsp; ${fmtDate(f.date)}`;
-    $("#featured-desc").textContent = f.description || "";
+    $("#featured-desc").textContent = t(f, "description") || "";
     $("#featured-links").innerHTML = linkBtns(f.links);
   }
   $("#home-releases").innerHTML =
     sortedReleases.slice(0, 3).map(releaseCard).join("") ||
-    `<p class="empty">Releases coming soon</p>`;
+    `<p class="empty">${ui("releases-soon")}</p>`;
 
   // HOME: VIDEO（YouTube埋め込み）
   // 各種YouTube URL形式から動画IDを取り出す（watch?v= / youtu.be/ / embed/ / shorts/）
@@ -106,7 +227,7 @@
   const renderReleases = (type) => {
     const list = type === "ALL" ? sortedReleases : sortedReleases.filter((r) => r.type === type);
     $("#release-grid").innerHTML =
-      list.map(releaseCard).join("") || `<p class="empty">No releases in this category yet</p>`;
+      list.map(releaseCard).join("") || `<p class="empty">${ui("releases-none")}</p>`;
     observeReveals();
   };
 
@@ -132,12 +253,12 @@
     <article class="event-card reveal ${isPast ? "past" : ""}">
       <div class="event-flyer"><img src="${esc(e.flyer)}" alt="${esc(e.name)} flyer" loading="lazy"></div>
       <div>
-        <p class="event-date-big">${fmtDate(e.date)}${e.timeNote ? ` / ${esc(e.timeNote)}` : ""}</p>
+        <p class="event-date-big">${fmtDate(e.date)}${t(e, "timeNote") ? ` / ${esc(t(e, "timeNote"))}` : ""}</p>
         <h3 class="event-name">${esc(e.name)}</h3>
-        <div class="event-meta"><span><b>VENUE</b> — ${esc(e.venue)}</span></div>
+        <div class="event-meta"><span><b>VENUE</b> — ${esc(t(e, "venue"))}</span></div>
         <div class="event-lineup">${(e.lineup || []).map((n) => `<span>${esc(n)}</span>`).join("")}</div>
-        ${!isPast && e.ticketUrl ? `<a class="btn" href="${esc(e.ticketUrl)}" target="_blank" rel="noopener">Tickets</a>` : ""}
-        ${(e.report && e.report.length) || (e.gallery && e.gallery.length) ? `<button class="btn ghost event-report-btn" data-event="${esc(e.name)}">VIEW REPORT</button>` : ""}
+        ${!isPast && e.ticketUrl ? `<a class="btn" href="${esc(e.ticketUrl)}" target="_blank" rel="noopener">${ui("tickets")}</a>` : ""}
+        ${(e.report && e.report.length) || (e.gallery && e.gallery.length) ? `<button class="btn ghost event-report-btn" data-event="${esc(e.name)}">${ui("view-report")}</button>` : ""}
       </div>
     </article>`;
 
@@ -146,11 +267,11 @@
 
   const openEventModal = (e) => {
     $("#event-modal-body").innerHTML = `
-      <p class="event-date-big">${fmtDate(e.date)}${e.timeNote ? ` / ${esc(e.timeNote)}` : ""} — ${esc(e.venue)}</p>
+      <p class="event-date-big">${fmtDate(e.date)}${t(e, "timeNote") ? ` / ${esc(t(e, "timeNote"))}` : ""} — ${esc(t(e, "venue"))}</p>
       <h2 class="em-title" id="em-title">${esc(e.name)}</h2>
-      ${(e.report || []).map((p) => `<p class="em-text">${esc(p)}</p>`).join("")}
-      ${e.videoUrl ? `<a class="btn em-video" href="${esc(e.videoUrl)}" target="_blank" rel="noopener">▶ AFTERMOVIE</a>` : ""}
-      ${(e.credits && e.credits.length) ? `<div class="em-credits">${e.credits.map((c) => `<p>${esc(c)}</p>`).join("")}</div>` : ""}
+      ${(t(e, "report") || []).map((p) => `<p class="em-text">${esc(p)}</p>`).join("")}
+      ${e.videoUrl ? `<a class="btn em-video" href="${esc(e.videoUrl)}" target="_blank" rel="noopener">${ui("aftermovie")}</a>` : ""}
+      ${(t(e, "credits") && t(e, "credits").length) ? `<div class="em-credits">${t(e, "credits").map((c) => `<p>${esc(c)}</p>`).join("")}</div>` : ""}
       ${(e.gallery && e.gallery.length) ? `<div class="em-gallery">${e.gallery.map((g) => `<img src="${esc(g)}" alt="${esc(e.name)} photo" loading="lazy">`).join("")}</div>` : ""}
     `;
     modal.classList.add("open");
@@ -237,7 +358,7 @@
     const list = mode === "upcoming" ? upcoming : past;
     $("#event-list").innerHTML =
       list.map((e) => eventCard(e, mode === "past")).join("") ||
-      `<p class="empty">${mode === "upcoming" ? "New events will be announced soon" : "No past events yet"}</p>`;
+      `<p class="empty">${mode === "upcoming" ? ui("events-soon") : ui("events-none-past")}</p>`;
     observeReveals();
   };
   $$("#event-tabs button").forEach((b) =>
@@ -252,7 +373,7 @@
   // HOME: 直近イベント1件
   $("#home-event").innerHTML = upcoming.length
     ? eventCard(upcoming[0], false)
-    : `<p class="empty">New events will be announced soon</p>`;
+    : `<p class="empty">${ui("events-soon")}</p>`;
 
   /* ---------- ニュース描画 ---------- */
   const newsItem = (n, i) => `
@@ -260,24 +381,24 @@
       <span class="news-date">${fmtDate(n.date)}</span>
       <span class="news-cat">${esc(n.category)}</span>
       <div>
-        <h3 class="news-title">${esc(n.title)}</h3>
-        ${n.body ? `<p class="news-body">${esc(n.body)}</p>` : ""}
+        <h3 class="news-title">${esc(t(n, "title"))}</h3>
+        ${t(n, "body") ? `<p class="news-body">${esc(t(n, "body"))}</p>` : ""}
         ${n.article && n.article.length
-          ? `<button class="news-link news-article-btn" data-news="${i}">READ MORE →</button>`
-          : n.link ? `<a class="news-link" href="${esc(n.link)}" target="_blank" rel="noopener">READ MORE →</a>` : ""}
+          ? `<button class="news-link news-article-btn" data-news="${i}">${ui("read-more")}</button>`
+          : n.link ? `<a class="news-link" href="${esc(n.link)}" target="_blank" rel="noopener">${ui("read-more")}</a>` : ""}
       </div>
     </article>`;
 
-  $("#news-list").innerHTML = NEWS.map(newsItem).join("") || `<p class="empty">No news yet</p>`;
-  $("#home-news").innerHTML = NEWS.slice(0, 3).map(newsItem).join("") || `<p class="empty">No news yet</p>`;
+  $("#news-list").innerHTML = NEWS.map(newsItem).join("") || `<p class="empty">${ui("news-none")}</p>`;
+  $("#home-news").innerHTML = NEWS.slice(0, 3).map(newsItem).join("") || `<p class="empty">${ui("news-none")}</p>`;
 
   /* ---------- ニュース記事モーダル（旧サイトの記事本文） ---------- */
   const openNewsModal = (n) => {
     $("#event-modal-body").innerHTML = `
       <p class="event-date-big">${fmtDate(n.date)} — ${esc(n.category)}</p>
-      <h2 class="em-title" id="em-title">${esc(n.title)}</h2>
-      ${n.image ? `<figure class="em-cover"><img src="${esc(n.image)}" alt="${esc(n.title)}" loading="lazy"></figure>` : ""}
-      ${(n.article || []).map((p) =>
+      <h2 class="em-title" id="em-title">${esc(t(n, "title"))}</h2>
+      ${n.image ? `<figure class="em-cover"><img src="${esc(n.image)}" alt="${esc(t(n, "title"))}" loading="lazy"></figure>` : ""}
+      ${newsArticle(n).map((p) =>
         /^【.+】/.test(p)
           ? `<h3 class="em-h">${esc(p)}</h3>`
           : `<p class="em-text">${esc(p).replace(/\n/g, "<br>")}</p>`
@@ -299,14 +420,15 @@
   });
 
   /* ---------- About描画 ---------- */
-  const leadWords = ABOUT.lead.split(" ");
+  const aboutLead = t(ABOUT, "lead");
+  const leadWords = aboutLead.split(" ");
   $("#about-lead").innerHTML =
     leadWords.length > 1
       ? `${esc(leadWords.slice(0, -1).join(" "))} <span class="accent">${esc(leadWords.at(-1))}</span>`
-      : esc(ABOUT.lead);
-  $("#about-text").innerHTML = ABOUT.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("");
+      : esc(aboutLead);
+  $("#about-text").innerHTML = (t(ABOUT, "paragraphs") || []).map((p) => `<p>${esc(p)}</p>`).join("");
   $("#about-pillars").innerHTML = ABOUT.pillars
-    .map((p) => `<div class="pillar reveal"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p></div>`)
+    .map((p) => `<div class="pillar reveal"><h3>${esc(t(p, "title"))}</h3><p>${esc(t(p, "text"))}</p></div>`)
     .join("");
 
   // ABOUTページの背景画像（data.jsのbackgroundImageで指定）
@@ -345,6 +467,17 @@
     return `<div class="${cls} is-initials" style="${style}"><span>${esc(letters)}</span></div>`;
   };
 
+  // ロスターの参加数ラベルを英語表示に変換（"10作品" → "10 releases" など）
+  const rosterNote = (note) => {
+    if (LANG !== "en" || !note) return note;
+    return note
+      .replace("Owner / 全コンピ", "Owner / all comps")
+      .replace(/(\d+)作品/, "$1 releases")
+      .replace("（旧", " (formerly ")
+      .replace("旧", "ex-")
+      .replace("）", ")");
+  };
+
   if (typeof ARTISTS !== "undefined" && ARTISTS) {
     // Owner
     const o = ARTISTS.owner;
@@ -352,10 +485,10 @@
       $("#artist-owner").innerHTML = `
         ${artistAvatar(o, "owner-photo")}
         <div class="owner-info reveal">
-          <span class="eyebrow">${esc(o.role || "Founder")}</span>
+          <span class="eyebrow">${esc(t(o, "role") || "Founder")}</span>
           <h3 class="owner-name">${esc(o.name)}</h3>
-          ${o.location ? `<p class="artist-meta">${esc(o.location)}${o.works ? ` &nbsp;/&nbsp; ${esc(o.works)}` : ""}</p>` : ""}
-          ${o.bio ? `<p class="owner-bio">${esc(o.bio)}</p>` : ""}
+          ${t(o, "location") ? `<p class="artist-meta">${esc(t(o, "location"))}${t(o, "works") ? ` &nbsp;/&nbsp; ${esc(t(o, "works"))}` : ""}</p>` : ""}
+          ${t(o, "bio") ? `<p class="owner-bio">${esc(t(o, "bio"))}</p>` : ""}
           <div class="artist-socials">${artistSocials(o.socials)}</div>
         </div>`;
     }
@@ -366,20 +499,20 @@
         ${artistAvatar(a, "artist-photo")}
         <div class="artist-card-body">
           <h3 class="artist-name">${esc(a.name)}</h3>
-          <p class="artist-meta">${[a.location, a.works].filter(Boolean).map(esc).join(" / ")}</p>
-          ${a.bio ? `<p class="artist-bio">${esc(a.bio)}</p>` : ""}
+          <p class="artist-meta">${[t(a, "location"), t(a, "works")].filter(Boolean).map(esc).join(" / ")}</p>
+          ${t(a, "bio") ? `<p class="artist-bio">${esc(t(a, "bio"))}</p>` : ""}
           <div class="artist-socials">${artistSocials(a.socials)}</div>
         </div>
       </article>`;
     $("#artist-featured").innerHTML =
       (ARTISTS.featured || []).map(featuredCard).join("") ||
-      `<p class="empty">Coming soon</p>`;
+      `<p class="empty">${ui("artists-soon")}</p>`;
 
     // Roster
     $("#artist-roster").innerHTML =
       (ARTISTS.roster || [])
-        .map((a) => `<div class="roster-chip reveal"><span class="roster-name">${esc(a.name)}</span>${a.note ? `<span class="roster-note">${esc(a.note)}</span>` : ""}</div>`)
-        .join("") || `<p class="empty">Coming soon</p>`;
+        .map((a) => `<div class="roster-chip reveal"><span class="roster-name">${esc(a.name)}</span>${a.note ? `<span class="roster-note">${esc(rosterNote(a.note))}</span>` : ""}</div>`)
+        .join("") || `<p class="empty">${ui("artists-soon")}</p>`;
   }
 
   /* ---------- ソーシャルリンク（ヒーロー/Contact/フッター） ---------- */
@@ -398,14 +531,14 @@
     ev.preventDefault();
     const fd = new FormData(form);
     const subjectMap = {
-      demo: "デモ応募",
-      booking: "出演依頼",
-      license: "ライセンス相談",
-      other: "お問い合わせ",
+      demo: ui("subj-demo"),
+      booking: ui("subj-booking"),
+      license: ui("subj-license"),
+      other: ui("subj-other"),
     };
     const cat = fd.get("category");
-    const subject = `[WDY] ${subjectMap[cat] || "お問い合わせ"} — ${fd.get("name")}`;
-    const bodyText = `お名前: ${fd.get("name")}\nメール: ${fd.get("email")}\n種別: ${subjectMap[cat]}\n\n${fd.get("message")}`;
+    const subject = `[WDY] ${subjectMap[cat] || ui("subj-other")} — ${fd.get("name")}`;
+    const bodyText = `${ui("mail-name")}: ${fd.get("name")}\n${ui("mail-email")}: ${fd.get("email")}\n${ui("mail-type")}: ${subjectMap[cat]}\n\n${fd.get("message")}`;
 
     if (SITE.formEndpoint) {
       // Formspree等のエンドポイントが設定されている場合はPOST送信
@@ -415,13 +548,11 @@
         body: fd,
       })
         .then((r) => {
-          $("#form-status").textContent = r.ok
-            ? "送信しました。返信をお待ちください。"
-            : "送信に失敗しました。時間をおいて再度お試しください。";
+          $("#form-status").textContent = r.ok ? ui("sent-ok") : ui("sent-fail");
           if (r.ok) form.reset();
         })
         .catch(() => {
-          $("#form-status").textContent = "送信に失敗しました。メールでご連絡ください。";
+          $("#form-status").textContent = ui("sent-fail-mail");
         });
     } else {
       // エンドポイント未設定時はメーラーを起動

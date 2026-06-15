@@ -12,6 +12,16 @@
      またはassets/images/ 内に入れてファイル名を書く
    - 日付は "YYYY-MM-DD" 形式（例: "2026-06-11"）
    - 不要な項目は "" (空文字) にすればサイト上に表示されません
+
+   ▼ 日本語 / 英語の切り替えについて（右上の「JP / EN」ボタン）
+   - 文章の項目（description, body, bio, paragraphs など）の「すぐ隣」に
+     「項目名_en」を足すと、英語表示のときその英文が使われます。
+       例:  description:    "日本語の説明",
+            description_en: "English description",
+   - 「_en」を書かなかった項目は、英語表示でも日本語のまま表示されます（崩れません）。
+   - 配列（paragraphs, report など）も同じで、「項目名_en」に英語の配列を書きます。
+   - ニュース記事(article)は、日本語と英語を一緒に並べておけば、
+     英語表示のとき日本語の段落だけ自動で隠れます（トラックリスト等は残ります）。
    ============================================================ */
 
 
@@ -31,6 +41,8 @@ const SITE = {
   // ▼ SEO用のサイト説明文（検索結果やSNSシェアに表示）
   description:
     "WE DIE YOUNGはProducer/DJのrejectionが2022年に立ち上げた日本発のトラップ/ベースミュージックレーベル。重低音が響く最先端のサウンドと圧巻のライブイベントで、グローバルなベースミュージックシーンをリードする。",
+  description_en:
+    "WE DIE YOUNG is a Japan-based trap / bass music label founded in 2022 by producer/DJ rejection. With cutting-edge, bass-heavy sounds and powerful live events, it leads the global bass music scene.",
 
   // ▼ 公開時のサイトURL（OGP用。公開したら必ず書き換える）
   siteUrl: "https://wedieyoung.jp",
@@ -75,17 +87,21 @@ const ABOUT = {
   backgroundImage: "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-211-scaled.jpg",
 
   // ▼ 本文（段落ごとに "..." を1つ。段落を増やす場合はカンマで追加）
+  //    日本語は paragraphs、英語は paragraphs_en に同じ数だけ書きます。
   paragraphs: [
     "WE DIE YOUNGはProducer/DJであるrejectionが2022年に立ち上げた日本発のトラップ/ベースミュージックレーベル。",
-    "重低音が響く最先端のサウンドと、「WE DIE YOUNG ON THE FLOOR」や「THE BASS」をはじめとする圧巻のライブイベントで、グローバルなベースミュージックシーンをリード！常に新しい音を追い求め、ベースミュージックカルチャーを世界に発信する。",
-    "WE DIE YOUNG is a Japanese trap/bass music label founded in 2022 by Producer/DJ rejection. With cutting-edge, bass-heavy sounds and electrifying live events like WE DIE YOUNG ON THE FLOOR and THE BASS, it leads the global bass music scene! Relentlessly pursuing fresh sounds, WE DIE YOUNG spreads bass music culture worldwide."
+    "重低音が響く最先端のサウンドと、「WE DIE YOUNG ON THE FLOOR」や「THE BASS」をはじめとする圧巻のライブイベントで、グローバルなベースミュージックシーンをリード！常に新しい音を追い求め、ベースミュージックカルチャーを世界に発信する。"
+  ],
+  paragraphs_en: [
+    "WE DIE YOUNG is a Japan-based trap / bass music label founded in 2022 by producer/DJ rejection.",
+    "With cutting-edge, bass-heavy sounds and electrifying live events like WE DIE YOUNG ON THE FLOOR and THE BASS, it leads the global bass music scene. Relentlessly pursuing fresh sounds, WE DIE YOUNG spreads bass music culture worldwide."
   ],
 
   // ▼ コンセプトを短い言葉で（3つ程度推奨）
   pillars: [
-    { title: "FOUNDED 2022",   text: "Producer/DJ rejectionが主宰。日本からアジア、世界へとベースミュージックを発信する。" },
-    { title: "BASS FORWARD",   text: "Trap / Bass / Hardwave / Rave。重低音を軸に、モダンかつハイブリッドなサウンドへ進化を続けるコンピレーションシリーズを展開。" },
-    { title: "ON THE FLOOR",   text: "年に一度の主催イベント「WE DIE YOUNG ON THE FLOOR」をはじめ、国内外のフロアでシーンを牽引する。" }
+    { title: "FOUNDED 2022",   text: "Producer/DJ rejectionが主宰。日本からアジア、世界へとベースミュージックを発信する。", text_en: "Led by producer/DJ rejection. Sending bass music out from Japan to Asia and the world." },
+    { title: "BASS FORWARD",   text: "Trap / Bass / Hardwave / Rave。重低音を軸に、モダンかつハイブリッドなサウンドへ進化を続けるコンピレーションシリーズを展開。", text_en: "Trap / Bass / Hardwave / Rave. A compilation series built on heavy low-end that keeps evolving toward a modern, hybrid sound." },
+    { title: "ON THE FLOOR",   text: "年に一度の主催イベント「WE DIE YOUNG ON THE FLOOR」をはじめ、国内外のフロアでシーンを牽引する。", text_en: "From our annual flagship party WE DIE YOUNG ON THE FLOOR to floors at home and abroad, we drive the scene forward." }
   ]
 };
 
@@ -107,6 +123,7 @@ const RELEASES = [
     date: "2026-04-27",
     cover: "https://f4.bcbits.com/img/a0311867667_10.jpg",
     description: "WE DIE YOUNGの新コンセプト・コンピレーションアルバム。Future Bass / Wave / Garage等のメロディックなサウンドを軸にした全12曲収録。",
+    description_en: "A new-concept compilation album from WE DIE YOUNG. 12 tracks built around melodic sounds like Future Bass, Wave and Garage.",
     links: {
       stream:   "https://www.submithub.com/link/afterlife-vol1",
       bandcamp: "https://wedieyoung.bandcamp.com/album/afterlifevol-1",
@@ -120,6 +137,7 @@ const RELEASES = [
     date: "2026-04-27",
     cover: "https://f4.bcbits.com/img/a0656935817_10.jpg",
     description: "極限までDEEPに、容赦ないほどにDARKなサウンドが切り刻む！最先端のBASS MUSICを更新し続けるWE DIE YOUNGシリーズ第八弾",
+    description_en: "Deep to the extreme, mercilessly dark sounds tear through. The eighth installment of the WE DIE YOUNG series, forever updating cutting-edge bass music.",
     links: {
       stream:   "https://www.submithub.com/link/we-die-young-vol-8",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-8",
@@ -133,6 +151,7 @@ const RELEASES = [
     date: "2025-10-27",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
     description: "THE NEW AGE RESONATES — サイバーサウンドを吸収し更に進化した、日本発Trap/Bassコンピレーション第7弾。全21曲収録の\"Cyber-Modern EDM Trap\"コンセプトアルバム。",
+    description_en: "THE NEW AGE RESONATES — the 7th Japan-born Trap/Bass compilation, evolved further by absorbing cyber sounds. A 21-track \"Cyber-Modern EDM Trap\" concept album.",
     links: {
       stream:   "https://www.submithub.com/link/wedieyoung-vol7",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-7",
@@ -146,6 +165,7 @@ const RELEASES = [
     date: "2025-10-27",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/10/RAVEMODEvol1-Artwork.png",
     description: "ENTER THE RAVE — WE DIE YOUNGが送る新コンピレーションシリーズが始動！聴く者を強制的に踊らせるRAVEサウンドで内なる衝動を解放せよ。全8曲収録。",
+    description_en: "ENTER THE RAVE — a new compilation series from WE DIE YOUNG begins! Unleash your inner impulse with relentless RAVE sounds that make you move. 8 tracks.",
     links: {
       stream:   "https://www.submithub.com/link/ravemode-vol1",
       bandcamp: "https://wedieyoung.bandcamp.com/album/ravemode-vol-1",
@@ -159,6 +179,7 @@ const RELEASES = [
     date: "2025-05-24",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol6-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第6弾。",
+    description_en: "The 6th Japan-born Trap/Bass compilation.",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-6",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-6",
@@ -172,6 +193,7 @@ const RELEASES = [
     date: "2024-11-16",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol5-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第5弾。",
+    description_en: "The 5th Japan-born Trap/Bass compilation.",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-5",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-5",
@@ -185,6 +207,7 @@ const RELEASES = [
     date: "2024-06-01",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol4-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第4弾。",
+    description_en: "The 4th Japan-born Trap/Bass compilation.",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-4",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-4",
@@ -198,6 +221,7 @@ const RELEASES = [
     date: "2023-10-29",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol3-1024x1024.jpg",
     description: "サイバーな質感で異彩を放つ、日本発Trap/Bassコンピレーション第3弾。",
+    description_en: "The 3rd Japan-born Trap/Bass compilation, standing out with its cyber texture.",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-3",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-3",
@@ -211,6 +235,7 @@ const RELEASES = [
     date: "2023-07-01",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol2-1024x1024.jpg",
     description: "日本発Trap/Bassコンピレーション第2弾。",
+    description_en: "The 2nd Japan-born Trap/Bass compilation.",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-2",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-2",
@@ -224,6 +249,7 @@ const RELEASES = [
     date: "2022-11-04",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol1-1024x1024.jpg",
     description: "すべてはここから始まった。レーベルコンピレーション第1弾。",
+    description_en: "Where it all began. The label's first compilation.",
     links: {
       stream: "https://www.submithub.com/link/we-die-young-vol-1",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-1",
@@ -239,6 +265,7 @@ const RELEASES = [
     date: "2026-04-10",
     cover: "https://wedieyoung.jp/wp-content/uploads/2026/04/WDY036-ver2-brown-scaled.png",
     description: "シンガポールのBass Musicアーティスト21SWINGSによるFestival Trap EP。",
+    description_en: "A Festival Trap EP by Singapore bass music artist 21SWINGS.",
     links: {
       stream:   "https://www.submithub.com/link/21swings-surge",
       bandcamp: "https://wedieyoung.bandcamp.com/album/surge"
@@ -251,6 +278,7 @@ const RELEASES = [
     date: "2026-03-27",
     cover: "https://wedieyoung.jp/wp-content/uploads/2026/03/WDY035-scaled.jpg",
     description: "シンガポールのViticzとインドネシアのNamyaによるコラボシングル。",
+    description_en: "A collaborative single by Viticz (Singapore) and Namya (Indonesia).",
     links: {
       stream:   "https://www.submithub.com/link/rangda",
       bandcamp: "https://wedieyoung.bandcamp.com/track/rangda"
@@ -263,6 +291,7 @@ const RELEASES = [
     date: "2026-01-30",
     cover: "https://wedieyoung.jp/wp-content/uploads/2026/02/WDY034-v1-scaled.png",
     description: "シンガポールのBass Musicアーティスト21SWINGSのシングル。",
+    description_en: "A single by Singapore bass music artist 21SWINGS.",
     links: {
       stream:   "https://www.submithub.com/link/break-the-bass",
       bandcamp: "https://wedieyoung.bandcamp.com/track/break-the-bass"
@@ -275,6 +304,7 @@ const RELEASES = [
     date: "2026-01-09",
     cover: "https://wedieyoung.jp/wp-content/uploads/2026/01/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.png",
     description: "中国を拠点にアトモスフェリックかつフューチャリスティックなサウンドを追求するVoxelkanaのシングル。",
+    description_en: "A single by Voxelkana, a China-based producer pursuing atmospheric, futuristic sounds.",
     links: {
       stream:   "https://www.submithub.com/link/digitalf10w",
       bandcamp: "https://wedieyoung.bandcamp.com/track/digital-f10w"
@@ -287,6 +317,7 @@ const RELEASES = [
     date: "2025-12-12",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY032-artwork-scaled.png",
     description: "RL GrimeやSkrillexに影響を受けた東京拠点のプロデューサーYuzacのシングル。",
+    description_en: "A single by Yuzac, a Tokyo-based producer influenced by RL Grime and Skrillex.",
     links: {
       stream:   "https://www.submithub.com/link/yuzac-feel-it",
       bandcamp: "https://wedieyoung.bandcamp.com/track/feel-it"
@@ -299,6 +330,7 @@ const RELEASES = [
     date: "2025-12-05",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY031_Artwork_fix-scaled.png",
     description: "ハワイ出身LA拠点のKANAKAと韓国のLAGnafによるコラボシングル。",
+    description_en: "A collaborative single by KANAKA (Hawai'i-born, LA-based) and LAGnaf (Korea).",
     links: {
       stream:   "https://www.submithub.com/link/kanaka-lagnaf-dontplay",
       bandcamp: "https://wedieyoung.bandcamp.com/track/dontplay"
@@ -311,6 +343,7 @@ const RELEASES = [
     date: "2025-11-16",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY-028-Artwork.png",
     description: "マルチジャンルを制作する東京在住プロデューサーKawashiiiのシングル。",
+    description_en: "A single by Kawashiii, a Tokyo-based producer working across many genres.",
     links: {
       stream:   "https://www.submithub.com/link/kawashiii-medication",
       bandcamp: "https://wedieyoung.bandcamp.com/track/medication"
@@ -323,6 +356,7 @@ const RELEASES = [
     date: "2025-09-19",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/09/WDY-027-Artwork.png",
     description: "レーベルオーナーrejectionによるシングル。",
+    description_en: "A single by label owner rejection.",
     links: {
       stream:   "https://www.submithub.com/link/rejection-hands-up",
       bandcamp: "https://wedieyoung.bandcamp.com/track/hands-up"
@@ -335,6 +369,7 @@ const RELEASES = [
     date: "2025-08-22",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/08/XeroCtok-BALLADE.jpg",
     description: "韓国を拠点にGarageとTrapを制作するXeroC'tokのデビューシングル。",
+    description_en: "The debut single by XeroC'tok, a Korea-based producer making Garage and Trap.",
     links: {
       stream:   "https://www.submithub.com/link/xeroctok-ballade",
       bandcamp: "https://wedieyoung.bandcamp.com/track/ballade"
@@ -347,6 +382,7 @@ const RELEASES = [
     date: "2025-08-09",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/08/a3054737185_10.jpg",
     description: "タイ出身のEDMプロデューサーZiXSによるシングル。",
+    description_en: "A single by ZiXS, an EDM producer from Thailand.",
     links: {
       stream:   "https://www.submithub.com/link/zixs-one-more",
       bandcamp: "https://wedieyoung.bandcamp.com/track/one-more"
@@ -359,6 +395,7 @@ const RELEASES = [
     date: "2025-07-26",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-024-fixed-scaled.png",
     description: "Bass Musicを中心に制作している日本在住プロデューサーLactar1uzのデビューシングル。",
+    description_en: "The debut single by Lactar1uz, a Japan-based producer focused on bass music.",
     links: {
       stream:   "https://www.submithub.com/link/falling-4-u",
       bandcamp: "https://wedieyoung.bandcamp.com/track/falling-4-u"
@@ -371,6 +408,7 @@ const RELEASES = [
     date: "2025-07-12",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/Butterfly-Zone-LAGnaf-Ghostmode-scaled.jpeg",
     description: "Butterfly ZoneとLAGnafによるコラボシングル。",
+    description_en: "A collaborative single by Butterfly Zone and LAGnaf.",
     links: {
       stream:   "https://www.submithub.com/link/ghostmode",
       bandcamp: "https://wedieyoung.bandcamp.com/track/ghostmode"
@@ -383,6 +421,7 @@ const RELEASES = [
     date: "2025-07-05",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-022-artwork-scaled.jpg",
     description: "クリアなサウンドと低音が炸裂するECLAIRのシングル。",
+    description_en: "A single by ECLAIR, bursting with crisp sound and heavy bass.",
     links: {
       stream: "https://www.submithub.com/link/eclair-need-you",
       bandcamp: "https://wedieyoung.bandcamp.com/track/need-you"
@@ -395,6 +434,7 @@ const RELEASES = [
     date: "2025-06-26",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_starfall.jpg",
     description: "rejectionとWATARUによるコラボシングル。",
+    description_en: "A collaborative single by rejection and WATARU.",
     links: {
       stream: "https://www.submithub.com/link/starfall",
       bandcamp: "https://wedieyoung.bandcamp.com/track/starfall"
@@ -407,6 +447,7 @@ const RELEASES = [
     date: "2025-06-20",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DEFINED.jpg",
     description: "台湾在住のDJ/ProducerであるMTGDのEP。",
+    description_en: "An EP by MTGD, a Taiwan-based DJ/producer.",
     links: {
       stream: "https://www.submithub.com/link/mtgd-defined",
       bandcamp: "https://wedieyoung.bandcamp.com/album/defined"
@@ -419,6 +460,7 @@ const RELEASES = [
     date: "2025-06-07",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_reality.jpg",
     description: "韓国在住のプロデューサーXenoのシングル。",
+    description_en: "A single by Xeno, a Korea-based producer.",
     links: {
       stream: "https://www.submithub.com/link/xeno-reality",
       bandcamp: "https://wedieyoung.bandcamp.com/track/reality"
@@ -431,6 +473,7 @@ const RELEASES = [
     date: "2025-05-31",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-ANGELvoid.jpg",
     description: "WE DIE YOUNG中心メンバーvishnu okunoのアルバム。",
+    description_en: "An album by vishnu okuno, a core WE DIE YOUNG member.",
     links: {
       stream: "https://www.submithub.com/link/angelvoid",
       bandcamp: "https://wedieyoung.bandcamp.com/album/angelvoid",
@@ -444,6 +487,7 @@ const RELEASES = [
     date: "2025-03-27",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_RUN-DAT.jpg",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
+    description_en: "A single by MTGD, a Taiwan-based DJ/producer.",
     links: {
       stream: "https://www.submithub.com/link/run-dat",
       bandcamp: "https://wedieyoung.bandcamp.com/track/run-dat"
@@ -456,6 +500,7 @@ const RELEASES = [
     date: "2025-02-22",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_Karma-Strike.jpg",
     description: "Violet.MKIIとGREEDによるコラボシングル。",
+    description_en: "A collaborative single by Violet.MKII and GREED.",
     links: {
       stream: "https://www.submithub.com/link/karma-strike",
       bandcamp: "https://wedieyoung.bandcamp.com/track/karma-strike"
@@ -468,6 +513,7 @@ const RELEASES = [
     date: "2025-02-01",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-WITH-ME-NOW.jpg",
     description: "インドネシア在住のDJ/ProducerであるMOSHIMOSHのシングル",
+    description_en: "A single by MOSHIMOSH, an Indonesia-based DJ/producer.",
     links: {
       stream: "https://www.submithub.com/link/with-me-now",
       bandcamp: "https://wedieyoung.bandcamp.com/track/with-me-now"
@@ -480,6 +526,7 @@ const RELEASES = [
     date: "2024-12-21",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DROP-IT.jpg",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
+    description_en: "A single by MTGD, a Taiwan-based DJ/producer.",
     links: {
       stream: "https://www.submithub.com/link/mtgd-drop-it",
       bandcamp: "https://wedieyoung.bandcamp.com/track/drop-it"
@@ -492,6 +539,7 @@ const RELEASES = [
     date: "2024-12-13",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Mental.jpg",
     description: "島根県在住のアーティストDouji Wiixのシングル。",
+    description_en: "A single by Douji Wiix, an artist based in Shimane, Japan.",
     links: {
       stream: "https://www.submithub.com/link/douji-wiix-mental",
       bandcamp: "https://wedieyoung.bandcamp.com/track/mental"
@@ -504,6 +552,7 @@ const RELEASES = [
     date: "2024-09-28",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_SIRENS.jpg",
     description: "VOLTAのシングル。",
+    description_en: "A single by VOLTA.",
     links: {
       stream: "https://www.submithub.com/link/volta-sirens",
       bandcamp: "https://wedieyoung.bandcamp.com/track/sirens"
@@ -516,6 +565,7 @@ const RELEASES = [
     date: "2024-09-07",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_we-fall-again.jpg",
     description: "vishnu okunoのシングル。",
+    description_en: "A single by vishnu okuno.",
     links: {
       stream: "https://www.submithub.com/link/we-fall-again",
       bandcamp: "https://wedieyoung.bandcamp.com/track/we-fall-again"
@@ -528,6 +578,7 @@ const RELEASES = [
     date: "2024-08-24",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_Radiance.jpg",
     description: "Exodynamixのシングル。",
+    description_en: "A single by Exodynamix.",
     links: {
       stream: "https://www.submithub.com/link/exodynamix-radiance",
       bandcamp: "https://wedieyoung.bandcamp.com/track/radiance"
@@ -540,6 +591,7 @@ const RELEASES = [
     date: "2024-07-26",
     cover: "https://f4.bcbits.com/img/a3791259603_10.jpg",
     description: "WE DIE YOUNGとUntitled Musicの合同リリースとして発表された、rejection & KO3による3曲入りEP。",
+    description_en: "A 3-track EP by rejection & KO3, released jointly by WE DIE YOUNG and Untitled Music.",
     links: {
       stream: "https://www.submithub.com/link/rejection-ko3-setitoff",
       bandcamp: "https://untitledmusic.bandcamp.com/album/set-it-off-ep-2"
@@ -552,6 +604,7 @@ const RELEASES = [
     date: "2024-06-21",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_U-FEEL-THE-SAME.jpg",
     description: "sh0wtimeのシングル。",
+    description_en: "A single by sh0wtime.",
     links: {
       stream: "https://www.submithub.com/link/sh0wtime-u-feel-the-same",
       bandcamp: "https://wedieyoung.bandcamp.com/track/u-feel-the-same"
@@ -564,6 +617,7 @@ const RELEASES = [
     date: "2024-03-02",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_IRISCTRL.jpg",
     description: "The Herb ShopのEP。",
+    description_en: "An EP by The Herb Shop.",
     links: {
       stream: "https://www.submithub.com/link/the-herb-shop-iris-ctrl",
       bandcamp: "https://wedieyoung.bandcamp.com/album/iris-ctrl"
@@ -576,6 +630,7 @@ const RELEASES = [
     date: "2023-09-19",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Heart-AttackFar-East.jpg",
     description: "レーベルオーナーrejectionによるEP。",
+    description_en: "An EP by label owner rejection.",
     links: {
       stream: "https://www.submithub.com/link/rejection-heart-attack-far-east",
       bandcamp: "https://wedieyoung.bandcamp.com/album/heart-attack-far-east"
@@ -590,6 +645,7 @@ const RELEASES = [
     date: "2025-07-21",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-ppvol1_thumbnail_square-scaled.png",
     description: "WE DIE YOUNGによるプロデューサー向けサンプルパック第1弾。",
+    description_en: "The first producer-oriented sample pack from WE DIE YOUNG.",
     links: {
       gumroad: "https://wedieyoung.gumroad.com/l/ppvol1"
     }
@@ -608,6 +664,7 @@ const EVENTS = [
     name: "I CAN FRY",
     date: "2026-06-20",
     timeNote: "OPEN 23:00 / DOOR ¥2,500（2D付・前売なし）",
+    timeNote_en: "OPEN 23:00 / DOOR ¥2,500 (incl. 2 drinks, no advance tickets)",
     venue: "Another Dimension",
     lineup: [
       "Acrocanthosaurus",
@@ -632,13 +689,21 @@ const EVENTS = [
     date: "2026-03-20",
     timeNote: "Z HALL / 360° SET",
     venue: "ZEROTOKYO（新宿）",
+    venue_en: "ZEROTOKYO (Shinjuku)",
     lineup: ["JUELZ", "WE DIE YOUNG (rejection, vishnu okuno, crp.)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2026/03/HDSZDPhaYAA-Xa8.jpeg",
     ticketUrl: "",
     videoUrl: "",
+    report_en: [
+      "On March 20, 2026 (Fri/holiday), WE DIE YOUNG (rejection, vishnu okuno, crp.) performs at Beginning ZERO \"JUELZ TOKYO RETURN\" at ZERO TOKYO in Shinjuku, held in Z HALL with a 360° set.",
+      "Alongside guest JUELZ, the night brings together Japan's Trap/Bass artists for one bass-music-filled evening."
+    ],
     report: [
       "2026年3月20日(金・祝日)、新宿ZERO TOKYOにて開催されるBeginning ZERO \"JUELZ TOKYO RETURN\"にWE DIE YOUNG(rejection, vishnu okuno, crp.)が出演。フロアはZ HALL、360°セットで開催。",
       "ゲストのJUELZはもちろん、国内のTrap/Bassアーティストが集結するBass Musicの一夜となった。"
+    ],
+    credits_en: [
+      "DJ: WE DIE YOUNG (rejection, vishnu okuno, crp.)"
     ],
     credits: [
       "DJ: WE DIE YOUNG（rejection、vishnu okuno、crp.）"
@@ -650,16 +715,31 @@ const EVENTS = [
     date: "2025-11-02",
     timeNote: "OPEN / START 14:00 — CLOSE 20:00",
     venue: "ROPPONGI CUBE（六本木）",
+    venue_en: "ROPPONGI CUBE (Roppongi)",
     lineup: ["MTGD (from Taiwan)", "crp.", "Douji Wiix", "ECLAIR", "KO3", "Redsign", "rejection", "vishnu okuno", "WE DIE YOUNG B2B", "Vocal: XiN", "VJ: COCOA* / SoU"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY-OTF-2025flyer_v2-scaled.jpg",
     ticketUrl: "",
     videoUrl: "",
+    report_en: [
+      "On November 2, 2025, \"WE DIE YOUNG\" took place at ROPPONGI CUBE in Tokyo. Celebrating the release of the compilation album WE DIE YOUNG vol.7, artists leading the current scene came together.",
+      "The lineup featured WE DIE YOUNG B2B, ECLAIR, Redsign, Douji Wiix, crp., vishnu okuno, KO3, MTGD (from Taiwan), and rejection — an international bill connecting Japan and Taiwan.",
+      "WE DIE YOUNG B2B opened, tuning the room to bass mode with a set packed with their latest sounds. ECLAIR followed with crystal-clear melodies and thick low-end, while Redsign overwhelmed the crowd with heavyweight bass. Douji Wiix and crp. each let their personalities clash while masterfully steering the flow of the whole event.",
+      "In the second half, vishnu okuno and KO3 took over, generously dropping their latest tracks centered on vol.7 and keeping the crowd swaying and cheering.",
+      "MTGD (from Taiwan) was a major highlight, evoking the cross-border unity of bass music, and closing act rejection built an instant climax with overwhelming intensity for a stunning finish."
+    ],
     report: [
       "2025年11月2日、東京・ROPPONGI CUBEにて開催された「WE DIE YOUNG」。コンピレーションアルバム『WE DIE YOUNG vol.7』のリリースを記念し、現行シーンを牽引するアーティストたちが集結した。",
       "出演者は、WE DIE YOUNG B2B、ECLAIR、Redsign、Douji Wiix、crp.、vishnu okuno、KO3、MTGD (from Taiwan)、そしてrejection。日本と台湾を繋ぐ国際的なラインナップが実現した。",
       "オープニングはWE DIE YOUNG B2B。最新モードを詰め込んだセットで空気をベース仕様へ変換し、続くECLAIRは澄んだメロディラインと厚みのある低音を、Redsignは重厚なベースで観客を圧倒した。Douji Wiixとcrp.はそれぞれの個性をぶつけ合いながらも、イベント全体の流れを見事にコントロールしていた。",
       "後半にはvishnu okuno、KO3が登場。『vol.7』収録曲を中心に最新トラックを惜しみなく披露し、観客を歓声とともに揺らし続けた。",
       "MTGD (from Taiwan) の出演も大きなハイライトとなり、国境を越えたベースミュージックの結束を感じさせ、最後に登場したrejectionは、圧倒的熱量のベースミュージックで一気にクライマックスを作り上げ、圧巻の締めを見せつけた。"
+    ],
+    credits_en: [
+      "Organizer: rejection",
+      "Main DJ: crp., Douji Wiix, ECLAIR, KO3, MTGD, Redsign, rejection, vishnu okuno, WE DIE YOUNG B2B",
+      "Vocal: XiN",
+      "VJ: COCOA*, SoU",
+      "Photo: mika"
     ],
     credits: [
       "Organizer: rejection",
@@ -704,14 +784,25 @@ const EVENTS = [
     date: "2025-09-05",
     timeNote: "Z HALL",
     venue: "ZEROTOKYO（新宿）",
+    venue_en: "ZEROTOKYO (Shinjuku)",
     lineup: ["WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/09/Gxj4dXvagAAjkUg.jpeg",
     ticketUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=LSUGdlfKpS8",
+    report_en: [
+      "On Friday, September 5, 2025, WE DIE YOUNG finally made their debut at ZEROTOKYO's Z HALL. rejection, KO3, and vishnu okuno took the stage, and the floor was charged from the start with devoted listeners and a bass-hungry crowd. Together they dropped new track after new track, wrapping the whole set in a fresh, aggressive mood.",
+      "rejection shook the air with weighty low-end, anchoring the set; KO3 built the flow with intricate build-ups and sharp drops, drawing the crowd in; and vishnu okuno grew his presence with deft track selection and crowd-working hype, lifting the venue's vibe another level.",
+      "Many fans who follow WE DIE YOUNG showed up, and their passionate response pushed the event to something even more special. The members themselves, looking forward to Darren Styles' set still to come, stayed one with the floor to the very end. This first Z HALL show was a night that proved their strong ties to the scene and hinted at WE DIE YOUNG's next chapter."
+    ],
     report: [
       "2025年9月5日(Fri)、WE DIE YOUNGがついにZEROTOKYOのZ HALLに初出演を果たした。ステージにはrejection、KO3、vishnu okunoの3人が登場し、熱心なリスナーやベースミュージックを求めるオーディエンスでフロアは序盤から熱気を帯びていた。彼らは揃って新曲を次々と投下し、セット全体がフレッシュかつ攻撃的なムードに包まれていた。",
       "rejectionは重量感のある低音で空気を震わせ、セットの要となる存在感を示す。KO3は緻密なビルドアップとキレのあるドロップで流れを組み立て、観客を引き込み続け、vishnu okunoは巧みな選曲とフロアを操るような煽りで存在感を増し、会場のヴァイブスを一段と引き上げていた。",
       "WE DIE YOUNGを追いかけるリスナーも多数駆けつけ、その熱いリアクションがイベントをさらに特別なものへと押し上げた。メンバー自身も、この後に控えるDarren Stylesの公演を心待ちにしながら、最後までフロアと一体になって楽しんでいた。初めてのZ HALL公演は、シーンとの繋がりの強さと、WE DIE YOUNGの次なる展開を予感させる夜であった。"
+    ],
+    credits_en: [
+      "DJ: WE DIE YOUNG (KO3, rejection, vishnu okuno)",
+      "Photo: mika",
+      "Video Edit: rejection"
     ],
     credits: [
       "DJ: WE DIE YOUNG（KO3、rejection、vishnu okuno）",
@@ -742,15 +833,26 @@ const EVENTS = [
     date: "2025-07-17",
     timeNote: "",
     venue: "Sel Octagon Tokyo（六本木）",
+    venue_en: "Sel Octagon Tokyo (Roppongi)",
     lineup: ["WE DIE YOUNG (Redsign, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/0717octagon.jpeg",
     ticketUrl: "",
     videoUrl: "",
+    report_en: [
+      "On Thursday, July 17, 2025, WE DIE YOUNG crew performed in support of SPACE LACES at the 6th-anniversary event held at Sel Octagon Tokyo in Roppongi. The three on the bill were rejection, Redsign, and vishnu okuno.",
+      "The event opened in a glamorous party mood, but as peak time approached, bass-seeking listeners gathered up front, and once WE DIE YOUNG's set began the space transformed into one where a crowd starved for heavy bass reacted with frenzy.",
+      "Redsign stood out in particular: weaving intricate structure with bold drops, his play combined sharpness and weight, leading the floor into a deeper groove. rejection laid a solid foundation with steady heavy bass, while vishnu okuno naturally pulled the crowd in with on-point hype and selection.",
+      "WE DIE YOUNG crew, WATARU, and then SPACE LACES — the heavy bass rang out relentlessly, and those who remained on the floor in the end were the true music lovers. Their cheers and frenzy intertwined in the moment when the glittering space turned into a sanctuary of bass music."
+    ],
     report: [
       "2025年7月17日(Thu)、六本木・Sel Octagon Tokyoで開催された6周年イベントに、WE DIE YOUNG crewが「SPACE LACES」のサポートとして出演した。出演したのはrejection、Redsign、vishnu okunoの3人。",
       "序盤は華やかなパーティームードでイベントは幕を開けたが、ピークタイムに近づくにつれてベースミュージックを求めるリスナーが最前に集まり、WE DIE YOUNGのセットがスタートすると重低音に飢えたオーディエンスが熱狂的に反応する空間へと変貌していった。",
       "中でも存在感を放ったのはRedsign。緻密な構成と大胆なドロップを織り交ぜたプレイは、鋭さと重さを兼ね備え、フロアを一段と深いグルーヴへ導いた。rejectionは安定感ある重低音で土台を固め、vishnu okunoはフロアのツボを押さえた煽りと選曲で観客を自然に巻き込んでいった。",
       "WE DIE YOUNG crew、WATARU、そしてSPACE LACESと容赦なく重低音は鳴り響き、最終的にフロアに残ったのは音楽好きたち。彼らの歓声と熱狂が交錯し、煌びやかな空間がベースミュージックの聖域へと変わった瞬間だった。"
+    ],
+    credits_en: [
+      "DJ: WE DIE YOUNG (Redsign, rejection, vishnu okuno)",
+      "Photo: mika"
     ],
     credits: [
       "DJ: WE DIE YOUNG（Redsign、rejection、vishnu okuno）",
@@ -772,12 +874,22 @@ const EVENTS = [
     date: "2025-07-05",
     timeNote: "",
     venue: "MIRAINAGOYA（名古屋）",
+    venue_en: "MIRAINAGOYA (Nagoya)",
     lineup: ["WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/dod4bass.jpeg",
     ticketUrl: "",
     videoUrl: "",
+    report_en: [
+      "On Saturday, July 5, 2025, WE DIE YOUNG (KO3, rejection, vishnu okuno) performed at \"Do D4 Bass\" held at MIRAINAGOYA in Nagoya."
+    ],
     report: [
       "2025年7月5日(Sat)、名古屋・MIRAINAGOYAにて開催された\"Do D4 Bass\"にWE DIE YOUNG（KO3、rejection、vishnu okuno）が出演した。"
+    ],
+    credits_en: [
+      "Organizer: AutuMxxxN (秋月)",
+      "DJ: WE DIE YOUNG (KO3, rejection, vishnu okuno)",
+      "Photo: 小南めぐる",
+      "Video / Video Edit: mika"
     ],
     credits: [
       "Organizer: 秋月/ AutuMxxxN",
@@ -813,16 +925,29 @@ const EVENTS = [
     date: "2025-06-28",
     timeNote: "JP NIGHT STAGE",
     venue: "幕張メッセ",
+    venue_en: "Makuhari Messe",
     lineup: ["WATARU", "WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDJF2025.png",
     ticketUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=HAyQS43M2eI",
+    report_en: [
+      "On June 28, 2025, at \"World DJ Festival 2025 JP NIGHT STAGE\" held at Makuhari Messe. Taking the stage that day were WATARU, along with rejection, KO3, and vishnu okuno from WE DIE YOUNG.",
+      "Played B2B, the set saw all four styles clash yet intertwine exquisitely, blurring genres and boundaries in a thrilling progression that gradually drew the audience in. People began gathering right from the start, and as the tracks rolled on the floor heated up. The energy of bodies moving to the beat created a sense of unity, and the feeling that \"this is the hottest place to be\" steadily spread.",
+      "WATARU led off, raising the heat with sturdy beats. rejection then unleashed air-slicing heavy bass. KO3 lifted the tempo with his own groove, moving freely between Trap and Bass House, while vishnu okuno joined in with emotionally edged sounds.",
+      "Then, mid-set, a mosh pit naturally formed at the center of the floor. Raw collisions broke out as the crowd slammed into one another. Amid surging waves of pushing and shoving, a rowing mosh even erupted in places, turning the special stage completely into a battlefield. Before long, people overflowed beyond the barriers around the stage — some stopping to listen intently, others breaking into dance.",
+      "The set from WATARU and the four of WE DIE YOUNG went beyond a mere B2B, carving out a story-like, unpredictable structure that fused live and DJ performance. Built on bass music, this stage effortlessly leapt over the walls of genre and the constraints of staging, and was without doubt etched as the moment that \"moved bodies\" the most on that day's JP NIGHT STAGE."
+    ],
     report: [
       "2025年6月28日、幕張メッセで開催された「World DJ Festival 2025 JP NIGHT STAGE」。この日のステージに登場したのは、WATARUと、WE DIE YOUNGからrejection、KO3、vishnu okunoの3名。",
       "B2B形式で展開されたこのセットは、4人それぞれのスタイルがぶつかり合いながらも絶妙に絡み合い、ジャンルや境界を曖昧にしたスリリングな展開で、オーディエンスを次第に引き込んでいった。開始直後からじわじわと人が集まり始め、曲が進むにつれてフロアの熱が上昇。ビートに合わせて体を揺らす観客たちのエネルギーが一体感を作り、徐々に\"ここが一番アツい場所だ\"という空気が、確実に広がっていった。",
       "先頭を切ったWATARUが強靭なビートで会場の熱を上げていく。そこにrejectionが空気を切り裂くような重低音を放つ。KO3は独自のグルーヴでテンポを引き上げ、Trap〜Bass Houseを自在に行き来し、vishnu okunoが感情のエッジを立てるようなサウンドで加勢する。",
       "そして中盤、自然とフロアの中央にモッシュピットが出現。観客同士が勢いよくぶつかり合う、むき出しの衝突がはじまる。押し合いへし合いの波がうねる中、一部では船漕ぎモッシュまで巻き起こり、特設ステージは完全に戦場と化した。気づけば、ステージを囲う柵の外にまで人が溢れ、立ち止まって聴き入る者、踊り出す者が続出。",
       "WATARUとWE DIE YOUNGの4人が繰り出すセットは、単なるB2Bに留まらず、LIVEとDJをかけ合わせたような、ストーリー的かつ予測不能な構成を刻み続けた。ベースミュージックを主軸に、ジャンルの壁も演出の縛りも軽々と超えてみせたこのステージは、間違いなくこの日のJP NIGHT STAGEで最も\"肉体を揺らした瞬間\"として刻まれた。"
+    ],
+    credits_en: [
+      "DJ: WATARU B2B WE DIE YOUNG (KO3, rejection, vishnu okuno)",
+      "Photo: mika",
+      "Video Edit: mika"
     ],
     credits: [
       "DJ: WATARU B2B WE DIE YOUNG（KO3、rejection、vishnu okuno）",
@@ -857,16 +982,33 @@ const EVENTS = [
     date: "2025-05-04",
     timeNote: "",
     venue: "ROPPONGI CUBE（六本木）",
+    venue_en: "ROPPONGI CUBE (Roppongi)",
     lineup: ["Redsign", "ESAI", "MK", "vishnu okuno", "crayvxn", "VOLTA", "Letsu", "Dubscribe", "rejection & KO3", "Vocal: XiN"],
     flyer: "https://wedieyoung.jp/wp-content/uploads/2025/06/52143FD9-F6E3-4E0B-95C5-AE5C2216CC2C.jpg",
     ticketUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=bUIHl26jgw0",
+    report_en: [
+      "On May 4, 2025, \"THE BASS 'wavforme & WE DIE YOUNG' Bass Music Party\" was held at Roppongi CUBE. A long line had already formed before doors opened, with anticipation rising from the entrance.",
+      "The lounge floor opened first, starting with a DJ set by SoU. It was packed from the very beginning, and the excitement carried on all day. aki, DJ Hide, B♭sic, HaLuna, ELVON, FELONE, and ATMK followed, each unfolding their own interpretation of bass music in three dimensions, building a dense groove that went beyond the bounds of a lounge.",
+      "On the main floor, the moment Redsign opened, people surged in and the venue filled to capacity. With edgy selection and structural skill he seized full control of the space, leaving a powerful impact befitting the main floor's opening. From there, ESAI, MK, vishnu okuno, crayvxn, VOLTA, Letsu, and Dubscribe kept the floor moving with diverse low-end spanning Trap, Dubstep, Bass House, and Wave.",
+      "Closing the night, rejection & KO3 invited XiN — who featured as a vocalist on WE DIE YOUNG vol.6 — to perform \"BEST GOAT\" and \"In The Cloud\" live. The instant XiN's fragile yet firm voice layered over the beat, transforming the taut atmosphere in a flash, the floor's energy leapt even higher.",
+      "Though the lounge and main floors each gave off their own color, what they shared was bottomless heavy bass and a heat that covered the entire floor. On the main floor it wasn't just sound — VJ visuals dominated as well, with lasers crossing sharply from the ceiling, creating moments where the sound seemed to run wild inside a net of light. Throughout the night, performers and crowd became one, in an event that unmistakably embodied the elation and intensity worthy of the name \"THE BASS\"."
+    ],
     report: [
       "2025年5月4日、六本木CUBEにて「THE BASS \"wavforme & WE DIE YOUNG\" Bass Music Party」が開催された。開場前にはすでに長蛇の列ができ、期待感が入り口から高まっていた。",
       "先にオープンしたラウンジフロアは、SoUのDJでスタート。オープニングからすでに人であふれかえり、その盛り上がりは一日中続いた。続くaki、DJ Hide、B♭sic、HaLuna、ELVON、FELONE、ATMKは、それぞれが持ち込むベースミュージックの解釈を立体的に展開し、ラウンジという枠を超えた濃密なグルーヴを構築した。",
       "続くメインフロアでは、Redsignが幕を開けた瞬間に人が押し寄せ、会場は満員状態に。エッジの効いた選曲と構成力で完全に空間の支配権を握り、メインフロアの幕開けにふさわしい強烈なインパクトを残した。そこからESAI、MK、vishnu okuno、crayvxn、VOLTA、Letsu、DubscribeがTrap・Dubstep・Bass House・Waveを横断する多彩な低音でフロアを揺らし続けた。",
       "最後を飾ったrejection & KO3はWE DIE YOUNG vol.6にボーカルとして参加したXiNを招き、\"BEST GOAT\"、\"In The Cloud\"をライブ披露。張りつめた空気を一瞬で染め変えるような、XiNの儚くも芯のある声がビートに重なった瞬間、フロアの熱量はさらに跳ね上がった。",
       "ラウンジとメイン、両フロアがそれぞれ異なる色を放ちながらも、共通していたのは\"底知れぬ重低音\"とフロア全体を覆う熱気。メインフロアでは音だけでなく、VJによる映像演出もフロアを支配し、レーザー演出が天井から鋭く交差し、光の網の中で音が暴れまわるような錯覚を生む場面も。一夜を通じて出演者と観客が一体となり、まぎれもなく\"THE BASS\"の名にふさわしい高揚感と熱量を体現したイベントとなった。"
+    ],
+    credits_en: [
+      "Organizer: wavforme, WE DIE YOUNG",
+      "Lounge DJ: aki, ATMK, B♭sic, DJ Hide, ELVON, FELONE, HaLuna, SoU",
+      "Main DJ: crayvxn, Dubscribe, ESAI, MK, Redsign, rejection & KO3, vishnu okuno, VOLTA, Letsu",
+      "Vocal: XiN",
+      "VJ: COCOA*, SoU",
+      "Photo: 佐藤瑞起",
+      "Video Edit: rejection"
     ],
     credits: [
       "Organizer: wavforme、WE DIE YOUNG",
@@ -919,7 +1061,9 @@ const NEWS = [
     date: "2026-04-27",
     category: "RELEASE",
     title: "AFTERLIFE vol.1 リリース",
+    title_en: "AFTERLIFE vol.1 Out Now",
     body: "WE DIE YOUNGの新コンセプト・コンピレーションアルバム「AFTERLIFE vol.1」がリリース。Future Bass / Wave / Garage等のメロディックなサウンドを軸にした全12曲収録。",
+    body_en: "WE DIE YOUNG's new-concept compilation album \"AFTERLIFE vol.1\" is out. 12 tracks built around melodic sounds like Future Bass, Wave and Garage.",
     link: "",
     image: "https://f4.bcbits.com/img/a0311867667_10.jpg",
     article: [
@@ -939,7 +1083,9 @@ const NEWS = [
     date: "2026-04-27",
     category: "RELEASE",
     title: "WE DIE YOUNG vol.8 リリース",
+    title_en: "WE DIE YOUNG vol.8 Out Now",
     body: "レーベルコンピレーションアルバム「WE DIE YOUNG vol.8」がリリース。Trap / Dubstep / Bass House等のBass Musicを軸にした、日本発Trap/Bassコンピレーション第8弾。全16曲収録。",
+    body_en: "The label compilation album \"WE DIE YOUNG vol.8\" is out. The 8th Japan-born Trap/Bass compilation, built around bass music like Trap, Dubstep and Bass House. 16 tracks.",
     link: "",
     image: "https://f4.bcbits.com/img/a0656935817_10.jpg",
     article: [
@@ -959,7 +1105,9 @@ const NEWS = [
     date: "2026-04-10",
     category: "RELEASE",
     title: "21SWINGS – SURGE EP 配信開始",
+    title_en: "21SWINGS – SURGE EP Out Now",
     body: "世界中のクラブやフェスでプレイされるEDMアーティスト21SWINGSが、WE DIE YOUNGからEP「SURGE」をデジタルリリース。",
+    body_en: "21SWINGS, an EDM artist played at clubs and festivals worldwide, releases the EP \"SURGE\" digitally on WE DIE YOUNG.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2026/04/WDY036-ver2-brown-scaled.png",
     article: [
@@ -981,7 +1129,9 @@ const NEWS = [
     date: "2026-03-27",
     category: "RELEASE",
     title: "Viticz & Namya – Rangda 配信開始",
+    title_en: "Viticz & Namya – Rangda Out Now",
     body: "シンガポールのViticzとインドネシアのNamyaによるコラボシングル「Rangda」をデジタルリリース。",
+    body_en: "A collaborative single \"Rangda\" by Viticz (Singapore) and Namya (Indonesia), out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2026/03/WDY035-scaled.jpg",
     article: [
@@ -1015,14 +1165,18 @@ const NEWS = [
     date: "2026-03-16",
     category: "EVENT",
     title: "【DJ Schedule】2026.03.20 Beginning ZERO at ZEROTOKYO",
+    title_en: "[DJ Schedule] 2026.03.20 Beginning ZERO at ZEROTOKYO",
     body: "新宿ZEROTOKYOで開催のBeginning ZERO \"JUELZ TOKYO RETURN\"にWE DIE YOUNG（rejection, vishnu okuno, crp.）が出演。Z HALL・360°セットにて、国内のTrap/Bassアーティストが集結するBass Musicの一夜。",
+    body_en: "WE DIE YOUNG (rejection, vishnu okuno, crp.) performs at Beginning ZERO \"JUELZ TOKYO RETURN\" at ZEROTOKYO in Shinjuku. A bass-music night gathering Japan's Trap/Bass artists, in Z HALL with a 360° set.",
     link: ""
   },
   {
     date: "2026-01-30",
     category: "RELEASE",
     title: "21SWINGS – BREAK THE BASS 配信開始",
+    title_en: "21SWINGS – BREAK THE BASS Out Now",
     body: "フェスティバルEDMとベースミュージックを融合する21SWINGSのシングル「BREAK THE BASS」をデジタルリリース。",
+    body_en: "21SWINGS, fusing festival EDM and bass music, releases the single \"BREAK THE BASS\" digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2026/02/WDY034-v1-scaled.png",
     article: [
@@ -1044,7 +1198,9 @@ const NEWS = [
     date: "2026-01-09",
     category: "RELEASE",
     title: "Voxelkana – digital[F10W] 配信開始",
+    title_en: "Voxelkana – digital[F10W] Out Now",
     body: "中国を拠点にアトモスフェリックかつフューチャリスティックなサウンドを追求するVoxelkanaのシングル「digital[F10W]」をデジタルリリース。",
+    body_en: "A single \"digital[F10W]\" by Voxelkana, a China-based producer pursuing atmospheric, futuristic sounds, out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2026/01/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.png",
     article: [
@@ -1064,7 +1220,9 @@ const NEWS = [
     date: "2025-12-19",
     category: "RELEASE",
     title: "WE DIE YOUNG vol.7 配信開始",
+    title_en: "WE DIE YOUNG vol.7 Now Streaming",
     body: "レーベルコンピレーションアルバム「WE DIE YOUNG vol.7」がデジタルリリース。Trap/Hardwave等のBass Musicを軸に全21曲を収録した\"Cyber-Modern EDM Trap\"コンセプトアルバム。",
+    body_en: "The label compilation album \"WE DIE YOUNG vol.7\" is out digitally. A 21-track \"Cyber-Modern EDM Trap\" concept album built around bass music like Trap and Hardwave.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
     article: [
@@ -1090,7 +1248,9 @@ const NEWS = [
     date: "2025-12-12",
     category: "RELEASE",
     title: "Yuzac – feel it 配信開始",
+    title_en: "Yuzac – feel it Out Now",
     body: "RL GrimeやSkrillexに影響を受けた東京拠点のプロデューサーYuzacのシングル「feel it」をデジタルリリース。",
+    body_en: "A single \"feel it\" by Yuzac, a Tokyo-based producer influenced by RL Grime and Skrillex, out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY032-artwork-scaled.png",
     article: [
@@ -1110,7 +1270,9 @@ const NEWS = [
     date: "2025-12-05",
     category: "RELEASE",
     title: "KANAKA & LAGnaf – DONTPLAY 配信開始",
+    title_en: "KANAKA & LAGnaf – DONTPLAY Out Now",
     body: "ハワイ出身LA拠点のKANAKAと韓国のLAGnafによるコラボシングル「DONTPLAY」をデジタルリリース。",
+    body_en: "A collaborative single \"DONTPLAY\" by KANAKA (Hawai'i-born, LA-based) and LAGnaf (Korea), out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY031_Artwork_fix-scaled.png",
     article: [
@@ -1140,14 +1302,18 @@ const NEWS = [
     date: "2025-11-24",
     category: "EVENT",
     title: "WE DIE YOUNG ON THE FLOOR 2025 イベントレポート",
+    title_en: "WE DIE YOUNG ON THE FLOOR 2025 Event Report",
     body: "11月2日、六本木CUBEにて開催。MTGD (from Taiwan)を迎え、ECLAIR、Redsign、Douji Wiix、crp.、vishnu okuno、KO3、rejectionら日本と台湾を繋ぐラインナップでベースミュージックの一日を作り上げた。",
+    body_en: "Held on November 2 at Roppongi CUBE. Welcoming MTGD (from Taiwan) and featuring ECLAIR, Redsign, Douji Wiix, crp., vishnu okuno, KO3 and rejection, a lineup connecting Japan and Taiwan built a full day of bass music.",
     link: ""
   },
   {
     date: "2025-11-16",
     category: "RELEASE",
     title: "Kawashiii – Medication 配信開始",
+    title_en: "Kawashiii – Medication Out Now",
     body: "サイバーな質感を軸に制作する東京在住プロデューサーKawashiiiのシングル「Medication」をデジタルリリース。",
+    body_en: "A single \"Medication\" by Kawashiii, a Tokyo-based producer working around a cyber texture, out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY-028-Artwork.png",
     article: [
@@ -1167,7 +1333,9 @@ const NEWS = [
     date: "2025-10-28",
     category: "GOODS",
     title: "WE DIE YOUNG vol.7 Tee 発売",
+    title_en: "WE DIE YOUNG vol.7 Tee On Sale",
     body: "最新コンピレーション「WE DIE YOUNG vol.7」デザインのTシャツが数量限定で発売。Size: FREE (XL) / ¥4,000。",
+    body_en: "A T-shirt featuring the latest compilation \"WE DIE YOUNG vol.7\" design, on sale in limited quantities. Size: FREE (XL) / ¥4,000.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00729-scaled.jpg",
     article: [
@@ -1194,7 +1362,9 @@ const NEWS = [
     date: "2025-10-27",
     category: "RELEASE",
     title: "WE DIE YOUNG vol.7 リリース（CD）",
+    title_en: "WE DIE YOUNG vol.7 Out Now (CD)",
     body: "THE NEW AGE RESONATES — サイバーサウンドを吸収し更に進化した、日本発Trap/Bassコンピレーション第7弾。M3秋2025にて早期販売、Diverse Direct / TANO*C STORE / Bandcampで展開。",
+    body_en: "THE NEW AGE RESONATES — the 7th Japan-born Trap/Bass compilation, evolved further by absorbing cyber sounds. Sold early at M3 Autumn 2025, available via Diverse Direct / TANO*C STORE / Bandcamp.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
     article: [
@@ -1214,7 +1384,9 @@ const NEWS = [
     date: "2025-10-27",
     category: "RELEASE",
     title: "RAVEMODE vol.1 リリース（CD）",
+    title_en: "RAVEMODE vol.1 Out Now (CD)",
     body: "ENTER THE RAVE — 新コンセプトのコンピレーションシリーズが始動。聴く者を強制的に踊らせるRAVEサウンド全8曲を収録。",
+    body_en: "ENTER THE RAVE — a new-concept compilation series begins. 8 RAVE tracks that force the listener to move.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/10/RAVEMODEvol1-Artwork.png",
     article: [
@@ -1234,14 +1406,18 @@ const NEWS = [
     date: "2025-10-03",
     category: "EVENT",
     title: "WE DIE YOUNG ON THE FLOOR 3rd Edition 開催決定",
+    title_en: "WE DIE YOUNG ON THE FLOOR 3rd Edition Announced",
     body: "年に一度の主催イベント第3弾は2025年11月2日（日）六本木CUBEにて開催。ゲストに台湾在住のDJ/Producer MTGDを招聘し、vishnu okuno、crp.、KO3に加えECLAIR、Douji Wiixが初参戦。",
+    body_en: "The 3rd edition of our annual flagship party takes place on Sunday, November 2, 2025 at Roppongi CUBE. Welcoming Taiwan-based DJ/Producer MTGD as guest, with vishnu okuno, crp. and KO3, plus first-timers ECLAIR and Douji Wiix.",
     link: ""
   },
   {
     date: "2025-09-19",
     category: "RELEASE",
     title: "rejection – HANDS UP 配信開始",
+    title_en: "rejection – HANDS UP Out Now",
     body: "レーベルオーナーrejectionによるシングル「HANDS UP」をデジタルリリース。",
+    body_en: "A single \"HANDS UP\" by label owner rejection, out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/09/WDY-027-Artwork.png",
     article: [
@@ -1261,35 +1437,45 @@ const NEWS = [
     date: "2025-09-19",
     category: "EVENT",
     title: "PARTY HARD!! feat. Darren Styles イベントレポート",
+    title_en: "PARTY HARD!! feat. Darren Styles Event Report",
     body: "9月5日、WE DIE YOUNGがZEROTOKYOのZ HALLに初出演。rejection、KO3、vishnu okunoの3人が新曲を次々と投下し、Darren Styles公演へと繋がる熱い一夜を演出した。",
+    body_en: "On September 5, WE DIE YOUNG made their Z HALL debut at ZEROTOKYO. rejection, KO3 and vishnu okuno dropped new tracks one after another, setting up a hot night leading into Darren Styles' show.",
     link: "https://www.youtube.com/watch?v=LSUGdlfKpS8"
   },
   {
     date: "2025-09-19",
     category: "EVENT",
     title: "Sel Octagon Tokyo 6th Anniversary \"SPACE LACES\" イベントレポート",
+    title_en: "Sel Octagon Tokyo 6th Anniversary \"SPACE LACES\" Event Report",
     body: "7月17日、六本木Sel Octagon Tokyoの6周年イベントにWE DIE YOUNG crew（rejection、Redsign、vishnu okuno）がSPACE LACESのサポートとして出演。",
+    body_en: "On July 17, WE DIE YOUNG crew (rejection, Redsign, vishnu okuno) performed in support of SPACE LACES at Sel Octagon Tokyo's 6th-anniversary event in Roppongi.",
     link: ""
   },
   {
     date: "2025-09-19",
     category: "EVENT",
     title: "Do D4 Bass MIRAINAGOYA イベントレポート",
+    title_en: "Do D4 Bass MIRAINAGOYA Event Report",
     body: "7月5日、名古屋MIRAINAGOYAで開催された\"Do D4 Bass\"にWE DIE YOUNG（KO3、rejection、vishnu okuno）が出演。",
+    body_en: "On July 5, WE DIE YOUNG (KO3, rejection, vishnu okuno) performed at \"Do D4 Bass\" at MIRAINAGOYA in Nagoya.",
     link: ""
   },
   {
     date: "2025-09-01",
     category: "INFO",
     title: "WE DIE YOUNG ON THE FLOOR 2025 開催日決定",
+    title_en: "WE DIE YOUNG ON THE FLOOR 2025 Date Confirmed",
     body: "2025年11月2日（日）デイタイム、ROPPONGI CUBEにて開催決定。詳細は後日発表。",
+    body_en: "Confirmed for daytime on Sunday, November 2, 2025 at ROPPONGI CUBE. Details to follow.",
     link: "https://www.youtube.com/watch?v=2uqdPfuVNks"
   },
   {
     date: "2025-08-22",
     category: "RELEASE",
     title: "XeroC'tok – Ballade 配信開始",
+    title_en: "XeroC'tok – Ballade Out Now",
     body: "韓国を拠点にGarageとTrapを制作するXeroC'tokのデビューシングル「Ballade」をデジタルリリース。",
+    body_en: "The debut single \"Ballade\" by XeroC'tok, a Korea-based producer making Garage and Trap, out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/08/XeroCtok-BALLADE.jpg",
     article: [
@@ -1309,7 +1495,9 @@ const NEWS = [
     date: "2025-08-09",
     category: "RELEASE",
     title: "ZiXS – One More 配信開始",
+    title_en: "ZiXS – One More Out Now",
     body: "タイ出身のEDMプロデューサーZiXSのデビューシングル「One More」をデジタルリリース。WE DIE YOUNG vol.5収録曲「MAKE ME FEEL LIKE YOU」以来のリリース。",
+    body_en: "The debut single \"One More\" by Thai EDM producer ZiXS, out digitally. His first release since \"MAKE ME FEEL LIKE YOU\" on WE DIE YOUNG vol.5.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/08/a3054737185_10.jpg",
     article: [
@@ -1329,7 +1517,9 @@ const NEWS = [
     date: "2025-07-26",
     category: "RELEASE",
     title: "Lactar1uz – Falling 4 U 配信開始",
+    title_en: "Lactar1uz – Falling 4 U Out Now",
     body: "TrapやDrum'n'Bassを軸に制作する日本在住プロデューサーLactar1uzのデビューシングル「Falling 4 U」をデジタルリリース。",
+    body_en: "The debut single \"Falling 4 U\" by Lactar1uz, a Japan-based producer working around Trap and Drum'n'Bass, out digitally.",
     link: "",
     image: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-024-fixed-scaled.png",
     article: [
@@ -1349,35 +1539,45 @@ const NEWS = [
     date: "2025-07-24",
     category: "INFO",
     title: "イベントスケジュールページを公開",
+    title_en: "Event Schedule Page Now Live",
     body: "今後の出演情報をGoogleカレンダー形式で随時掲載。",
+    body_en: "Upcoming performance info posted as a Google Calendar, updated regularly.",
     link: "https://calendar.google.com/calendar/embed?src=wedieyoungrec%40gmail.com&ctz=Asia%2FTokyo"
   },
   {
     date: "2025-07-15",
     category: "EVENT",
     title: "World DJ Festival JAPAN 2025 — WATARU B2B WE DIE YOUNG イベントレポート",
+    title_en: "World DJ Festival JAPAN 2025 — WATARU B2B WE DIE YOUNG Event Report",
     body: "6月28日、幕張メッセのJP NIGHT STAGEにWATARUとWE DIE YOUNG（rejection、KO3、vishnu okuno）が登場。モッシュピットが出現するほどの熱狂で、この日最も\"肉体を揺らした瞬間\"を刻んだ。",
+    body_en: "On June 28, WATARU and WE DIE YOUNG (rejection, KO3, vishnu okuno) hit the JP NIGHT STAGE at Makuhari Messe. The frenzy was wild enough to spark a mosh pit, marking the moment that \"moved bodies\" the most that day.",
     link: "https://www.youtube.com/watch?v=HAyQS43M2eI"
   },
   {
     date: "2025-07-15",
     category: "EVENT",
     title: "THE BASS — wavforme & WE DIE YOUNG Bass Music Party イベントレポート",
+    title_en: "THE BASS — wavforme & WE DIE YOUNG Bass Music Party Event Report",
     body: "5月4日、六本木CUBEにて開催。2フロアにわたり国内のベースミュージックアーティストが集結し、rejection & KO3はXiNを迎え\"BEST GOAT\"、\"In The Cloud\"をライブ披露した。",
+    body_en: "Held on May 4 at Roppongi CUBE. Japan's bass music artists gathered across two floors, and rejection & KO3 welcomed XiN to perform \"BEST GOAT\" and \"In The Cloud\" live.",
     link: "https://www.youtube.com/watch?v=bUIHl26jgw0"
   },
   {
     date: "2025-07-14",
     category: "INFO",
     title: "WE DIE YOUNG オフィシャルウェブサイト公開",
+    title_en: "WE DIE YOUNG Official Website Launched",
     body: "アーティストのリリース情報やイベントスケジュール、最新ニュース、過去の活動アーカイブなどを掲載。コンテンツなども順次追加予定！",
+    body_en: "Featuring artist release info, event schedules, the latest news, an archive of past activities and more. More content to be added over time!",
     link: ""
   },
   {
     date: "2024-07-26",
     category: "RELEASE",
     title: "rejection & KO3 – SET IT OFF EP 配信開始",
+    title_en: "rejection & KO3 – SET IT OFF EP Out Now",
     body: "WE DIE YOUNGとUntitled Musicの合同リリースとして、rejection & KO3による3曲入りEP「SET IT OFF EP」をリリース。",
+    body_en: "rejection & KO3 release the 3-track \"SET IT OFF EP\" as a joint release between WE DIE YOUNG and Untitled Music.",
     link: "",
     image: "https://f4.bcbits.com/img/a3791259603_10.jpg",
     article: [
@@ -1423,6 +1623,7 @@ const ARTISTS = {
     location: "Tokyo, Japan",
     works: "WE DIE YOUNG Owner",
     bio: "WE DIE YOUNGの創設者。福岡出身・東京拠点のProducer/DJで、2022年にレーベルを立ち上げた。MEGAREXのメンバーとしても活動し、メロディアスかつ重厚なトラックと、フロアを支配するDJパフォーマンスで国内ベースミュージックシーンを牽引。コンピレーションvol.1からAFTERLIFEまで全作品に参加し、レーベルの中心として国内外へサウンドを発信し続けている。",
+    bio_en: "Founder of WE DIE YOUNG. A Fukuoka-born, Tokyo-based producer/DJ who launched the label in 2022. Also active as a member of MEGAREX, he leads Japan's bass music scene with melodic yet heavyweight tracks and floor-commanding DJ sets. Having appeared on every release from compilation vol.1 through AFTERLIFE, he continues to send the label's sound out at home and abroad as its central figure.",
     photo: "assets/images/artists/rejection.jpg",
     socials: {
       instagram:  "https://www.instagram.com/rejection_dj/",
@@ -1437,8 +1638,10 @@ const ARTISTS = {
     {
       name: "vishnu okuno",
       works: "10作品参加",
+      works_en: "10 releases",
       location: "Japan",
       bio: "WE DIE YOUNGの中心メンバー。エモーショナルなメロディとモダンなTrap/Bassを融合させたサウンドで、コンピレーションvol.2以降の常連として活躍。アルバム『ANGELvoid』も発表している。",
+      bio_en: "A core member of WE DIE YOUNG. With a sound fusing emotional melodies and modern Trap/Bass, he has been a regular since compilation vol.2. He has also released the album ANGELvoid.",
       photo: "assets/images/artists/vishnu-okuno.jpg",
       socials: {
         instagram:  "https://www.instagram.com/vish.rar/",
@@ -1450,8 +1653,10 @@ const ARTISTS = {
     {
       name: "The Herb Shop",
       works: "9作品参加",
+      works_en: "9 releases",
       location: "Japan",
       bio: "ハウスビートを軸に、サブカルチャーとベースミュージックの感性を併せ持つ日本のProducer/DJ。vol.1から長く参加し、EP『IRIS/CTRL』もリリース。幅広い質感のサウンドを操る。",
+      bio_en: "A Japanese producer/DJ who pairs house beats with a sensibility spanning subculture and bass music. A long-time contributor since vol.1, he also released the EP IRIS/CTRL, handling a wide range of sonic textures.",
       photo: "assets/images/artists/the-herb-shop.jpg",
       socials: {
         instagram:  "https://www.instagram.com/hbvr_ths/",
@@ -1463,8 +1668,10 @@ const ARTISTS = {
     {
       name: "crp.",
       works: "8作品参加",
+      works_en: "8 releases",
       location: "Japan",
       bio: "札幌拠点のProducer/DJ。中毒性のあるフックとアンビエント、心地よいグルーヴが持ち味。vol.3以降コンスタントに参加し、レーベルを支える存在のひとり。",
+      bio_en: "A Sapporo-based producer/DJ known for addictive hooks, ambience and a comfortable groove. A steady contributor since vol.3 and one of the pillars supporting the label.",
       photo: "assets/images/artists/crp.jpg",
       socials: {
         instagram:  "https://www.instagram.com/its_me_crp/",
@@ -1477,8 +1684,10 @@ const ARTISTS = {
     {
       name: "Redsign",
       works: "8作品参加",
+      works_en: "8 releases",
       location: "Japan",
       bio: "緻密なサウンドデザインスキルで国内外Dubstepシーンの最先端を走るDJ/Producer. Trap/Dubstepを横断する重厚なベースデザインが特徴で、vol.1から数多くの作品に参加してきた。",
+      bio_en: "A DJ/producer at the forefront of the Dubstep scene at home and abroad with meticulous sound-design skills. Known for heavyweight bass design spanning Trap and Dubstep, he has appeared on many releases since vol.1.",
       photo: "assets/images/artists/redsign.jpg",
       photoPos: "center 18%",
       socials: {
@@ -1491,8 +1700,10 @@ const ARTISTS = {
     {
       name: "Exodynamix",
       works: "6作品参加",
+      works_en: "6 releases",
       location: "Canada",
       bio: "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
+      bio_en: "A Canada-based producer who crosses diverse genres such as Future Garage, Wave, Hardwave and Trance, unfolding an atmospheric, refined sound.",
       photo: "assets/images/artists/exodynamix.jpg",
       photoPos: "center 12%",
       socials: {
@@ -1506,8 +1717,10 @@ const ARTISTS = {
     {
       name: "MTGD",
       works: "6作品参加",
+      works_en: "6 releases",
       location: "Taiwan",
       bio: "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フェスティバル直系のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
+      bio_en: "A Taiwan-based DJ/producer. Under the banner “All About The Bass,” he makes aggressive, festival-grade bass music. He has many solo works, starting with the EP DEFINED.",
       photo: "assets/images/artists/MTGD.jpg",
       photoPos: "center 12%",
       socials: {
@@ -1520,8 +1733,10 @@ const ARTISTS = {
     {
       name: "KO3",
       works: "6作品参加",
+      works_en: "6 releases",
       location: "Japan",
       bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
+      bio_en: "A Japanese producer/DJ who builds on house beats while hybridizing the latest bass music trends. A regular since vol.4 and one of the label's core members on stage as well.",
       photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
       socials: {
         instagram:  "https://www.instagram.com/ko3_untitled/",
@@ -1534,8 +1749,10 @@ const ARTISTS = {
     {
       name: "Ruxxi",
       works: "5作品参加",
+      works_en: "5 releases",
       location: "Korea",
       bio: "韓国を拠点に活動するBass music Producer/DJ。Tokyo Machine、San Holoらからもサポートを受け、ポップからダブステップまで幅広く制作する。",
+      bio_en: "A Korea-based bass music producer/DJ. Supported by the likes of Tokyo Machine and San Holo, he produces across a wide range from pop to dubstep.",
       photo: "https://i.scdn.co/image/ab6761610000517490e333c1acf68f31e20924b5",
       socials: {
         instagram:  "https://www.instagram.com/im_ruxxi/",
@@ -1548,8 +1765,10 @@ const ARTISTS = {
     {
       name: "mahziel",
       works: "5作品参加",
+      works_en: "5 releases",
       location: "Japan",
       bio: "WE DIE YOUNGの黎明期から参加するプロデューサー。vol.1〜4、そしてAFTERLIFEまで、シリーズの節目を彩るトラックを提供してきた。",
+      bio_en: "A producer involved since WE DIE YOUNG's earliest days. From vol.1–4 through AFTERLIFE, he has provided tracks marking the series' milestones.",
       photo: "assets/images/artists/mahziel.jpg",
       socials: {
         instagram:  "https://www.instagram.com/mahziel/",
@@ -1561,8 +1780,10 @@ const ARTISTS = {
     {
       name: "ECLAIR",
       works: "5作品参加",
+      works_en: "5 releases",
       location: "Japan",
       bio: "クリアかつ厚みのある独自のサウンドデザインを探求するプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。アンダーグラウンドシーンに頭角を表す。",
+      bio_en: "A producer exploring a clear yet thick, distinctive sound design. Centered on Trap / Rave / Dubstep, he also released the single NEED YOU, making his mark in the underground scene.",
       photo: "assets/images/artists/eclair.jpg",
       socials: {
         instagram:  "https://www.instagram.com/the_eclair_/",
@@ -1574,8 +1795,10 @@ const ARTISTS = {
     {
       name: "REXY=DEXY",
       works: "4作品参加",
+      works_en: "4 releases",
       location: "Japan",
       bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trapを軸に、ULTRA JAPANへの出演、Yellow Clawとのコラボなど数々の実績を果たす若手注目株。",
+      bio_en: "A Tokyo-based bass music DJ/producer unit. Centered on Trap, they are a rising act with a track record including a performance at ULTRA JAPAN and a collaboration with Yellow Claw.",
       photo: "assets/images/artists/rexy-dexy.jpg",
       photoPos: "center 12%",
       socials: {
@@ -1588,8 +1811,10 @@ const ARTISTS = {
     {
       name: "ZiXS",
       works: "4作品参加",
+      works_en: "4 releases",
       location: "Thailand",
       bio: "タイ出身のEDMプロデューサー。vol.5以降のコンピレーションに参加し、シングル『One More』も発表。Dubstep出身の重厚なBassが持ち味。",
+      bio_en: "An EDM producer from Thailand. Featured on compilations since vol.5, he also released the single One More. His signature is heavyweight, Dubstep-rooted bass.",
       photo: "assets/images/artists/zixs.jpg",
       socials: {
         instagram:  "https://www.instagram.com/zixss_bloomii/",
@@ -1601,8 +1826,10 @@ const ARTISTS = {
     {
       name: "sh0wtime",
       works: "4作品参加",
+      works_en: "4 releases",
       location: "Japan",
       bio: "Trap/Bassを軸に制作するプロデューサー。シングル『U FEEL THE SAME!』をはじめ、vol.5〜7のコンピレーションにトラックを提供している。",
+      bio_en: "A producer working around Trap/Bass. Starting with the single U FEEL THE SAME!, he has provided tracks to the vol.5–7 compilations.",
       photo: "assets/images/artists/sh0wtime.jpg",
       socials: {
         instagram:  "https://www.instagram.com/sh0wtime.lol/",
@@ -1614,8 +1841,10 @@ const ARTISTS = {
     {
       name: "Douji Wiix",
       works: "4作品参加",
+      works_en: "4 releases",
       location: "Japan",
       bio: "島根県を拠点に活動するDJ/プロデューサー。vol.6以降の常連で、シングル『Mental』も発表。\"Neo Kagura Vibes\"を掲げ唯一無二の和サウンドを取り入れる。",
+      bio_en: "A DJ/producer based in Shimane, Japan. A regular since vol.6, he also released the single Mental. Under the banner \"Neo Kagura Vibes,\" he weaves in a one-of-a-kind Japanese sound.",
       photo: "assets/images/artists/douji-wiix.jpg",
       socials: {
         instagram:  "https://www.instagram.com/doujiwiix/",
