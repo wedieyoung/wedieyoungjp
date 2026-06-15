@@ -534,6 +534,18 @@ const RELEASES = [
     }
   },
   {
+    title: "SET IT OFF EP",
+    artist: "rejection & KO3",
+    type: "EP",
+    date: "2024-07-26",
+    cover: "https://f4.bcbits.com/img/a3791259603_10.jpg",
+    description: "WE DIE YOUNGとUntitled Musicの合同リリースとして発表された、rejection & KO3による3曲入りEP。",
+    links: {
+      stream: "https://www.submithub.com/link/rejection-ko3-setitoff",
+      bandcamp: "https://untitledmusic.bandcamp.com/album/set-it-off-ep-2"
+    }
+  },
+  {
     title: "U FEEL THE SAME!",
     artist: "sh0wtime",
     type: "SINGLE",
@@ -1360,6 +1372,24 @@ const NEWS = [
     title: "WE DIE YOUNG オフィシャルウェブサイト公開",
     body: "アーティストのリリース情報やイベントスケジュール、最新ニュース、過去の活動アーカイブなどを掲載。コンテンツなども順次追加予定！",
     link: ""
+  },
+  {
+    date: "2024-07-26",
+    category: "RELEASE",
+    title: "rejection & KO3 – SET IT OFF EP 配信開始",
+    body: "WE DIE YOUNGとUntitled Musicの合同リリースとして、rejection & KO3による3曲入りEP「SET IT OFF EP」をリリース。",
+    link: "",
+    image: "https://f4.bcbits.com/img/a3791259603_10.jpg",
+    article: [
+      "2024年7月26日、WE DIE YOUNGとUntitled Musicの合同リリースとして、rejection & KO3による「SET IT OFF EP」がリリースされました。",
+      "On July 26, 2024, rejection & KO3 released “SET IT OFF EP” as a joint release between WE DIE YOUNG and Untitled Music.",
+      "本作は、rejection & KO3によるタイトル曲「SET IT OFF (feat. yosumi)」に加え、KO3「TECHNO」、rejection「Call To Action」を収録した3曲入りEP。",
+      "🎧 TRACKLIST\n01. rejection & KO3 – SET IT OFF (feat. yosumi)\n02. KO3 – TECHNO\n03. rejection – Call To Action"
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/rejection-ko3-setitoff" },
+      { label: "Bandcamp", url: "https://untitledmusic.bandcamp.com/album/set-it-off-ep-2" }
+    ]
   }
 ];
 
@@ -1516,7 +1546,7 @@ const ARTISTS = {
     },
     {
       name: "KO3",
-      works: "5作品参加",
+      works: "6作品参加",
       location: "Japan",
       bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
       photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
@@ -1607,7 +1637,7 @@ const ARTISTS = {
     { name: "Redsign",        note: "8作品" },
     { name: "Exodynamix",     note: "6作品" },
     { name: "MTGD",           note: "6作品" },
-    { name: "KO3",            note: "5作品" },
+    { name: "KO3",            note: "6作品" },
     { name: "Ruxxi",          note: "5作品" },
     { name: "mahziel",        note: "5作品" },
     { name: "ECLAIR",         note: "5作品" },
@@ -1649,6 +1679,7 @@ const ARTISTS = {
     { name: "WATARU",         note: "Starfall" },
     { name: "Violet.MKII",    note: "Karma Strike" },
     { name: "GREED",          note: "Karma Strike" },
+    { name: "yosumi",         note: "SET IT OFF EP" },
     { name: "Miii",           note: "vol.1" },
     { name: "poniyama",       note: "vol.1" },
     { name: "Hylen",          note: "vol.2" },
