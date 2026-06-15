@@ -119,7 +119,7 @@ const RELEASES = [
     type: "COMPILATION",
     date: "2026-04-27",
     cover: "https://f4.bcbits.com/img/a0656935817_10.jpg",
-    description: "日本発Trap/Bassコンピレーション第8弾。Trap / Dubstep / Bass House等のBass Musicを軸にした全16曲収録。",
+    description: "極限までDEEPに、容赦ないほどにDARKなサウンドが切り刻む！最先端のBASS MUSICを更新し続けるWE DIE YOUNGシリーズ第八弾",
     links: {
       stream:   "https://www.submithub.com/link/we-die-young-vol-8",
       bandcamp: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-8",
@@ -238,7 +238,7 @@ const RELEASES = [
     type: "EP",
     date: "2026-04-10",
     cover: "https://wedieyoung.jp/wp-content/uploads/2026/04/WDY036-ver2-brown-scaled.png",
-    description: "世界中のクラブやフェスでプレイされるEDMアーティスト21SWINGSによるEP。",
+    description: "シンガポールのBass Musicアーティスト21SWINGSによるFestival Trap EP。",
     links: {
       stream:   "https://www.submithub.com/link/21swings-surge",
       bandcamp: "https://wedieyoung.bandcamp.com/album/surge"
@@ -262,7 +262,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2026-01-30",
     cover: "https://wedieyoung.jp/wp-content/uploads/2026/02/WDY034-v1-scaled.png",
-    description: "フェスティバルEDMとベースミュージックを融合する21SWINGSのシングル。",
+    description: "シンガポールのBass Musicアーティスト21SWINGSのシングル。",
     links: {
       stream:   "https://www.submithub.com/link/break-the-bass",
       bandcamp: "https://wedieyoung.bandcamp.com/track/break-the-bass"
@@ -310,7 +310,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2025-11-16",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY-028-Artwork.png",
-    description: "サイバーな質感を軸に制作する東京在住プロデューサーKawashiiiのシングル。",
+    description: "マルチジャンルを制作する東京在住プロデューサーKawashiiiのシングル。",
     links: {
       stream:   "https://www.submithub.com/link/kawashiii-medication",
       bandcamp: "https://wedieyoung.bandcamp.com/track/medication"
@@ -346,7 +346,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2025-08-09",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/08/a3054737185_10.jpg",
-    description: "タイ出身のEDMプロデューサーZiXSのデビューシングル。",
+    description: "タイ出身のEDMプロデューサーZiXSによるシングル。",
     links: {
       stream:   "https://www.submithub.com/link/zixs-one-more",
       bandcamp: "https://wedieyoung.bandcamp.com/track/one-more"
@@ -358,7 +358,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2025-07-26",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-024-fixed-scaled.png",
-    description: "TrapやDrum'n'Bassを軸に制作する日本在住プロデューサーLactar1uzのデビューシングル。",
+    description: "Bass Musicを中心に制作している日本在住プロデューサーLactar1uzのデビューシングル。",
     links: {
       stream:   "https://www.submithub.com/link/falling-4-u",
       bandcamp: "https://wedieyoung.bandcamp.com/track/falling-4-u"
@@ -382,7 +382,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2025-07-05",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-022-artwork-scaled.jpg",
-    description: "澄んだメロディラインと厚みのある低音を操るECLAIRのシングル。",
+    description: "クリアなサウンドと低音が炸裂するECLAIRのシングル。",
     links: {
       stream: "https://www.submithub.com/link/eclair-need-you",
       bandcamp: "https://wedieyoung.bandcamp.com/track/need-you"
@@ -418,7 +418,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2025-06-07",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_reality.jpg",
-    description: "Xenoのシングル。",
+    description: "韓国在住のプロデューサーXenoのシングル。",
     links: {
       stream: "https://www.submithub.com/link/xeno-reality",
       bandcamp: "https://wedieyoung.bandcamp.com/track/reality"
@@ -467,7 +467,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2025-02-01",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-WITH-ME-NOW.jpg",
-    description: "MOSHIMOSHのシングル。",
+    description: "インドネシア在住のDJ/ProducerであるMOSHIMOSHのシングル",
     links: {
       stream: "https://www.submithub.com/link/with-me-now",
       bandcamp: "https://wedieyoung.bandcamp.com/track/with-me-now"
@@ -491,7 +491,7 @@ const RELEASES = [
     type: "SINGLE",
     date: "2024-12-13",
     cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Mental.jpg",
-    description: "Douji Wiixのシングル。",
+    description: "島根県在住のアーティストDouji Wiixのシングル。",
     links: {
       stream: "https://www.submithub.com/link/douji-wiix-mental",
       bandcamp: "https://wedieyoung.bandcamp.com/track/mental"
