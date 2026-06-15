@@ -1493,7 +1493,7 @@ const ARTISTS = {
       works: "6作品参加",
       location: "Canada",
       bio: "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
-      photo: "assets/images/artists/Exodynamix.png",
+      photo: "assets/images/artists/exodynamix.jpg",
       photoPos: "center 12%",
       socials: {
         instagram:  "https://www.instagram.com/exodynamix64/",
@@ -1507,7 +1507,7 @@ const ARTISTS = {
       name: "MTGD",
       works: "6作品参加",
       location: "Taiwan",
-      bio: "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フロア直結のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
+      bio: "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フェスティバル直系のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
       photo: "assets/images/artists/MTGD.jpg",
       photoPos: "center 12%",
       socials: {
@@ -1515,6 +1515,20 @@ const ARTISTS = {
         x:          "https://x.com/_mtgd24",
         soundcloud: "https://soundcloud.com/m_t_g_d",
         spotify:    "https://open.spotify.com/artist/2yrXDsIl3e0y01ptasQ30w"
+      }
+    },
+    {
+      name: "KO3",
+      works: "6作品参加",
+      location: "Japan",
+      bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
+      photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
+      socials: {
+        instagram:  "https://www.instagram.com/ko3_untitled/",
+        x:          "https://twitter.com/KO3_untitled",
+        soundcloud: "https://soundcloud.com/dj-ko3",
+        spotify:    "https://open.spotify.com/artist/1ioBfZldZvVAcqD3KXXTXy",
+        bandcamp:   "https://ko3untitled.bandcamp.com/"
       }
     },
     {
@@ -1536,7 +1550,7 @@ const ARTISTS = {
       works: "5作品参加",
       location: "Japan",
       bio: "WE DIE YOUNGの黎明期から参加するプロデューサー。vol.1〜4、そしてAFTERLIFEまで、シリーズの節目を彩るトラックを提供してきた。",
-      photo: "assets/images/artists/mahziel.png",
+      photo: "assets/images/artists/mahziel.jpg",
       socials: {
         instagram:  "https://www.instagram.com/mahziel/",
         x:          "https://x.com/mahziel_",
@@ -1545,25 +1559,11 @@ const ARTISTS = {
       }
     },
     {
-      name: "KO3",
-      works: "6作品参加",
-      location: "Japan",
-      bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
-      photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
-      socials: {
-        instagram:  "https://www.instagram.com/ko3_untitled/",
-        x:          "https://twitter.com/KO3_untitled",
-        soundcloud: "https://soundcloud.com/dj-ko3",
-        spotify:    "https://open.spotify.com/artist/1ioBfZldZvVAcqD3KXXTXy",
-        bandcamp:   "https://ko3untitled.bandcamp.com/"
-      }
-    },
-    {
       name: "ECLAIR",
       works: "5作品参加",
       location: "Japan",
       bio: "クリアかつ厚みのある独自のサウンドデザインを探求するプロデューサー。Trap / Rave / Dubstepを軸に、シングル『NEED YOU』も発表。アンダーグラウンドシーンに頭角を表す。",
-      photo: "assets/images/artists/ECLAIR.png",
+      photo: "assets/images/artists/eclair.jpg",
       socials: {
         instagram:  "https://www.instagram.com/the_eclair_/",
         x:          "https://x.com/IamECLAIR",
@@ -1576,7 +1576,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Japan",
       bio: "東京拠点のベースミュージックDJ/プロデューサーユニット。Trapを軸に、ULTRA JAPANへの出演、Yellow Clawとのコラボなど数々の実績を果たす若手注目株。",
-      photo: "assets/images/artists/REXY=DEXY.png",
+      photo: "assets/images/artists/rexy-dexy.jpg",
       photoPos: "center 12%",
       socials: {
         instagram:  "https://www.instagram.com/rexy_dexy_official/",
@@ -1590,7 +1590,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Thailand",
       bio: "タイ出身のEDMプロデューサー。vol.5以降のコンピレーションに参加し、シングル『One More』も発表。Dubstep出身の重厚なBassが持ち味。",
-      photo: "assets/images/artists/ZiXS.png",
+      photo: "assets/images/artists/zixs.jpg",
       socials: {
         instagram:  "https://www.instagram.com/zixss_bloomii/",
         x:          "https://x.com/ZiXS_BLOOMii",
@@ -1603,7 +1603,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Japan",
       bio: "Trap/Bassを軸に制作するプロデューサー。シングル『U FEEL THE SAME!』をはじめ、vol.5〜7のコンピレーションにトラックを提供している。",
-      photo: "assets/images/artists/sh0wtime.png",
+      photo: "assets/images/artists/sh0wtime.jpg",
       socials: {
         instagram:  "https://www.instagram.com/sh0wtime.lol/",
         x:          "https://x.com/Sh0wtimeDTM",
@@ -1616,7 +1616,7 @@ const ARTISTS = {
       works: "4作品参加",
       location: "Japan",
       bio: "島根県を拠点に活動するDJ/プロデューサー。vol.6以降の常連で、シングル『Mental』も発表。\"Neo Kagura Vibes\"を掲げ唯一無二の和サウンドを取り入れる。",
-      photo: "assets/images/artists/Douji Wiix.png",
+      photo: "assets/images/artists/douji-wiix.jpg",
       socials: {
         instagram:  "https://www.instagram.com/doujiwiix/",
         x:          "https://x.com/doujiwiix",
