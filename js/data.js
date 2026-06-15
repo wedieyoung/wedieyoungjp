@@ -1827,7 +1827,7 @@ const ARTISTS = {
       name: "sh0wtime",
       works: "4作品参加",
       works_en: "4 releases",
-      location: "Japan",
+      location: "USA",
       bio: "Trap/Bassを軸に制作するプロデューサー。シングル『U FEEL THE SAME!』をはじめ、vol.5〜7のコンピレーションにトラックを提供している。",
       bio_en: "A producer working around Trap/Bass. Starting with the single U FEEL THE SAME!, he has provided tracks to the vol.5–7 compilations.",
       photo: "assets/images/artists/sh0wtime.jpg",
