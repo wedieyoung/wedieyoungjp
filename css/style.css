@@ -1016,14 +1016,39 @@ ul { list-style: none; }
 
 .news-item {
   display: grid;
-  grid-template-columns: 120px 110px 1fr;
-  gap: 22px;
-  padding: 26px 6px;
+  grid-template-columns: 110px 100px 78px 1fr;
+  gap: 20px;
+  padding: 24px 6px;
   border-bottom: 1px solid var(--line);
-  align-items: baseline;
+  align-items: start;
   transition: background .2s;
 }
 .news-item:hover { background: rgba(255,255,255,.022); }
+
+/* 記事サムネ（扉絵） */
+.news-thumb {
+  width: 78px;
+  height: 78px;
+  flex: none;
+  border: 1px solid var(--line);
+  background: #0c0c0e;
+  overflow: hidden;
+}
+.news-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+/* 画像なし記事のプレースホルダー（WDYロゴを控えめに） */
+.news-thumb img.news-thumb__ph {
+  object-fit: contain;
+  padding: 22%;
+  opacity: .26;
+}
+.news-thumb--clickable { cursor: pointer; }
+.news-thumb--clickable:hover img:not(.news-thumb__ph) { transform: scale(1.07); }
 
 .news-date {
   font-family: var(--font-mono);
@@ -1261,8 +1286,20 @@ footer {
 
   .event-card { grid-template-columns: 1fr; }
   .event-flyer { max-width: 280px; }
-  .news-item { grid-template-columns: 1fr; gap: 8px; }
-  .news-cat { justify-self: start; }
+  .news-item {
+    grid-template-columns: 64px 1fr;
+    grid-template-areas:
+      "thumb date"
+      "thumb cat"
+      "thumb main";
+    column-gap: 14px;
+    row-gap: 6px;
+    align-items: center;
+  }
+  .news-date { grid-area: date; align-self: end; }
+  .news-cat { grid-area: cat; justify-self: start; }
+  .news-thumb { grid-area: thumb; width: 64px; height: 64px; align-self: start; }
+  .news-main { grid-area: main; margin-top: 4px; }
   .page-head { padding-top: 110px; }
 }
 

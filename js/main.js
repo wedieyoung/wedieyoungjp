@@ -376,18 +376,28 @@
     : `<p class="empty">${ui("events-soon")}</p>`;
 
   /* ---------- ニュース描画 ---------- */
-  const newsItem = (n, i) => `
+  const newsItem = (n, i) => {
+    const hasArticle = n.article && n.article.length;
+    const thumb = `
+      <div class="news-thumb${hasArticle ? " news-thumb--clickable" : ""}"${hasArticle ? ` data-news="${i}"` : ""}>
+        ${n.image
+          ? `<img src="${esc(n.image)}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.classList.add('news-thumb__ph');this.src='assets/images/logo-white-nav.png';">`
+          : `<img class="news-thumb__ph" src="assets/images/logo-white-nav.png" alt="" aria-hidden="true" loading="lazy">`}
+      </div>`;
+    return `
     <article class="news-item reveal">
       <span class="news-date">${fmtDate(n.date)}</span>
       <span class="news-cat">${esc(n.category)}</span>
-      <div>
+      ${thumb}
+      <div class="news-main">
         <h3 class="news-title">${esc(t(n, "title"))}</h3>
         ${t(n, "body") ? `<p class="news-body">${esc(t(n, "body"))}</p>` : ""}
-        ${n.article && n.article.length
+        ${hasArticle
           ? `<button class="news-link news-article-btn" data-news="${i}">${ui("read-more")}</button>`
           : n.link ? `<a class="news-link" href="${esc(n.link)}" target="_blank" rel="noopener">${ui("read-more")}</a>` : ""}
       </div>
     </article>`;
+  };
 
   $("#news-list").innerHTML = NEWS.map(newsItem).join("") || `<p class="empty">${ui("news-none")}</p>`;
   $("#home-news").innerHTML = NEWS.slice(0, 3).map(newsItem).join("") || `<p class="empty">${ui("news-none")}</p>`;
@@ -413,7 +423,7 @@
   };
 
   document.addEventListener("click", (ev) => {
-    const btn = ev.target.closest(".news-article-btn");
+    const btn = ev.target.closest("[data-news]");
     if (!btn) return;
     const n = NEWS[+btn.dataset.news];
     if (n) openNewsModal(n);
