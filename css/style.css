@@ -4,6 +4,17 @@
    変更すればサイト全体に反映されます。
    ============================================================ */
 
+/* スクリーンリーダー / 検索エンジン用の非表示テキスト（見た目には出ない） */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 :root {
   /* ---- カラーパレット（ここを書き換えると全体の配色が変わる） ---- */
   --void:   #09090b;   /* 背景（ほぼ黒） */

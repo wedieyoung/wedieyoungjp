@@ -4,20 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Search Console 所有権確認 -->
+  <meta name="google-site-verification" content="VJyze61ZXg7yGcKN54OyJdXApuCz0H3_Sy559-HtRFE" />
+
   <!-- ============================================================
        SEO / OGP（タイトルや説明文は js/data.js から自動反映されます。
        公開時は data.js の siteUrl を本番URLに書き換えてください）
        ============================================================ -->
   <title>WE DIE YOUNG | Tokyo-based Bass Music Label</title>
   <meta name="description" content="WE DIE YOUNG は東京を拠点とする Bass Music / Trap レーベル。日本・アジアから先鋭的なダンスミュージックを発信します。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://wedieyoung.jp/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="WE DIE YOUNG">
   <meta property="og:title" content="WE DIE YOUNG | Tokyo-based Bass Music Label">
   <meta property="og:description" content="Future Sounds from Tokyo — Trap / Bass / Club Music Label from Japan.">
   <meta property="og:url" content="https://wedieyoung.jp">
   <meta property="og:image" content="https://wedieyoung.jp/assets/images/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WE DIE YOUNG | Tokyo-based Bass Music Label">
+  <meta name="twitter:description" content="Future Sounds from Tokyo — Trap / Bass / Club Music Label from Japan.">
   <meta name="twitter:image" content="https://wedieyoung.jp/assets/images/ogp.png">
+
+  <!-- 構造化データ（JSON-LD）: 検索エンジンにレーベル情報を伝える。
+       内容を変える場合は js/data.js の SITE と内容を揃えてください。 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://wedieyoung.jp/#organization",
+        "name": "WE DIE YOUNG",
+        "alternateName": "WDY",
+        "url": "https://wedieyoung.jp/",
+        "logo": "https://wedieyoung.jp/assets/images/favicon-512.png",
+        "image": "https://wedieyoung.jp/assets/images/ogp.png",
+        "description": "WE DIE YOUNGはProducer/DJのrejectionが2022年に立ち上げた日本発のトラップ/ベースミュージックレーベル。重低音が響く最先端のサウンドと圧巻のライブイベントで、グローバルなベースミュージックシーンをリードする。",
+        "foundingDate": "2022",
+        "foundingLocation": "Tokyo, Japan",
+        "founder": { "@type": "Person", "name": "rejection" },
+        "email": "info@wedieyoung.jp",
+        "sameAs": [
+          "https://x.com/WEDIEYOUNGrec",
+          "https://www.instagram.com/wedieyoungrec",
+          "https://www.youtube.com/@WEDIEYOUNGrec",
+          "https://open.spotify.com/playlist/6JyYK5Vq5FzUuUBJyTbTCJ",
+          "https://wedieyoung.bandcamp.com/",
+          "https://discord.gg/NwJqNHU93J",
+          "https://wedieyoung.base.shop/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://wedieyoung.jp/#website",
+        "url": "https://wedieyoung.jp/",
+        "name": "WE DIE YOUNG",
+        "inLanguage": "ja",
+        "publisher": { "@id": "https://wedieyoung.jp/#organization" }
+      }
+    ]
+  }
+  </script>
   <meta name="theme-color" content="#09090b">
   <link rel="icon" href="assets/images/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
@@ -73,6 +125,7 @@
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
       <div class="hero-core" id="hero-core">
+        <h1 class="sr-only">WE DIE YOUNG — 東京発のトラップ / ベースミュージックレーベル</h1>
         <div class="glitch-wrap">
           <img class="hero-logo" src="assets/images/logo-white.png" alt="WE DIE YOUNG" fetchpriority="high">
           <img class="glitch-layer gl-r" src="assets/images/logo-white.png" alt="" aria-hidden="true">
