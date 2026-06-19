@@ -415,6 +415,13 @@
       ).join("")}
       ${(n.gallery && n.gallery.length) ? `<div class="em-gallery">${n.gallery.map((g) => `<img src="${esc(g)}" alt="${esc(n.title)} photo" loading="lazy">`).join("")}</div>` : ""}
       ${(n.articleLinks && n.articleLinks.length) ? `<div class="release-links em-links">${n.articleLinks.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}
+      ${(n.artistCards && n.artistCards.length) ? `<div class="em-artists">${n.artistCards.map((a) => `
+        <div class="em-artist">
+          <img class="em-artist__logo" src="${esc(a.logo)}" alt="${esc(a.name)} logo" loading="lazy">
+          <span class="em-artist__name">${esc(a.name)}</span>
+          ${t(a, "bio") ? `<p class="em-artist__bio">${esc(t(a, "bio")).replace(/\n/g, "<br>")}</p>` : ""}
+          <div class="release-links em-artist__links">${(a.links || []).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div>
+        </div>`).join("")}</div>` : ""}
     `;
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");

@@ -949,6 +949,49 @@ ul { list-style: none; }
 }
 .em-gallery img:hover { opacity: .8; }
 
+/* ニュース記事内：アーティスト紹介カード（ロゴ＋SNS） */
+.em-artists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+@media (max-width: 520px) { .em-artists { grid-template-columns: 1fr; } }
+.em-artist {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.em-artist__logo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+.em-artist__name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--bone);
+}
+.em-artist__bio {
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--ash);
+  text-align: left;
+  margin: -2px 0 2px;
+}
+.em-artist__links {
+  margin-top: 0;
+  justify-content: center;
+}
+
 /* ============ 写真ライトボックス ============ */
 .lightbox {
   position: fixed;

@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "HereItAgain",
+    artist: "AKLA & LESTONE",
+    type: "SINGLE",
+    date: "2026-06-18",
+    cover: "https://f4.bcbits.com/img/a2818887799_10.jpg",
+    description: "韓国拠点のAKLAとLESTONEによる、ミニマムかつアグレッシブな次世代Bass musicコラボトラック",
+    description_en: "A next-generation bass music collaboration by South Korea-based AKLA and LESTONE — minimal yet aggressive.",
+    links: {
+      stream:   "https://www.submithub.com/link/hereitagain",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/hereitagain"
+    }
+  },
+  {
     title: "SURGE EP",
     artist: "21SWINGS",
     type: "EP",
@@ -1057,6 +1070,48 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-06-18",
+    category: "RELEASE",
+    title: "AKLA & LESTONE – HereItAgain 配信開始",
+    title_en: "AKLA & LESTONE – HereItAgain Out Now",
+    body: "韓国拠点のAKLAとLESTONEによるコラボシングル「HereItAgain」をデジタルリリース。ミニマムかつアグレッシブな次世代Bass musicトラック。",
+    body_en: "A collaborative single \"HereItAgain\" by South Korea-based AKLA and LESTONE, out digitally. A minimal yet aggressive, next-generation bass music track.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a2818887799_10.jpg",
+    article: [
+      "2026年6月18日、AKLA & LESTONEがWE DIE YOUNGからシングル「HereItAgain」をデジタルリリースしました。",
+      "On June 18, 2026, AKLA & LESTONE released the single “HereItAgain” digitally from WE DIE YOUNG.",
+      "韓国拠点のAKLAとLESTONEによる、ミニマムかつアグレッシブな次世代Bass musicコラボトラック。",
+      "A next-generation bass music collaboration by South Korea-based AKLA and LESTONE — minimal yet aggressive."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/hereitagain" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/hereitagain" }
+    ],
+    artistCards: [
+      {
+        name: "AKLA",
+        logo: "assets/images/artists/akla-logo.png",
+        bio: "AKLAは、韓国を拠点に活動するベースミュージック・プロデューサー兼DJ。トラップやブレイクビーツを軸に、Rawな質感のサウンドと深みのある響くベースラインを追求している。",
+        bio_en: "AKLA is a bass music producer and DJ based in South Korea. Focusing on Trap and Breakbeat, he explores raw textures and deep, resonating basslines.",
+        links: [
+          { label: "Instagram", url: "https://www.instagram.com/aklaismint/" },
+          { label: "SoundCloud", url: "https://soundcloud.com/aklaismint" }
+        ]
+      },
+      {
+        name: "LESTONE",
+        logo: "assets/images/artists/lestone-logo.png",
+        bio: "LESTONEは韓国を拠点に活動するBass Musicプロデューサー／DJ。\nDubstep、Hybrid Trap、UK Bassを中心に、重厚なサウンドデザインと幅広い音楽的バックグラウンドを融合させた独自のサウンドを展開している。\n国内外のアーティストやレーベルとのコラボレーションを重ねながら、常に新たな表現を追求し続けている。",
+        bio_en: "LESTONE is a South Korean bass music producer and DJ.\nFocused on Dubstep, Hybrid Trap, and UK Bass, he combines powerful sound design with genre-blending influences to create his own unique style. He continues to collaborate with artists and labels around the world while expanding his musical vision.",
+        links: [
+          { label: "Instagram", url: "https://www.instagram.com/lestone_kor/" },
+          { label: "SoundCloud", url: "https://soundcloud.com/ston-ho" }
+        ]
+      }
+    ]
+  },
   {
     date: "2026-04-27",
     category: "RELEASE",
