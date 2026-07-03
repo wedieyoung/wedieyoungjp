@@ -84,7 +84,7 @@ const ABOUT = {
   lead: "The New Age Resonates.",
 
   // ▼ ABOUTページの背景画像（""にすると背景なし）
-  backgroundImage: "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-211-scaled.jpg",
+  backgroundImage: "assets/images/uploads/0628WDY-211-scaled.webp",
 
   // ▼ 本文（段落ごとに "..." を1つ。段落を増やす場合はカンマで追加）
   //    日本語は paragraphs、英語は paragraphs_en に同じ数だけ書きます。
@@ -149,7 +149,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2025-10-27",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
+    cover: "assets/images/uploads/WDY7_ARTWORK_01-1-1024x1024.webp",
     description: "THE NEW AGE RESONATES — サイバーサウンドを吸収し更に進化した、日本発Trap/Bassコンピレーション第7弾。全21曲収録の\"Cyber-Modern EDM Trap\"コンセプトアルバム。",
     description_en: "THE NEW AGE RESONATES — the 7th Japan-born Trap/Bass compilation, evolved further by absorbing cyber sounds. A 21-track \"Cyber-Modern EDM Trap\" concept album.",
     links: {
@@ -163,7 +163,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2025-10-27",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/10/RAVEMODEvol1-Artwork.png",
+    cover: "assets/images/uploads/RAVEMODEvol1-Artwork.webp",
     description: "ENTER THE RAVE — WE DIE YOUNGが送る新コンピレーションシリーズが始動！聴く者を強制的に踊らせるRAVEサウンドで内なる衝動を解放せよ。全8曲収録。",
     description_en: "ENTER THE RAVE — a new compilation series from WE DIE YOUNG begins! Unleash your inner impulse with relentless RAVE sounds that make you move. 8 tracks.",
     links: {
@@ -177,7 +177,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2025-05-24",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol6-1024x1024.jpg",
+    cover: "assets/images/uploads/0626WDY_vol6-1024x1024.webp",
     description: "日本発Trap/Bassコンピレーション第6弾。",
     description_en: "The 6th Japan-born Trap/Bass compilation.",
     links: {
@@ -191,7 +191,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2024-11-16",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol5-1024x1024.jpg",
+    cover: "assets/images/uploads/0626WDY_vol5-1024x1024.webp",
     description: "日本発Trap/Bassコンピレーション第5弾。",
     description_en: "The 5th Japan-born Trap/Bass compilation.",
     links: {
@@ -205,7 +205,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2024-06-01",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol4-1024x1024.jpg",
+    cover: "assets/images/uploads/0626WDY_vol4-1024x1024.webp",
     description: "日本発Trap/Bassコンピレーション第4弾。",
     description_en: "The 4th Japan-born Trap/Bass compilation.",
     links: {
@@ -219,7 +219,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2023-10-29",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol3-1024x1024.jpg",
+    cover: "assets/images/uploads/0626WDY_vol3-1024x1024.webp",
     description: "サイバーな質感で異彩を放つ、日本発Trap/Bassコンピレーション第3弾。",
     description_en: "The 3rd Japan-born Trap/Bass compilation, standing out with its cyber texture.",
     links: {
@@ -233,7 +233,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2023-07-01",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol2-1024x1024.jpg",
+    cover: "assets/images/uploads/0626WDY_vol2-1024x1024.webp",
     description: "日本発Trap/Bassコンピレーション第2弾。",
     description_en: "The 2nd Japan-born Trap/Bass compilation.",
     links: {
@@ -247,7 +247,7 @@ const RELEASES = [
     artist: "Various Artists",
     type: "COMPILATION",
     date: "2022-11-04",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_vol1-1024x1024.jpg",
+    cover: "assets/images/uploads/0626WDY_vol1-1024x1024.webp",
     description: "すべてはここから始まった。レーベルコンピレーション第1弾。",
     description_en: "Where it all began. The label's first compilation.",
     links: {
@@ -276,7 +276,7 @@ const RELEASES = [
     artist: "21SWINGS",
     type: "EP",
     date: "2026-04-10",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2026/04/WDY036-ver2-brown-scaled.png",
+    cover: "assets/images/uploads/WDY036-ver2-brown-scaled.webp",
     description: "シンガポールのBass Musicアーティスト21SWINGSによるFestival Trap EP。",
     description_en: "A Festival Trap EP by Singapore bass music artist 21SWINGS.",
     links: {
@@ -289,7 +289,7 @@ const RELEASES = [
     artist: "Viticz & Namya",
     type: "SINGLE",
     date: "2026-03-27",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2026/03/WDY035-scaled.jpg",
+    cover: "assets/images/uploads/WDY035-scaled.webp",
     description: "シンガポールのViticzとインドネシアのNamyaによるコラボシングル。",
     description_en: "A collaborative single by Viticz (Singapore) and Namya (Indonesia).",
     links: {
@@ -302,7 +302,7 @@ const RELEASES = [
     artist: "21SWINGS",
     type: "SINGLE",
     date: "2026-01-30",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2026/02/WDY034-v1-scaled.png",
+    cover: "assets/images/uploads/WDY034-v1-scaled.webp",
     description: "シンガポールのBass Musicアーティスト21SWINGSのシングル。",
     description_en: "A single by Singapore bass music artist 21SWINGS.",
     links: {
@@ -315,7 +315,7 @@ const RELEASES = [
     artist: "Voxelkana",
     type: "SINGLE",
     date: "2026-01-09",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2026/01/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.png",
+    cover: "assets/images/uploads/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.webp",
     description: "中国を拠点にアトモスフェリックかつフューチャリスティックなサウンドを追求するVoxelkanaのシングル。",
     description_en: "A single by Voxelkana, a China-based producer pursuing atmospheric, futuristic sounds.",
     links: {
@@ -328,7 +328,7 @@ const RELEASES = [
     artist: "Yuzac",
     type: "SINGLE",
     date: "2025-12-12",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY032-artwork-scaled.png",
+    cover: "assets/images/uploads/WDY032-artwork-scaled.webp",
     description: "RL GrimeやSkrillexに影響を受けた東京拠点のプロデューサーYuzacのシングル。",
     description_en: "A single by Yuzac, a Tokyo-based producer influenced by RL Grime and Skrillex.",
     links: {
@@ -341,7 +341,7 @@ const RELEASES = [
     artist: "KANAKA & LAGnaf",
     type: "SINGLE",
     date: "2025-12-05",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY031_Artwork_fix-scaled.png",
+    cover: "assets/images/uploads/WDY031_Artwork_fix-scaled.webp",
     description: "ハワイ出身LA拠点のKANAKAと韓国のLAGnafによるコラボシングル。",
     description_en: "A collaborative single by KANAKA (Hawai'i-born, LA-based) and LAGnaf (Korea).",
     links: {
@@ -354,7 +354,7 @@ const RELEASES = [
     artist: "Kawashiii",
     type: "SINGLE",
     date: "2025-11-16",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY-028-Artwork.png",
+    cover: "assets/images/uploads/WDY-028-Artwork.webp",
     description: "マルチジャンルを制作する東京在住プロデューサーKawashiiiのシングル。",
     description_en: "A single by Kawashiii, a Tokyo-based producer working across many genres.",
     links: {
@@ -367,7 +367,7 @@ const RELEASES = [
     artist: "rejection",
     type: "SINGLE",
     date: "2025-09-19",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/09/WDY-027-Artwork.png",
+    cover: "assets/images/uploads/WDY-027-Artwork.webp",
     description: "レーベルオーナーrejectionによるシングル。",
     description_en: "A single by label owner rejection.",
     links: {
@@ -380,7 +380,7 @@ const RELEASES = [
     artist: "XeroC'tok",
     type: "SINGLE",
     date: "2025-08-22",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/08/XeroCtok-BALLADE.jpg",
+    cover: "assets/images/uploads/XeroCtok-BALLADE.webp",
     description: "韓国を拠点にGarageとTrapを制作するXeroC'tokのデビューシングル。",
     description_en: "The debut single by XeroC'tok, a Korea-based producer making Garage and Trap.",
     links: {
@@ -393,7 +393,7 @@ const RELEASES = [
     artist: "ZiXS",
     type: "SINGLE",
     date: "2025-08-09",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/08/a3054737185_10.jpg",
+    cover: "assets/images/uploads/a3054737185_10.webp",
     description: "タイ出身のEDMプロデューサーZiXSによるシングル。",
     description_en: "A single by ZiXS, an EDM producer from Thailand.",
     links: {
@@ -406,7 +406,7 @@ const RELEASES = [
     artist: "Lactar1uz",
     type: "SINGLE",
     date: "2025-07-26",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-024-fixed-scaled.png",
+    cover: "assets/images/uploads/WDY-024-fixed-scaled.webp",
     description: "Bass Musicを中心に制作している日本在住プロデューサーLactar1uzのデビューシングル。",
     description_en: "The debut single by Lactar1uz, a Japan-based producer focused on bass music.",
     links: {
@@ -419,7 +419,7 @@ const RELEASES = [
     artist: "Butterfly Zone & LAGnaf",
     type: "SINGLE",
     date: "2025-07-12",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/Butterfly-Zone-LAGnaf-Ghostmode-scaled.jpeg",
+    cover: "assets/images/uploads/Butterfly-Zone-LAGnaf-Ghostmode-scaled.webp",
     description: "Butterfly ZoneとLAGnafによるコラボシングル。",
     description_en: "A collaborative single by Butterfly Zone and LAGnaf.",
     links: {
@@ -432,7 +432,7 @@ const RELEASES = [
     artist: "ECLAIR",
     type: "SINGLE",
     date: "2025-07-05",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-022-artwork-scaled.jpg",
+    cover: "assets/images/uploads/WDY-022-artwork-scaled.webp",
     description: "クリアなサウンドと低音が炸裂するECLAIRのシングル。",
     description_en: "A single by ECLAIR, bursting with crisp sound and heavy bass.",
     links: {
@@ -445,7 +445,7 @@ const RELEASES = [
     artist: "rejection & WATARU",
     type: "SINGLE",
     date: "2025-06-26",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_starfall.jpg",
+    cover: "assets/images/uploads/0626WDY_starfall.webp",
     description: "rejectionとWATARUによるコラボシングル。",
     description_en: "A collaborative single by rejection and WATARU.",
     links: {
@@ -458,7 +458,7 @@ const RELEASES = [
     artist: "MTGD",
     type: "EP",
     date: "2025-06-20",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DEFINED.jpg",
+    cover: "assets/images/uploads/0626WDY_-DEFINED.webp",
     description: "台湾在住のDJ/ProducerであるMTGDのEP。",
     description_en: "An EP by MTGD, a Taiwan-based DJ/producer.",
     links: {
@@ -471,7 +471,7 @@ const RELEASES = [
     artist: "Xeno",
     type: "SINGLE",
     date: "2025-06-07",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_reality.jpg",
+    cover: "assets/images/uploads/0626WDY_reality.webp",
     description: "韓国在住のプロデューサーXenoのシングル。",
     description_en: "A single by Xeno, a Korea-based producer.",
     links: {
@@ -484,7 +484,7 @@ const RELEASES = [
     artist: "vishnu okuno",
     type: "ALBUM",
     date: "2025-05-31",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-ANGELvoid.jpg",
+    cover: "assets/images/uploads/0626WDY_-ANGELvoid.webp",
     description: "WE DIE YOUNG中心メンバーvishnu okunoのアルバム。",
     description_en: "An album by vishnu okuno, a core WE DIE YOUNG member.",
     links: {
@@ -498,7 +498,7 @@ const RELEASES = [
     artist: "MTGD",
     type: "SINGLE",
     date: "2025-03-27",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_RUN-DAT.jpg",
+    cover: "assets/images/uploads/0626WDY_RUN-DAT.webp",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
     description_en: "A single by MTGD, a Taiwan-based DJ/producer.",
     links: {
@@ -511,7 +511,7 @@ const RELEASES = [
     artist: "Violet.MKII & GREED",
     type: "SINGLE",
     date: "2025-02-22",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_Karma-Strike.jpg",
+    cover: "assets/images/uploads/0626WDY_Karma-Strike.webp",
     description: "Violet.MKIIとGREEDによるコラボシングル。",
     description_en: "A collaborative single by Violet.MKII and GREED.",
     links: {
@@ -524,7 +524,7 @@ const RELEASES = [
     artist: "MOSHIMOSH",
     type: "SINGLE",
     date: "2025-02-01",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-WITH-ME-NOW.jpg",
+    cover: "assets/images/uploads/0626WDY_-WITH-ME-NOW.webp",
     description: "インドネシア在住のDJ/ProducerであるMOSHIMOSHのシングル",
     description_en: "A single by MOSHIMOSH, an Indonesia-based DJ/producer.",
     links: {
@@ -537,7 +537,7 @@ const RELEASES = [
     artist: "MTGD",
     type: "SINGLE",
     date: "2024-12-21",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-DROP-IT.jpg",
+    cover: "assets/images/uploads/0626WDY_-DROP-IT.webp",
     description: "台湾在住のDJ/ProducerであるMTGDのシングル。",
     description_en: "A single by MTGD, a Taiwan-based DJ/producer.",
     links: {
@@ -550,7 +550,7 @@ const RELEASES = [
     artist: "Douji Wiix",
     type: "SINGLE",
     date: "2024-12-13",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Mental.jpg",
+    cover: "assets/images/uploads/0626WDY_-Mental.webp",
     description: "島根県在住のアーティストDouji Wiixのシングル。",
     description_en: "A single by Douji Wiix, an artist based in Shimane, Japan.",
     links: {
@@ -563,7 +563,7 @@ const RELEASES = [
     artist: "VOLTA",
     type: "SINGLE",
     date: "2024-09-28",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_SIRENS.jpg",
+    cover: "assets/images/uploads/0626WDY_SIRENS.webp",
     description: "VOLTAのシングル。",
     description_en: "A single by VOLTA.",
     links: {
@@ -576,7 +576,7 @@ const RELEASES = [
     artist: "vishnu okuno",
     type: "SINGLE",
     date: "2024-09-07",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_we-fall-again.jpg",
+    cover: "assets/images/uploads/0626WDY_we-fall-again.webp",
     description: "vishnu okunoのシングル。",
     description_en: "A single by vishnu okuno.",
     links: {
@@ -589,7 +589,7 @@ const RELEASES = [
     artist: "Exodynamix",
     type: "SINGLE",
     date: "2024-08-24",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_Radiance.jpg",
+    cover: "assets/images/uploads/0626WDY_Radiance.webp",
     description: "Exodynamixのシングル。",
     description_en: "A single by Exodynamix.",
     links: {
@@ -615,7 +615,7 @@ const RELEASES = [
     artist: "sh0wtime",
     type: "SINGLE",
     date: "2024-06-21",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_U-FEEL-THE-SAME.jpg",
+    cover: "assets/images/uploads/0626WDY_U-FEEL-THE-SAME.webp",
     description: "sh0wtimeのシングル。",
     description_en: "A single by sh0wtime.",
     links: {
@@ -628,7 +628,7 @@ const RELEASES = [
     artist: "The Herb Shop",
     type: "EP",
     date: "2024-03-02",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_IRISCTRL.jpg",
+    cover: "assets/images/uploads/0626WDY_IRISCTRL.webp",
     description: "The Herb ShopのEP。",
     description_en: "An EP by The Herb Shop.",
     links: {
@@ -641,7 +641,7 @@ const RELEASES = [
     artist: "rejection",
     type: "EP",
     date: "2023-09-19",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/06/0626WDY_-Heart-AttackFar-East.jpg",
+    cover: "assets/images/uploads/0626WDY_-Heart-AttackFar-East.webp",
     description: "レーベルオーナーrejectionによるEP。",
     description_en: "An EP by label owner rejection.",
     links: {
@@ -656,7 +656,7 @@ const RELEASES = [
     artist: "WE DIE YOUNG",
     type: "SAMPLE PACK",
     date: "2025-07-21",
-    cover: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-ppvol1_thumbnail_square-scaled.png",
+    cover: "assets/images/uploads/WDY-ppvol1_thumbnail_square-scaled.webp",
     description: "WE DIE YOUNGによるプロデューサー向けサンプルパック第1弾。",
     description_en: "The first producer-oriented sample pack from WE DIE YOUNG.",
     links: {
@@ -704,7 +704,7 @@ const EVENTS = [
     venue: "ZEROTOKYO（新宿）",
     venue_en: "ZEROTOKYO (Shinjuku)",
     lineup: ["JUELZ", "WE DIE YOUNG (rejection, vishnu okuno, crp.)"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2026/03/HDSZDPhaYAA-Xa8.jpeg",
+    flyer: "assets/images/uploads/HDSZDPhaYAA-Xa8.webp",
     ticketUrl: "",
     videoUrl: "",
     report_en: [
@@ -730,7 +730,7 @@ const EVENTS = [
     venue: "ROPPONGI CUBE（六本木）",
     venue_en: "ROPPONGI CUBE (Roppongi)",
     lineup: ["MTGD (from Taiwan)", "crp.", "Douji Wiix", "ECLAIR", "KO3", "Redsign", "rejection", "vishnu okuno", "WE DIE YOUNG B2B", "Vocal: XiN", "VJ: COCOA* / SoU"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY-OTF-2025flyer_v2-scaled.jpg",
+    flyer: "assets/images/uploads/WDY-OTF-2025flyer_v2-scaled.webp",
     ticketUrl: "",
     videoUrl: "",
     report_en: [
@@ -762,34 +762,34 @@ const EVENTS = [
       "Photo: mika"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00796-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00828-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00871-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00931-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00863-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00843-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00856-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC00909-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01192-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01126-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01567-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01258-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01815-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01796-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02002-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC01940-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02234-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02292-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02443-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02660-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02745-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02753-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02869-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03005-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC02914-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03170-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03226-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/11/DSC03249-1024x576.jpg"
+      "assets/images/uploads/DSC00796-1024x576.webp",
+      "assets/images/uploads/DSC00828-1024x576.webp",
+      "assets/images/uploads/DSC00871-1024x576.webp",
+      "assets/images/uploads/DSC00931-1024x576.webp",
+      "assets/images/uploads/DSC00863-1024x576.webp",
+      "assets/images/uploads/DSC00843-1024x576.webp",
+      "assets/images/uploads/DSC00856-1024x576.webp",
+      "assets/images/uploads/DSC00909-1024x576.webp",
+      "assets/images/uploads/DSC01192-1024x576.webp",
+      "assets/images/uploads/DSC01126-1024x576.webp",
+      "assets/images/uploads/DSC01567-1024x576.webp",
+      "assets/images/uploads/DSC01258-1024x576.webp",
+      "assets/images/uploads/DSC01815-1024x576.webp",
+      "assets/images/uploads/DSC01796-1024x576.webp",
+      "assets/images/uploads/DSC02002-1024x576.webp",
+      "assets/images/uploads/DSC01940-1024x576.webp",
+      "assets/images/uploads/DSC02234-1024x576.webp",
+      "assets/images/uploads/DSC02292-1024x576.webp",
+      "assets/images/uploads/DSC02443-1024x576.webp",
+      "assets/images/uploads/DSC02660-1024x576.webp",
+      "assets/images/uploads/DSC02745-1024x576.webp",
+      "assets/images/uploads/DSC02753-1024x576.webp",
+      "assets/images/uploads/DSC02869-1024x576.webp",
+      "assets/images/uploads/DSC03005-1024x576.webp",
+      "assets/images/uploads/DSC02914-1024x576.webp",
+      "assets/images/uploads/DSC03170-1024x576.webp",
+      "assets/images/uploads/DSC03226-1024x576.webp",
+      "assets/images/uploads/DSC03249-1024x576.webp"
     ]
   },
   {
@@ -799,7 +799,7 @@ const EVENTS = [
     venue: "ZEROTOKYO（新宿）",
     venue_en: "ZEROTOKYO (Shinjuku)",
     lineup: ["WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2025/09/Gxj4dXvagAAjkUg.jpeg",
+    flyer: "assets/images/uploads/Gxj4dXvagAAjkUg.webp",
     ticketUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=LSUGdlfKpS8",
     report_en: [
@@ -823,22 +823,22 @@ const EVENTS = [
       "Video Edit: rejection"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3307-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3228-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3167-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3221-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3193-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3201-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3219-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3230-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3206-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3200-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3237-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3244-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3308-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3274-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3190-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/IMG_3222-1-1024x683.jpg"
+      "assets/images/uploads/IMG_3307-1024x683.webp",
+      "assets/images/uploads/IMG_3228-1024x683.webp",
+      "assets/images/uploads/IMG_3167-1024x683.webp",
+      "assets/images/uploads/IMG_3221-1024x683.webp",
+      "assets/images/uploads/IMG_3193-1024x683.webp",
+      "assets/images/uploads/IMG_3201-1024x683.webp",
+      "assets/images/uploads/IMG_3219-1024x683.webp",
+      "assets/images/uploads/IMG_3230-1024x683.webp",
+      "assets/images/uploads/IMG_3206-1024x683.webp",
+      "assets/images/uploads/IMG_3200-1024x683.webp",
+      "assets/images/uploads/IMG_3237-1024x683.webp",
+      "assets/images/uploads/IMG_3244-1024x683.webp",
+      "assets/images/uploads/IMG_3308-1024x683.webp",
+      "assets/images/uploads/IMG_3274-1024x683.webp",
+      "assets/images/uploads/IMG_3190-1024x683.webp",
+      "assets/images/uploads/IMG_3222-1-1024x683.webp"
     ]
   },
   {
@@ -848,7 +848,7 @@ const EVENTS = [
     venue: "Sel Octagon Tokyo（六本木）",
     venue_en: "Sel Octagon Tokyo (Roppongi)",
     lineup: ["WE DIE YOUNG (Redsign, rejection, vishnu okuno)"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/0717octagon.jpeg",
+    flyer: "assets/images/uploads/0717octagon.webp",
     ticketUrl: "",
     videoUrl: "",
     report_en: [
@@ -872,14 +872,14 @@ const EVENTS = [
       "Photo: mika"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-255-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-228-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-217-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-267-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-251-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-247-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-263-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/0628WDY-278-1024x576.jpg"
+      "assets/images/uploads/0628WDY-255-1024x576.webp",
+      "assets/images/uploads/0628WDY-228-1024x576.webp",
+      "assets/images/uploads/0628WDY-217-1024x576.webp",
+      "assets/images/uploads/0628WDY-267-1024x576.webp",
+      "assets/images/uploads/0628WDY-251-1024x576.webp",
+      "assets/images/uploads/0628WDY-247-1024x576.webp",
+      "assets/images/uploads/0628WDY-263-1024x576.webp",
+      "assets/images/uploads/0628WDY-278-1024x576.webp"
     ]
   },
   {
@@ -889,7 +889,7 @@ const EVENTS = [
     venue: "MIRAINAGOYA（名古屋）",
     venue_en: "MIRAINAGOYA (Nagoya)",
     lineup: ["WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/dod4bass.jpeg",
+    flyer: "assets/images/uploads/dod4bass.webp",
     ticketUrl: "",
     videoUrl: "",
     report_en: [
@@ -911,26 +911,26 @@ const EVENTS = [
       "Video / Video Edit: mika"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-36-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-40-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-41-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-59-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-61-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-63-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-64-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-65-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-67-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-68-576x1024.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-71-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-76-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-83-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-93-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-97-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-101-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-109-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-113-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-121-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/09/20250705_DoD4Bass-125-1024x576.jpg"
+      "assets/images/uploads/20250705_DoD4Bass-36-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-40-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-41-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-59-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-61-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-63-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-64-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-65-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-67-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-68-576x1024.webp",
+      "assets/images/uploads/20250705_DoD4Bass-71-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-76-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-83-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-93-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-97-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-101-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-109-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-113-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-121-1024x576.webp",
+      "assets/images/uploads/20250705_DoD4Bass-125-1024x576.webp"
     ]
   },
   {
@@ -940,7 +940,7 @@ const EVENTS = [
     venue: "幕張メッセ",
     venue_en: "Makuhari Messe",
     lineup: ["WATARU", "WE DIE YOUNG (KO3, rejection, vishnu okuno)"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDJF2025.png",
+    flyer: "assets/images/uploads/WDJF2025.webp",
     ticketUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=HAyQS43M2eI",
     report_en: [
@@ -968,26 +968,26 @@ const EVENTS = [
       "Video Edit: mika"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-006-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-039-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-077-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-066-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-033-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-074-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-091-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-103-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-047-1-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-043-1-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-188-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-147-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-109-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-056-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-114-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-002-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-041-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-062-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-042-1024x576.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/0628WDY-202-scaled.jpg"
+      "assets/images/uploads/0628WDY-006-1024x576.webp",
+      "assets/images/uploads/0628WDY-039-1024x576.webp",
+      "assets/images/uploads/0628WDY-077-1024x683.webp",
+      "assets/images/uploads/0628WDY-066-1024x576.webp",
+      "assets/images/uploads/0628WDY-033-1024x576.webp",
+      "assets/images/uploads/0628WDY-074-1024x683.webp",
+      "assets/images/uploads/0628WDY-091-1024x683.webp",
+      "assets/images/uploads/0628WDY-103-1024x683.webp",
+      "assets/images/uploads/0628WDY-047-1-1024x683.webp",
+      "assets/images/uploads/0628WDY-043-1-1024x576.webp",
+      "assets/images/uploads/0628WDY-188-1024x683.webp",
+      "assets/images/uploads/0628WDY-147-1024x683.webp",
+      "assets/images/uploads/0628WDY-109-1024x683.webp",
+      "assets/images/uploads/0628WDY-056-1024x576.webp",
+      "assets/images/uploads/0628WDY-114-1024x576.webp",
+      "assets/images/uploads/0628WDY-002-1024x576.webp",
+      "assets/images/uploads/0628WDY-041-1024x576.webp",
+      "assets/images/uploads/0628WDY-062-1024x576.webp",
+      "assets/images/uploads/0628WDY-042-1024x576.webp",
+      "assets/images/uploads/0628WDY-202-scaled.webp"
     ]
   },
   {
@@ -997,7 +997,7 @@ const EVENTS = [
     venue: "ROPPONGI CUBE（六本木）",
     venue_en: "ROPPONGI CUBE (Roppongi)",
     lineup: ["Redsign", "ESAI", "MK", "vishnu okuno", "crayvxn", "VOLTA", "Letsu", "Dubscribe", "rejection & KO3", "Vocal: XiN"],
-    flyer: "https://wedieyoung.jp/wp-content/uploads/2025/06/52143FD9-F6E3-4E0B-95C5-AE5C2216CC2C.jpg",
+    flyer: "assets/images/uploads/52143FD9-F6E3-4E0B-95C5-AE5C2216CC2C.webp",
     ticketUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=bUIHl26jgw0",
     report_en: [
@@ -1033,30 +1033,30 @@ const EVENTS = [
       "Video Edit: rejection"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9464-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9469-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9667-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9831-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9944-684x1024.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0071-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0234-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0239-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0398-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9515-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9544-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9742-684x1024.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9881-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9998-1-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0088-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0186-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0325-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0443-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0645-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0656-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_9752-1024x683.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0498-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0591-1024x684.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/07/D75_0699-1024x684.jpg"
+      "assets/images/uploads/D75_9464-1024x684.webp",
+      "assets/images/uploads/D75_9469-1024x684.webp",
+      "assets/images/uploads/D75_9667-1024x683.webp",
+      "assets/images/uploads/D75_9831-1024x684.webp",
+      "assets/images/uploads/D75_9944-684x1024.webp",
+      "assets/images/uploads/D75_0071-1024x684.webp",
+      "assets/images/uploads/D75_0234-1024x684.webp",
+      "assets/images/uploads/D75_0239-1024x684.webp",
+      "assets/images/uploads/D75_0398-1024x684.webp",
+      "assets/images/uploads/D75_9515-1024x684.webp",
+      "assets/images/uploads/D75_9544-1024x684.webp",
+      "assets/images/uploads/D75_9742-684x1024.webp",
+      "assets/images/uploads/D75_9881-1024x684.webp",
+      "assets/images/uploads/D75_9998-1-1024x684.webp",
+      "assets/images/uploads/D75_0088-1024x684.webp",
+      "assets/images/uploads/D75_0186-1024x684.webp",
+      "assets/images/uploads/D75_0325-1024x684.webp",
+      "assets/images/uploads/D75_0443-1024x684.webp",
+      "assets/images/uploads/D75_0645-1024x684.webp",
+      "assets/images/uploads/D75_0656-1024x684.webp",
+      "assets/images/uploads/D75_9752-1024x683.webp",
+      "assets/images/uploads/D75_0498-1024x684.webp",
+      "assets/images/uploads/D75_0591-1024x684.webp",
+      "assets/images/uploads/D75_0699-1024x684.webp"
     ]
   }
 ];
@@ -1164,7 +1164,7 @@ const NEWS = [
     body: "世界中のクラブやフェスでプレイされるEDMアーティスト21SWINGSが、WE DIE YOUNGからEP「SURGE」をデジタルリリース。",
     body_en: "21SWINGS, an EDM artist played at clubs and festivals worldwide, releases the EP \"SURGE\" digitally on WE DIE YOUNG.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2026/04/WDY036-ver2-brown-scaled.png",
+    image: "assets/images/uploads/WDY036-ver2-brown-scaled.webp",
     article: [
       "2026年4月10日、21SWINGSがWE DIE YOUNGからEP「SURGE」をデジタルリリースしました。",
       "On April 10, 2026, 21SWINGS released the EP “SURGE” digitally from WE DIE YOUNG.",
@@ -1188,7 +1188,7 @@ const NEWS = [
     body: "シンガポールのViticzとインドネシアのNamyaによるコラボシングル「Rangda」をデジタルリリース。",
     body_en: "A collaborative single \"Rangda\" by Viticz (Singapore) and Namya (Indonesia), out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2026/03/WDY035-scaled.jpg",
+    image: "assets/images/uploads/WDY035-scaled.webp",
     article: [
       "2026年3月27日、Viticz & NamyaがWE DIE YOUNGからシングル「Rangda」をデジタルリリースしました。",
       "On March 27, 2026, Viticz & Namya released the single “Rangda” digitally from WE DIE YOUNG.",
@@ -1233,7 +1233,7 @@ const NEWS = [
     body: "フェスティバルEDMとベースミュージックを融合する21SWINGSのシングル「BREAK THE BASS」をデジタルリリース。",
     body_en: "21SWINGS, fusing festival EDM and bass music, releases the single \"BREAK THE BASS\" digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2026/02/WDY034-v1-scaled.png",
+    image: "assets/images/uploads/WDY034-v1-scaled.webp",
     article: [
       "2026年1月30日、21SWINGSがWE DIE YOUNGからシングル「BREAK THE BASS」をデジタルリリースしました。",
       "On January 30, 2026, 21SWINGS released the single “BREAK THE BASS” digitally from WE DIE YOUNG.",
@@ -1257,7 +1257,7 @@ const NEWS = [
     body: "中国を拠点にアトモスフェリックかつフューチャリスティックなサウンドを追求するVoxelkanaのシングル「digital[F10W]」をデジタルリリース。",
     body_en: "A single \"digital[F10W]\" by Voxelkana, a China-based producer pursuing atmospheric, futuristic sounds, out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2026/01/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.png",
+    image: "assets/images/uploads/8d0beaaa9e129d0e95ae16b76dbefdac-scaled.webp",
     article: [
       "2026年1月9日、VoxelkanaがWE DIE YOUNGからシングル「digital[F10W]」をデジタルリリースしました。",
       "On January 9, 2026, Voxelkana released the single “digital[F10W]” digitally from WE DIE YOUNG.",
@@ -1279,7 +1279,7 @@ const NEWS = [
     body: "レーベルコンピレーションアルバム「WE DIE YOUNG vol.7」がデジタルリリース。Trap/Hardwave等のBass Musicを軸に全21曲を収録した\"Cyber-Modern EDM Trap\"コンセプトアルバム。",
     body_en: "The label compilation album \"WE DIE YOUNG vol.7\" is out digitally. A 21-track \"Cyber-Modern EDM Trap\" concept album built around bass music like Trap and Hardwave.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
+    image: "assets/images/uploads/WDY7_ARTWORK_01-1-1024x1024.webp",
     article: [
       "2025年12月19日、WE DIE YOUNGのレーベルコンピレーションアルバム「WE DIE YOUNG vol.7」がデジタルリリースされました。",
       "On December 19, 2025, WE DIE YOUNG released its label compilation album “WE DIE YOUNG vol.7”.",
@@ -1307,7 +1307,7 @@ const NEWS = [
     body: "RL GrimeやSkrillexに影響を受けた東京拠点のプロデューサーYuzacのシングル「feel it」をデジタルリリース。",
     body_en: "A single \"feel it\" by Yuzac, a Tokyo-based producer influenced by RL Grime and Skrillex, out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY032-artwork-scaled.png",
+    image: "assets/images/uploads/WDY032-artwork-scaled.webp",
     article: [
       "2025年12月12日、YuzacがWE DIE YOUNGからシングル「feel it」をデジタルリリースしました。",
       "On December 12, 2025, Yuzac released the single “feel it” digitally from WE DIE YOUNG.",
@@ -1329,7 +1329,7 @@ const NEWS = [
     body: "ハワイ出身LA拠点のKANAKAと韓国のLAGnafによるコラボシングル「DONTPLAY」をデジタルリリース。",
     body_en: "A collaborative single \"DONTPLAY\" by KANAKA (Hawai'i-born, LA-based) and LAGnaf (Korea), out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY031_Artwork_fix-scaled.png",
+    image: "assets/images/uploads/WDY031_Artwork_fix-scaled.webp",
     article: [
       "2025年12月5日、LAGnaf & KANAKAがWE DIE YOUNGからシングル「DONTPLAY」をデジタルリリースしました。",
       "On December 5, 2025, LAGnaf & KANAKA released the single “DONTPLAY” digitally from WE DIE YOUNG.",
@@ -1370,7 +1370,7 @@ const NEWS = [
     body: "サイバーな質感を軸に制作する東京在住プロデューサーKawashiiiのシングル「Medication」をデジタルリリース。",
     body_en: "A single \"Medication\" by Kawashiii, a Tokyo-based producer working around a cyber texture, out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/12/WDY-028-Artwork.png",
+    image: "assets/images/uploads/WDY-028-Artwork.webp",
     article: [
       "2025年11月16日、KawashiiiがWE DIE YOUNGからシングル「Medication」をデジタルリリースしました。",
       "On November 16, 2025, Kawashiii released the single “Medication” digitally from WE DIE YOUNG.",
@@ -1392,7 +1392,7 @@ const NEWS = [
     body: "最新コンピレーション「WE DIE YOUNG vol.7」デザインのTシャツが数量限定で発売。Size: FREE (XL) / ¥4,000。",
     body_en: "A T-shirt featuring the latest compilation \"WE DIE YOUNG vol.7\" design, on sale in limited quantities. Size: FREE (XL) / ¥4,000.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00729-scaled.jpg",
+    image: "assets/images/uploads/DSC00729-scaled.webp",
     article: [
       "2025年10月28日、WE DIE YOUNGから新しいグッズが販売！新たに出たコンピレーション “WE DIE YOUNG vol.7” デザインとなっております。数量限定発売の為、お早めにお求めください。",
       "WE DIE YOUNG vol.7 Tee [2025]\nsize: FREE (XL) / ¥4,000",
@@ -1400,13 +1400,13 @@ const NEWS = [
       "Model: rejection\nT-Shirts Design, Photo, Edit: mika"
     ],
     gallery: [
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00719-scaled.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00670-scaled.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00636-scaled.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00643-scaled.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00626-scaled.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00781-scaled-e1761546544167.jpg",
-      "https://wedieyoung.jp/wp-content/uploads/2025/10/DSC00784-scaled.jpg"
+      "assets/images/uploads/DSC00719-scaled.webp",
+      "assets/images/uploads/DSC00670-scaled.webp",
+      "assets/images/uploads/DSC00636-scaled.webp",
+      "assets/images/uploads/DSC00643-scaled.webp",
+      "assets/images/uploads/DSC00626-scaled.webp",
+      "assets/images/uploads/DSC00781-scaled-e1761546544167.webp",
+      "assets/images/uploads/DSC00784-scaled.webp"
     ],
     articleLinks: [
       { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/merch/we-die-young-vol-7-tee-2025" },
@@ -1421,7 +1421,7 @@ const NEWS = [
     body: "THE NEW AGE RESONATES — サイバーサウンドを吸収し更に進化した、日本発Trap/Bassコンピレーション第7弾。M3秋2025にて早期販売、Diverse Direct / TANO*C STORE / Bandcampで展開。",
     body_en: "THE NEW AGE RESONATES — the 7th Japan-born Trap/Bass compilation, evolved further by absorbing cyber sounds. Sold early at M3 Autumn 2025, available via Diverse Direct / TANO*C STORE / Bandcamp.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/WDY7_ARTWORK_01-1-1024x1024.png",
+    image: "assets/images/uploads/WDY7_ARTWORK_01-1-1024x1024.webp",
     article: [
       "2025年10月27日、WE DIE YOUNGからコンピレーションアルバム「WE DIE YOUNG vol.7」が発売決定＆予約開始しました。本アルバムは、2025年10月26日に行われるM3秋2025 東京流通センター 第一展示場（※カタログ購入必須）にて早期購入が可能。",
       "会場価格・Bandcamp: 3,000円 / 通販価格: 3,500円",
@@ -1443,7 +1443,7 @@ const NEWS = [
     body: "ENTER THE RAVE — 新コンセプトのコンピレーションシリーズが始動。聴く者を強制的に踊らせるRAVEサウンド全8曲を収録。",
     body_en: "ENTER THE RAVE — a new-concept compilation series begins. 8 RAVE tracks that force the listener to move.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/10/RAVEMODEvol1-Artwork.png",
+    image: "assets/images/uploads/RAVEMODEvol1-Artwork.webp",
     article: [
       "2025年10月27日、WE DIE YOUNGから新たなコンセプトのコンピレーションアルバム「RAVEMODE vol.1」が発売決定＆予約開始しました。本アルバムは、2025年10月26日に行われるM3秋2025 東京流通センター 第一展示場（※カタログ購入必須）にて早期購入が可能。",
       "会場価格・Bandcamp: 2,000円 / 通販価格: 2,500円",
@@ -1474,7 +1474,7 @@ const NEWS = [
     body: "レーベルオーナーrejectionによるシングル「HANDS UP」をデジタルリリース。",
     body_en: "A single \"HANDS UP\" by label owner rejection, out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/09/WDY-027-Artwork.png",
+    image: "assets/images/uploads/WDY-027-Artwork.webp",
     article: [
       "2025年9月19日、rejectionがWE DIE YOUNGからシングル「HANDS UP」をデジタルリリースしました。",
       "On September 19, 2025, rejection released the single “HANDS UP” digitally from WE DIE YOUNG.",
@@ -1532,7 +1532,7 @@ const NEWS = [
     body: "韓国を拠点にGarageとTrapを制作するXeroC'tokのデビューシングル「Ballade」をデジタルリリース。",
     body_en: "The debut single \"Ballade\" by XeroC'tok, a Korea-based producer making Garage and Trap, out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/08/XeroCtok-BALLADE.jpg",
+    image: "assets/images/uploads/XeroCtok-BALLADE.webp",
     article: [
       "2025年8月22日、XeroC’tokがWE DIE YOUNGから初のシングル「Ballade」をデジタルリリースしました。",
       "On August 22, 2025, XeroC’tok released his debut single “Ballade” via WE DIE YOUNG.",
@@ -1554,7 +1554,7 @@ const NEWS = [
     body: "タイ出身のEDMプロデューサーZiXSのデビューシングル「One More」をデジタルリリース。WE DIE YOUNG vol.5収録曲「MAKE ME FEEL LIKE YOU」以来のリリース。",
     body_en: "The debut single \"One More\" by Thai EDM producer ZiXS, out digitally. His first release since \"MAKE ME FEEL LIKE YOU\" on WE DIE YOUNG vol.5.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/08/a3054737185_10.jpg",
+    image: "assets/images/uploads/a3054737185_10.webp",
     article: [
       "2025年8月9日、ZiXSがWE DIE YOUNGから初のシングル「One More」をデジタルリリースしました。本作は、WE DIE YOUNG vol.5収録曲「MAKE ME FEEL LIKE YOU」以来のリリースです。",
       "On August 9, 2025, ZiXS released his debut single “One More” via WE DIE YOUNG. This marks his first release since “MAKE ME FEEL LIKE YOU,” featured on WE DIE YOUNG vol.5.",
@@ -1576,7 +1576,7 @@ const NEWS = [
     body: "TrapやDrum'n'Bassを軸に制作する日本在住プロデューサーLactar1uzのデビューシングル「Falling 4 U」をデジタルリリース。",
     body_en: "The debut single \"Falling 4 U\" by Lactar1uz, a Japan-based producer working around Trap and Drum'n'Bass, out digitally.",
     link: "",
-    image: "https://wedieyoung.jp/wp-content/uploads/2025/07/WDY-024-fixed-scaled.png",
+    image: "assets/images/uploads/WDY-024-fixed-scaled.webp",
     article: [
       "2025年7月26日、Lactar1uzがWE DIE YOUNGから初のシングル「Falling 4 U」をデジタルリリースしました。",
       "On July 26, 2025, Lactar1uz released his debut single “Falling 4 U” via WE DIE YOUNG.",
