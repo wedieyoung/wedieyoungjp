@@ -1107,6 +1107,29 @@ const EVENTS = [
    ------------------------------------------------------------ */
 const NEWS = [
   {
+    date: "2026-07-06",
+    category: "EVENT",
+    title: "【DJ Schedule】2026.07.25 MOTOR RAVE（横浜）",
+    title_en: "[DJ Schedule] 2026.07.25 MOTOR RAVE (Yokohama)",
+    body: "ZERO HERTZ CLUB presents「MOTOR RAVE」にWE DIE YOUNG CREWが出演。2026年7月25日 17:00〜22:00、横浜のシークレットロケーションにて完全招待制で開催。チケットは主催DM、または当サイトのCONTACTから。",
+    body_en: "WE DIE YOUNG CREW performs at ZERO HERTZ CLUB presents \"MOTOR RAVE.\" July 25, 2026, 17:00–22:00 at a secret location in Yokohama, invitation only. Tickets via the organizer's DM or the CONTACT form on this site.",
+    link: "",
+    image: "assets/images/uploads/ZHC-MOTOR-RAVE-2026.webp",
+    article: [
+      "2026年7月25日、横浜のシークレットロケーションにて開催されるZERO HERTZ CLUB presents「MOTOR RAVE」にWE DIE YOUNG CREWが出演します。",
+      "On July 25, 2026, WE DIE YOUNG CREW performs at ZERO HERTZ CLUB presents “MOTOR RAVE,” held at a secret location in Yokohama.",
+      "モーターをテーマにしたシークレット・ポップアップ・レイヴ。国内アーティストとシークレットゲストが集結し、17:00〜22:00で開催されます。",
+      "A motor-themed secret pop-up rave bringing together domestic artists and a secret guest, running from 17:00 to 22:00.",
+      "LINE UP：CRAZYHYUGA / HiTOMi / REXY=DEXY / RUDE CREW / SID3 EFFECT / vrownnoise / WE DIE YOUNG CREW / with SECRET GUEST",
+      "本イベントは完全招待制です。チケットは主催（ZERO HERTZ CLUB）のDM、または当サイトのCONTACTフォームからお問い合わせください。",
+      "This is an invitation-only event. For tickets, please reach out via the organizer's (ZERO HERTZ CLUB) DM or the CONTACT form on this site."
+    ],
+    articleLinks: [
+      { label: "告知ツイート / Announcement", url: "https://x.com/ZEROHERTZCLUB/status/2073759462247248344" },
+      { label: "お問い合わせ / CONTACT", url: "#contact" }
+    ]
+  },
+  {
     date: "2026-06-18",
     category: "RELEASE",
     title: "AKLA & LESTONE – HereItAgain 配信開始",
