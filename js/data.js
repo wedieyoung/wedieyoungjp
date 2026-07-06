@@ -674,6 +674,42 @@ const RELEASES = [
    ------------------------------------------------------------ */
 const EVENTS = [
   {
+    name: "ZERO HERTZ CLUB presents \"MOTOR RAVE\"",
+    date: "2026-07-25",
+    timeNote: "17:00〜22:00 ／ 完全招待制（主催DM、または当サイトのCONTACTからチケット購入可）",
+    timeNote_en: "17:00–22:00 / Invitation only (tickets via the organizer's DM or the CONTACT form on this site)",
+    venue: "SECRET LOCATION（横浜）",
+    venue_en: "SECRET LOCATION (Yokohama)",
+    lineup: [
+      "CRAZYHYUGA",
+      "HiTOMi",
+      "REXY=DEXY",
+      "RUDE CREW",
+      "SID3 EFFECT",
+      "vrownnoise",
+      "WE DIE YOUNG CREW",
+      "with SECRET GUEST"
+    ],
+    flyer: "assets/images/uploads/ZHC-MOTOR-RAVE-2026.webp",
+    ticketUrl: "",
+    videoUrl: "",
+    report_en: [
+      "On July 25, 2026, WE DIE YOUNG CREW performs at ZERO HERTZ CLUB presents \"MOTOR RAVE,\" a secret pop-up rave at an undisclosed location in Yokohama (17:00–22:00).",
+      "A motor-themed night bringing together domestic artists and a secret guest. The event is invitation only."
+    ],
+    report: [
+      "2026年7月25日、横浜のシークレットロケーションで開催されるZERO HERTZ CLUB presents「MOTOR RAVE」にWE DIE YOUNG CREWが出演。17:00〜22:00で開催。",
+      "国内アーティストとシークレットゲストが集結するモーターテーマのシークレット・ポップアップ・レイヴ。完全招待制での開催となる。"
+    ],
+    credits_en: [
+      "DJ: WE DIE YOUNG CREW"
+    ],
+    credits: [
+      "DJ: WE DIE YOUNG CREW"
+    ],
+    gallery: []
+  },
+  {
     name: "I CAN FRY",
     date: "2026-06-20",
     timeNote: "OPEN 23:00 / DOOR ¥2,500（2D付・前売なし）",
