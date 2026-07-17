@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "SHADOWS",
+    artist: "rejection & KO3 & yosumi",
+    type: "SINGLE",
+    date: "2026-07-17",
+    cover: "https://f4.bcbits.com/img/a0221164701_10.jpg",
+    description: "rejection、KO3、yosumiが贈る日本語ボーカルEDM Trap。切なくも力強いメロディとヘヴィなベースサウンドが融合したメロディック・トラップアンセム。",
+    description_en: "A Japanese-vocal EDM trap tune by rejection, KO3 and yosumi. A melodic trap anthem fusing bittersweet yet powerful melodies with heavyweight bass.",
+    links: {
+      stream:   "https://www.submithub.com/link/rejection-ko3-yosumi-shadows",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/shadows"
+    }
+  },
+  {
     title: "HereItAgain",
     artist: "AKLA & LESTONE",
     type: "SINGLE",
@@ -1107,6 +1120,37 @@ const EVENTS = [
    ------------------------------------------------------------ */
 const NEWS = [
   {
+    date: "2026-07-17",
+    category: "RELEASE",
+    title: "rejection & KO3 & yosumi – SHADOWS 配信開始",
+    title_en: "rejection & KO3 & yosumi – SHADOWS Out Now",
+    body: "rejection、KO3、yosumiが贈る日本語ボーカルEDM Trap「SHADOWS」をデジタルリリース。切なくも力強いメロディとヘヴィなベースサウンドが融合したメロディック・トラップアンセム。",
+    body_en: "\"SHADOWS,\" a Japanese-vocal EDM trap tune by rejection, KO3 and yosumi, is out digitally. A melodic trap anthem fusing bittersweet yet powerful melodies with heavyweight bass.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a0221164701_10.jpg",
+    article: [
+      "2026年7月17日、rejection & KO3 & yosumiによるシングル「SHADOWS」がWE DIE YOUNGからデジタルリリースされました。",
+      "On July 17, 2026, rejection, KO3 and yosumi released the single “SHADOWS” digitally from WE DIE YOUNG.",
+      "rejection、KO3、yosumiが贈る日本語ボーカルEDM Trap。",
+      "切なくも力強いメロディと、日本語ならではの繊細な感情表現を乗せたボーカルが、ヘヴィなベースサウンドと融合。エモーショナルな展開とフロアを揺らすエネルギーを兼ね備えた、メロディック・トラップアンセム。",
+      "A Japanese-vocal EDM trap tune from rejection, KO3 and yosumi. Bittersweet yet powerful melodies and vocals carrying the delicate emotional nuance unique to the Japanese language fuse with heavyweight bass — a melodic trap anthem armed with emotional builds and floor-shaking energy.",
+      "【プロフィール】KO3",
+      "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れたサウンドを展開。WE DIE YOUNGではコンピレーションvol.4以降の常連として、ライブでもレーベルの核を担う一人。rejectionとは「SET IT OFF EP」に続くタッグとなる。",
+      "【プロフィール】yosumi",
+      "2019年10月に活動を開始したバーチャルシンガー。gaburyuとのコラボ楽曲「seek」を皮切りにオリジナル楽曲を多数発表し、透き通るような唯一無二の歌声で着実にファンを増やしてきた。EP「phantasm」、アルバム「MEMENTO」の発表や音楽ゲームへの楽曲参加、クラブシーンでのライブ出演など幅広く活動している。",
+      "【BIOGRAPHY】KO3",
+      "A Japanese producer/DJ who builds on house beats while hybridizing the latest bass music trends. A regular on WE DIE YOUNG compilations since vol.4 and one of the label's core members on stage as well. \"SHADOWS\" follows \"SET IT OFF EP\" as another team-up with rejection.",
+      "【BIOGRAPHY】yosumi",
+      "A virtual singer active since October 2019. Starting with “seek,” a collaboration with gaburyu, yosumi has released numerous original songs, steadily winning fans with a crystalline, one-of-a-kind voice. Recent work spans the EP “phantasm,” the album “MEMENTO,” songs for rhythm games, and live performances across the club scene."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/rejection-ko3-yosumi-shadows" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/shadows" },
+      { label: "KO3 (X)", url: "https://twitter.com/KO3_untitled" },
+      { label: "yosumi (X)", url: "https://x.com/yosurni" }
+    ]
+  },
+  {
     date: "2026-07-06",
     category: "EVENT",
     title: "【DJ Schedule】2026.07.25 MOTOR RAVE（横浜）",
@@ -1812,6 +1856,22 @@ const ARTISTS = {
       }
     },
     {
+      name: "KO3",
+      works: "7作品参加",
+      works_en: "7 releases",
+      location: "Japan",
+      bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
+      bio_en: "A Japanese producer/DJ who builds on house beats while hybridizing the latest bass music trends. A regular since vol.4 and one of the label's core members on stage as well.",
+      photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
+      socials: {
+        instagram:  "https://www.instagram.com/ko3_untitled/",
+        x:          "https://twitter.com/KO3_untitled",
+        soundcloud: "https://soundcloud.com/dj-ko3",
+        spotify:    "https://open.spotify.com/artist/1ioBfZldZvVAcqD3KXXTXy",
+        bandcamp:   "https://ko3untitled.bandcamp.com/"
+      }
+    },
+    {
       name: "Exodynamix",
       works: "6作品参加",
       works_en: "6 releases",
@@ -1842,22 +1902,6 @@ const ARTISTS = {
         x:          "https://x.com/_mtgd24",
         soundcloud: "https://soundcloud.com/m_t_g_d",
         spotify:    "https://open.spotify.com/artist/2yrXDsIl3e0y01ptasQ30w"
-      }
-    },
-    {
-      name: "KO3",
-      works: "6作品参加",
-      works_en: "6 releases",
-      location: "Japan",
-      bio: "日本のProducer/DJ。ハウスビートを軸に、Bass Musicのトレンドをハイブリッドに取り入れている。vol.4以降の常連で、ライブでもレーベルの核を担う一人。",
-      bio_en: "A Japanese producer/DJ who builds on house beats while hybridizing the latest bass music trends. A regular since vol.4 and one of the label's core members on stage as well.",
-      photo: "https://f4.bcbits.com/img/0044639769_10.jpg",
-      socials: {
-        instagram:  "https://www.instagram.com/ko3_untitled/",
-        x:          "https://twitter.com/KO3_untitled",
-        soundcloud: "https://soundcloud.com/dj-ko3",
-        spotify:    "https://open.spotify.com/artist/1ioBfZldZvVAcqD3KXXTXy",
-        bandcamp:   "https://ko3untitled.bandcamp.com/"
       }
     },
     {
@@ -1978,9 +2022,9 @@ const ARTISTS = {
     { name: "The Herb Shop",  note: "9作品" },
     { name: "crp.",           note: "8作品" },
     { name: "Redsign",        note: "8作品" },
+    { name: "KO3",            note: "7作品" },
     { name: "Exodynamix",     note: "6作品" },
     { name: "MTGD",           note: "6作品" },
-    { name: "KO3",            note: "6作品" },
     { name: "Ruxxi",          note: "5作品" },
     { name: "mahziel",        note: "5作品" },
     { name: "ECLAIR",         note: "5作品" },
@@ -2010,6 +2054,9 @@ const ARTISTS = {
     { name: "eeyrith.",       note: "2作品" },
     { name: "TRYDENY",        note: "2作品" },
     { name: "SiZZ",           note: "2作品（旧SIZ）" },
+    { name: "yosumi",         note: "2作品" },
+    { name: "AKLA",           note: "HereItAgain" },
+    { name: "LESTONE",        note: "HereItAgain" },
     { name: "Viticz",         note: "Rangda" },
     { name: "Namya",          note: "Rangda" },
     { name: "Voxelkana",      note: "digital[F10W]" },
@@ -2022,7 +2069,6 @@ const ARTISTS = {
     { name: "WATARU",         note: "Starfall" },
     { name: "Violet.MKII",    note: "Karma Strike" },
     { name: "GREED",          note: "Karma Strike" },
-    { name: "yosumi",         note: "SET IT OFF EP" },
     { name: "Miii",           note: "vol.1" },
     { name: "poniyama",       note: "vol.1" },
     { name: "Hylen",          note: "vol.2" },
