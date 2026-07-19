@@ -68,7 +68,7 @@ const SITE = {
   // ▼ ホームの「VIDEO」欄に埋め込むYouTube動画
   //    YouTubeのURLをそのまま貼り付けるだけ（watch?v=… / youtu.be/… どちらでもOK）
   //    動画を変えたい時はこのURLを書き換えるだけ。""にすると欄ごと非表示になります
-  featuredVideo: "https://www.youtube.com/watch?v=fW-frTKQJP4",
+  featuredVideo: "https://www.youtube.com/watch?v=GhZ9plkfP3o",
 
   // ▼ トップページの「GENRES」セクションに大きく表示されるジャンル一覧
   //    （追加・削除・並び替え自由）
