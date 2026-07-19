@@ -11,6 +11,43 @@
   const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
 
   let io; // IntersectionObserver（observeRevealsで使用）
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // CSSのモーショントークンと、閉じ切った後のDOM状態変更を同期する
+  const cssTimeMs = (name, fallback) => {
+    const value = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    if (!value) return fallback;
+    if (value.endsWith("ms")) return Number.parseFloat(value) || fallback;
+    if (value.endsWith("s")) return (Number.parseFloat(value) || 0) * 1000;
+    return fallback;
+  };
+  const materialDuration = () => reducedMotion ? 0 : cssTimeMs("--dur-med", 320);
+
+  // トリガーの中心を、アニメーションする面の座標系へ変換する
+  const setMaterialOrigin = (surface, trigger) => {
+    if (!surface) return;
+    surface.style.transformOrigin = "center";
+    const surfaceRect = surface.getBoundingClientRect();
+    if (!surfaceRect.width || !surfaceRect.height) {
+      return;
+    }
+    const triggerRect = trigger && typeof trigger.getBoundingClientRect === "function"
+      ? trigger.getBoundingClientRect()
+      : null;
+    const pointX = triggerRect ? triggerRect.left + triggerRect.width / 2 : innerWidth / 2;
+    const pointY = triggerRect ? triggerRect.top + triggerRect.height / 2 : innerHeight / 2;
+    const surfaceWidth = surface.offsetWidth || surfaceRect.width;
+    const surfaceHeight = surface.offsetHeight || surfaceRect.height;
+    const originX = Math.max(0, Math.min(
+      surfaceWidth,
+      ((pointX - surfaceRect.left) / surfaceRect.width) * surfaceWidth
+    ));
+    const originY = Math.max(0, Math.min(
+      surfaceHeight,
+      ((pointY - surfaceRect.top) / surfaceRect.height) * surfaceHeight
+    ));
+    surface.style.transformOrigin = `${originX}px ${originY}px`;
+  };
 
   const esc = (s) =>
     String(s || "").replace(/[&<>"']/g, (c) =>
@@ -264,8 +301,22 @@
 
   /* ---------- イベントレポート モーダル ---------- */
   const modal = $("#event-modal");
+  const modalPanel = $(".event-modal-panel");
+  let modalCloseTimer = null;
 
-  const openEventModal = (e) => {
+  const prepareModalOpen = (trigger) => {
+    clearTimeout(modalCloseTimer);
+    modal.classList.remove("open", "closing");
+    setMaterialOrigin(modalPanel, trigger);
+    // 初期状態を一度確定させてからopenを付け、毎回同じ軌道で物質化させる
+    void modal.offsetWidth;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    modalPanel.scrollTop = 0;
+  };
+
+  const openEventModal = (e, trigger) => {
     $("#event-modal-body").innerHTML = `
       <p class="event-date-big">${fmtDate(e.date)}${t(e, "timeNote") ? ` / ${esc(t(e, "timeNote"))}` : ""} — ${esc(t(e, "venue"))}</p>
       <h2 class="em-title" id="em-title">${esc(e.name)}</h2>
@@ -274,16 +325,19 @@
       ${(t(e, "credits") && t(e, "credits").length) ? `<div class="em-credits">${t(e, "credits").map((c) => `<p>${esc(c)}</p>`).join("")}</div>` : ""}
       ${(e.gallery && e.gallery.length) ? `<div class="em-gallery">${e.gallery.map((g) => `<img src="${esc(g)}" alt="${esc(e.name)} photo" loading="lazy">`).join("")}</div>` : ""}
     `;
-    modal.classList.add("open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-    $(".event-modal-panel").scrollTop = 0;
+    prepareModalOpen(trigger);
   };
 
   const closeEventModal = () => {
+    if (!modal.classList.contains("open")) return;
+    clearTimeout(modalCloseTimer);
+    modal.classList.add("closing");
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    modalCloseTimer = setTimeout(() => {
+      modal.classList.remove("closing");
+    }, materialDuration());
   };
 
   $("#event-modal-close").addEventListener("click", closeEventModal);
@@ -294,7 +348,7 @@
     const btn = ev.target.closest(".event-report-btn");
     if (!btn) return;
     const e = EVENTS.find((x) => x.name === btn.dataset.event);
-    if (e) openEventModal(e);
+    if (e) openEventModal(e, btn);
   });
 
   /* ---------- 写真ライトボックス（ギャラリー写真をクリックで拡大） ---------- */
@@ -302,6 +356,8 @@
   const lbImg = $("#lightbox-img");
   let lbList = [];   // 現在のギャラリーのサムネイルURL一覧
   let lbIndex = 0;
+  let lbTrigger = null;
+  let lightboxCloseTimer = null;
 
   // サムネイル(-1024x576等)から高解像度版(-scaled)のURLを導出
   const fullSizeUrl = (thumb) => thumb.replace(/-\d+x\d+(\.\w+)$/, "-scaled$1");
@@ -309,25 +365,50 @@
   const showLightbox = (i) => {
     lbIndex = (i + lbList.length) % lbList.length;
     const thumb = lbList[lbIndex];
+    lightbox.classList.remove("image-ready");
+    const revealImage = () => {
+      setMaterialOrigin(lbImg, lbTrigger);
+      void lbImg.offsetWidth;
+      requestAnimationFrame(() => {
+        if (lightbox.classList.contains("open")) lightbox.classList.add("image-ready");
+      });
+    };
+    lbImg.onload = revealImage;
     lbImg.src = fullSizeUrl(thumb);
     // 高解像度版が無い場合はサムネイルにフォールバック
     lbImg.onerror = () => { lbImg.onerror = null; lbImg.src = thumb; };
+    if (lbImg.complete && lbImg.naturalWidth) revealImage();
     $("#lightbox-counter").textContent = `${lbIndex + 1} / ${lbList.length}`;
     $("#lightbox-prev").style.display = lbList.length > 1 ? "" : "none";
     $("#lightbox-next").style.display = lbList.length > 1 ? "" : "none";
   };
 
-  const openLightbox = (list, i) => {
+  const openLightbox = (list, i, trigger) => {
+    clearTimeout(lightboxCloseTimer);
+    lbTrigger = trigger || null;
+    lightbox.classList.remove("open", "closing");
     lbList = list;
     showLightbox(i);
+    lbImg.style.transformOrigin = "center";
+    void lightbox.offsetWidth;
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
   };
 
   const closeLightbox = () => {
+    if (!lightbox.classList.contains("open")) return;
+    clearTimeout(lightboxCloseTimer);
+    lightbox.classList.add("closing");
     lightbox.classList.remove("open");
     lightbox.setAttribute("aria-hidden", "true");
-    lbImg.src = "";
+    lightboxCloseTimer = setTimeout(() => {
+      lightbox.classList.remove("closing");
+      lightbox.classList.remove("image-ready");
+      lbImg.onload = null;
+      lbImg.onerror = null;
+      lbImg.removeAttribute("src");
+      lbTrigger = null;
+    }, materialDuration());
   };
 
   $("#lightbox-close").addEventListener("click", closeLightbox);
@@ -340,7 +421,7 @@
     const img = ev.target.closest(".em-gallery img");
     if (!img) return;
     const imgs = $$(".em-gallery img");
-    openLightbox(imgs.map((x) => x.getAttribute("src")), imgs.indexOf(img));
+    openLightbox(imgs.map((x) => x.getAttribute("src")), imgs.indexOf(img), img);
   });
 
   // キーボード操作: Escは「ライトボックス → モーダル」の順に閉じる / ←→で写真送り
@@ -403,7 +484,7 @@
   $("#home-news").innerHTML = NEWS.slice(0, 3).map(newsItem).join("") || `<p class="empty">${ui("news-none")}</p>`;
 
   /* ---------- ニュース記事モーダル（旧サイトの記事本文） ---------- */
-  const openNewsModal = (n) => {
+  const openNewsModal = (n, trigger) => {
     $("#event-modal-body").innerHTML = `
       <p class="event-date-big">${fmtDate(n.date)} — ${esc(n.category)}</p>
       <h2 class="em-title" id="em-title">${esc(t(n, "title"))}</h2>
@@ -423,17 +504,14 @@
           <div class="release-links em-artist__links">${(a.links || []).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div>
         </div>`).join("")}</div>` : ""}
     `;
-    modal.classList.add("open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-    $(".event-modal-panel").scrollTop = 0;
+    prepareModalOpen(trigger);
   };
 
   document.addEventListener("click", (ev) => {
     const btn = ev.target.closest("[data-news]");
     if (!btn) return;
     const n = NEWS[+btn.dataset.news];
-    if (n) openNewsModal(n);
+    if (n) openNewsModal(n, btn);
   });
 
   /* ---------- About描画 ---------- */
@@ -621,7 +699,6 @@
 
   /* ---------- イントロローダー ---------- */
   const intro = $("#intro");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (sessionStorage.getItem("wdy-intro") || reducedMotion) {
     intro.style.display = "none";
   } else {
@@ -631,11 +708,14 @@
 
   /* ---------- スクロール進捗バー ---------- */
   const progress = $("#progress");
+  const nav = $(".nav");
   const onScroll = () => {
     const max = document.documentElement.scrollHeight - innerHeight;
     progress.style.width = max > 0 ? `${(scrollY / max) * 100}%` : "0";
+    nav.classList.toggle("scrolled", scrollY > 12);
   };
   addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
   /* ---------- ヒーロー: ベースウェーブ・キャンバス ---------- */
   (function initHeroCanvas() {
