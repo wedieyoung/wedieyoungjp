@@ -1147,9 +1147,9 @@ const NEWS = [
       "UKスタイルを軸にBass Musicからハードコアジャングルまで幅広く手掛けるSave Me The Troubleが放つシングル。Bass HouseとHard Technoのエッジを効かせた仕上がりで、フロアを揺らす一曲。",
       "A single from Save Me The Trouble, who works across a wide range of styles from UK-rooted bass music to hardcore jungle. Finished with an edge drawn from bass house and hard techno, it's a track built to move the floor.",
       "【プロフィール】Save Me The Trouble",
-      "本名 Taichi Tsutsui。UKスタイルを軸に、ベースジャンルやハードコアジャングルなど幅広いジャンルの楽曲制作・DJを行なっている。SPRAYBOXをはじめ様々なレーベルからのリリースも行なっている。ユニット名義「2swing」のメンバーでもあり、MPHやInter Planetary Criminalのサポートアクトとしても活動している。",
+      "UKスタイルを軸に、ベースジャンルやハードコアジャングルなど幅広いジャンルの楽曲制作・DJを行なっている。SPRAYBOXをはじめ様々なレーベルからのリリースも行なっている。ユニット名義「2swing」のメンバーでもあり、MPHやInter Planetary Criminalのサポートアクトとしても活動している。",
       "【BIOGRAPHY】Save Me The Trouble",
-      "Real name: Taichi Tsutsui. Producing and DJing across a wide range of genres centered on a UK style, including bass genres and hardcore jungle. He has also released on various labels including SPRAYBOX. He is a member of the unit 2swing, and has served as a support act for MPH and Inter Planetary Criminal."
+      "Producing and DJing across a wide range of genres centered on a UK style, including bass genres and hardcore jungle. He has also released on various labels including SPRAYBOX. He is a member of the unit 2swing, and has served as a support act for MPH and Inter Planetary Criminal."
     ],
     articleLinks: [
       { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/save-me-the-trouble-mode" },
