@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "MODE",
+    artist: "Save Me The Trouble",
+    type: "SINGLE",
+    date: "2026-07-24",
+    cover: "https://f4.bcbits.com/img/a3187110929_10.jpg",
+    description: "UKスタイルを軸にBass Musicからハードコアジャングルまで幅広く手掛けるSave Me The Troubleによるシングル。Bass HouseとHard Technoのエッジを効かせたトラック。",
+    description_en: "A single by Save Me The Trouble, who works across a wide range of styles from UK-rooted bass music to hardcore jungle. A track with an edge drawn from bass house and hard techno.",
+    links: {
+      stream:   "https://www.submithub.com/link/save-me-the-trouble-mode",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/mode"
+    }
+  },
+  {
     title: "SHADOWS",
     artist: "rejection & KO3 & yosumi",
     type: "SINGLE",
@@ -1119,6 +1132,32 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-07-24",
+    category: "RELEASE",
+    title: "Save Me The Trouble – MODE 配信開始",
+    title_en: "Save Me The Trouble – MODE Out Now",
+    body: "UKスタイルを軸に幅広いベースミュージックを手掛けるSave Me The Troubleのシングル「MODE」をデジタルリリース。Bass HouseとHard Technoのエッジを効かせたトラック。",
+    body_en: "\"MODE,\" a single by Save Me The Trouble, who works across a wide range of UK-rooted bass music, is out digitally. A track with an edge drawn from bass house and hard techno.",
+    link: "",
+    image: "assets/images/uploads/save-me-the-trouble-logo.jpg",
+    article: [
+      "2026年7月24日、Save Me The Troubleによるシングル「MODE」がWE DIE YOUNGからデジタルリリースされました。",
+      "On July 24, 2026, Save Me The Trouble released the single “MODE” digitally from WE DIE YOUNG.",
+      "UKスタイルを軸にBass Musicからハードコアジャングルまで幅広く手掛けるSave Me The Troubleが放つシングル。Bass HouseとHard Technoのエッジを効かせた仕上がりで、フロアを揺らす一曲。",
+      "A single from Save Me The Trouble, who works across a wide range of styles from UK-rooted bass music to hardcore jungle. Finished with an edge drawn from bass house and hard techno, it's a track built to move the floor.",
+      "【プロフィール】Save Me The Trouble",
+      "本名 Taichi Tsutsui。UKスタイルを軸に、ベースジャンルやハードコアジャングルなど幅広いジャンルの楽曲制作・DJを行なっている。SPRAYBOXをはじめ様々なレーベルからのリリースも行なっている。ユニット名義「2swing」のメンバーでもあり、MPHやInter Planetary Criminalのサポートアクトとしても活動している。",
+      "【BIOGRAPHY】Save Me The Trouble",
+      "Real name: Taichi Tsutsui. Producing and DJing across a wide range of genres centered on a UK style, including bass genres and hardcore jungle. He has also released on various labels including SPRAYBOX. He is a member of the unit 2swing, and has served as a support act for MPH and Inter Planetary Criminal."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/save-me-the-trouble-mode" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/mode" },
+      { label: "Instagram", url: "https://www.instagram.com/save_me_the_trouble/" },
+      { label: "SoundCloud", url: "https://soundcloud.com/save-me-the-trouble" }
+    ]
+  },
   {
     date: "2026-07-17",
     category: "RELEASE",
@@ -2055,6 +2094,7 @@ const ARTISTS = {
     { name: "TRYDENY",        note: "2作品" },
     { name: "SiZZ",           note: "2作品（旧SIZ）" },
     { name: "yosumi",         note: "2作品" },
+    { name: "Save Me The Trouble", note: "MODE" },
     { name: "AKLA",           note: "HereItAgain" },
     { name: "LESTONE",        note: "HereItAgain" },
     { name: "Viticz",         note: "Rangda" },
