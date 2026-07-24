@@ -30,7 +30,7 @@
   /* ---- タイポグラフィ ---- */
   --font-display: "Anton", "Noto Sans JP", sans-serif;
   --font-body: "Space Grotesk", "Noto Sans JP", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  --font-mono: "Inter", sans-serif;
 
   /* ---- モーション（操作への反応は速く、移動は滑らかに） ---- */
   --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
