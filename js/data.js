@@ -1166,7 +1166,10 @@ const NEWS = [
     ],
     articleLinks: [
       { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/crux-jump" },
-      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/jump" }
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/jump" },
+      { label: "Instagram", url: "https://www.instagram.com/crux.mp3/" },
+      { label: "SoundCloud", url: "https://soundcloud.com/cruxmp3" },
+      { label: "TikTok", url: "https://www.tiktok.com/@crux.mp3" }
     ]
   },
   {
