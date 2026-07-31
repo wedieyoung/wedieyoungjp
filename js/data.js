@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "JUMP!",
+    artist: "CRUX",
+    type: "SINGLE",
+    date: "2026-07-31",
+    cover: "https://f4.bcbits.com/img/a3182268385_10.jpg",
+    description: "グアム拠点のプロデューサーCRUXによるシングル。Bass Houseのエッジを効かせたトラック。",
+    description_en: "A single by Guam-based producer CRUX. A track with a bass house edge.",
+    links: {
+      stream:   "https://www.submithub.com/link/crux-jump",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/jump"
+    }
+  },
+  {
     title: "MODE",
     artist: "Save Me The Trouble",
     type: "SINGLE",
@@ -1132,6 +1145,30 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-07-31",
+    category: "RELEASE",
+    title: "CRUX – JUMP! 配信開始",
+    title_en: "CRUX – JUMP! Out Now",
+    body: "グアム拠点のプロデューサーCRUXのシングル「JUMP!」をデジタルリリース。Bass Houseのエッジを効かせたトラック。",
+    body_en: "\"JUMP!,\" a single by Guam-based producer CRUX, is out digitally. A track with a bass house edge.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a3182268385_10.jpg",
+    article: [
+      "2026年7月31日、CRUXによるシングル「JUMP!」がWE DIE YOUNGからデジタルリリースされました。",
+      "On July 31, 2026, CRUX released the single “JUMP!” digitally from WE DIE YOUNG.",
+      "グアム拠点のプロデューサーCRUXが放つシングル。Bass Houseのエッジを効かせた仕上がりで、フロアを揺らす一曲。",
+      "A single from Guam-based producer CRUX. Finished with a bass house edge, it's a track built to move the floor.",
+      "【プロフィール】CRUX",
+      "グアム出身・拠点のプロデューサー。島で生まれ育ち、15歳で楽曲制作を始める。地元の様々なアーティストと共に、Rap、R&B、Indie、Rock、Popなど数多くの楽曲を手掛けてきた。早くからEDM(特にヘヴィなTrapとDubstep)にも魅了され、2020年からは地元のショーに出演するDJとしても活動を開始した。NITTI、KAKU、Justin Oh、Ruvlo、REXY=DEXY、Bear Grillzらのオープニングアクトを務め、東京(ZEROTOKYO)やクアラルンプール(Club Kyō)でも公演。グアム唯一のフェスティバル「Electric Island Festival」に過去3回出演し、2023年にはEIF Saipanにも出演した。スタジオでもステージでも、グアムのアンダーグラウンドTrapシーンとベースミュージックの世界を繋ぐエネルギーを放っている。",
+      "【BIOGRAPHY】CRUX",
+      "A Guam-born and based producer. Raised on the island, he began producing at the age of 15. He has worked closely with various local artists, producing countless Rap, R&B, Indie, Rock, and Pop songs. He also had a love for EDM early on (specifically heavy trap and dubstep), leading to his start as a DJ playing local shows since 2020. He has opened for artists such as NITTI, KAKU, Justin Oh, Ruvlo, REXY=DEXY, and Bear Grillz, and has played shows in Tokyo (ZEROTOKYO) and Kuala Lumpur (Club Kyō). He has also played Guam's only festival, Electric Island Festival, three times over the years, plus EIF Saipan in 2023. Whether in the studio or on stage, CRUX brings an energy that bridges Guam's underground trap scene with the world of bass-heavy electronic music."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/crux-jump" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/jump" }
+    ]
+  },
   {
     date: "2026-07-24",
     category: "RELEASE",
@@ -2094,6 +2131,7 @@ const ARTISTS = {
     { name: "TRYDENY",        note: "2作品" },
     { name: "SiZZ",           note: "2作品（旧SIZ）" },
     { name: "yosumi",         note: "2作品" },
+    { name: "CRUX",           note: "JUMP!" },
     { name: "Save Me The Trouble", note: "MODE" },
     { name: "AKLA",           note: "HereItAgain" },
     { name: "LESTONE",        note: "HereItAgain" },
