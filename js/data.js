@@ -1146,6 +1146,29 @@ const EVENTS = [
    ------------------------------------------------------------ */
 const NEWS = [
   {
+    date: "2026-08-01",
+    category: "EVENT",
+    title: "【WE DIE YOUNG × OUTDOOR TRACKERS】2026.08.28 コラボイベント開催決定（ソウル）",
+    title_en: "[WE DIE YOUNG × OUTDOOR TRACKERS] 2026.08.28 Collab Event Announced (Seoul)",
+    body: "WE DIE YOUNG🇯🇵とOUTDOOR TRACKERS🇰🇷によるコラボイベントが2026年8月28日、韓国・ソウルのXIMXIM Seoulにて開催決定。出演者・詳細は近日発表。",
+    body_en: "A collab event between WE DIE YOUNG🇯🇵 and OUTDOOR TRACKERS🇰🇷 is set for August 28, 2026 at XIMXIM Seoul, South Korea. Lineup and further details coming soon.",
+    link: "",
+    image: "assets/images/uploads/WDY-OUTDOORTRACKERS-Seoul-2026.jpg",
+    article: [
+      "WE DIE YOUNG🇯🇵とOUTDOOR TRACKERS🇰🇷のコラボイベントが、韓国・ソウルで開催されることが発表されました。",
+      "A collab event between WE DIE YOUNG🇯🇵 and OUTDOOR TRACKERS🇰🇷 has been announced, taking place in Seoul, South Korea.",
+      "開催日時：2026年8月28日（金）",
+      "Date: Friday, August 28, 2026",
+      "会場：XIMXIM Seoul（11, Yeonmujang 15-gil, Seongdong-gu, Seoul）",
+      "Venue: XIMXIM Seoul (11, Yeonmujang 15-gil, Seongdong-gu, Seoul)",
+      "出演者・詳細情報は近日公開予定です。",
+      "Lineup and further details will be announced soon."
+    ],
+    articleLinks: [
+      { label: "告知ポスト / Announcement", url: "https://x.com/WEDIEYOUNGrec/status/2083480788713304349" }
+    ]
+  },
+  {
     date: "2026-07-31",
     category: "RELEASE",
     title: "CRUX – JUMP! 配信開始",
