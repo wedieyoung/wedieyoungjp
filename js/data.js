@@ -713,6 +713,23 @@ const RELEASES = [
    ------------------------------------------------------------ */
 const EVENTS = [
   {
+    name: "WE DIE YOUNG × OUTDOOR TRACKERS",
+    date: "2026-08-28",
+    timeNote: "出演者・詳細は近日発表",
+    timeNote_en: "Lineup and details coming soon",
+    venue: "XIMXIM Seoul（ソウル・韓国）",
+    venue_en: "XIMXIM Seoul (Seoul, South Korea)",
+    lineup: [],
+    flyer: "assets/images/uploads/WDY-OUTDOORTRACKERS-Seoul-2026.jpg",
+    ticketUrl: "",
+    videoUrl: "",
+    report_en: [],
+    report: [],
+    credits_en: [],
+    credits: [],
+    gallery: []
+  },
+  {
     name: "ZERO HERTZ CLUB presents \"MOTOR RAVE\"",
     date: "2026-07-25",
     timeNote: "17:00〜22:00 ／ 完全招待制（主催DM、または当サイトのCONTACTからチケット購入可）",
