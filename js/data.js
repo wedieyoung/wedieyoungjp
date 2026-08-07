@@ -715,11 +715,22 @@ const EVENTS = [
   {
     name: "WE DIE YOUNG × OUTDOOR TRACKERS",
     date: "2026-08-28",
-    timeNote: "出演者・詳細は近日発表",
-    timeNote_en: "Lineup and details coming soon",
-    venue: "XIMXIM Seoul（ソウル・韓国）",
-    venue_en: "XIMXIM Seoul (Seoul, South Korea)",
-    lineup: [],
+    timeNote: "20:00〜翌2:00",
+    timeNote_en: "8:00 PM – 2:00 AM",
+    venue: "XIMXIM Seoul（SFactory B 308 / ソウル・韓国）",
+    venue_en: "XIMXIM Seoul (SFactory B 308, Seoul, South Korea)",
+    lineup: [
+      "ARKI",
+      "Blosso",
+      "ESAI",
+      "iota",
+      "KiiRO",
+      "KO3",
+      "rejection",
+      "SiZZ",
+      "Xeno",
+      "(X)PIDER"
+    ],
     flyer: "assets/images/uploads/WDY-OUTDOORTRACKERS-Seoul-2026.jpg",
     ticketUrl: "",
     videoUrl: "",
@@ -1162,6 +1173,26 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-08-07",
+    category: "EVENT",
+    title: "【LINE UP発表】WE DIE YOUNG × OUTDOOR TRACKERS（ソウル）",
+    title_en: "[LINE UP] WE DIE YOUNG × OUTDOOR TRACKERS (Seoul)",
+    body: "2026年8月28日、韓国・ソウルのXIMXIM Seoulで開催されるWE DIE YOUNG × OUTDOOR TRACKERSのコラボイベント、出演者ラインナップを発表。",
+    body_en: "Lineup announced for the WE DIE YOUNG × OUTDOOR TRACKERS collab event on August 28, 2026 at XIMXIM Seoul, South Korea.",
+    link: "",
+    image: "assets/images/uploads/WDY-OUTDOORTRACKERS-Seoul-2026.jpg",
+    article: [
+      "韓国・ソウルで開催されるWE DIE YOUNG × OUTDOOR TRACKERSのコラボイベントの出演者ラインナップが発表されました。",
+      "The lineup has been announced for the WE DIE YOUNG × OUTDOOR TRACKERS collab event in Seoul, South Korea.",
+      "LINE UP：ARKI / Blosso / ESAI / iota / KiiRO / KO3 / rejection / SiZZ / Xeno / (X)PIDER",
+      "LINE UP: ARKI / Blosso / ESAI / iota / KiiRO / KO3 / rejection / SiZZ / Xeno / (X)PIDER",
+      "会場：XIMXIM Seoul（SFactory B 308 / 연무장 15길 11 B동 308호）",
+      "Venue: XIMXIM Seoul (SFactory B 308, 11 Yeonmujang 15-gil, B-dong 308, Seongdong-gu, Seoul)",
+      "開催日時：2026年8月28日（金）20:00〜翌2:00",
+      "Date: Friday, August 28, 2026, 8:00 PM – 2:00 AM"
+    ]
+  },
   {
     date: "2026-08-01",
     category: "EVENT",
