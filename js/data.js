@@ -58,7 +58,7 @@ const SITE = {
     spotify:    "https://open.spotify.com/playlist/6JyYK5Vq5FzUuUBJyTbTCJ",
     bandcamp:   "https://wedieyoung.bandcamp.com/",
     discord:    "https://discord.gg/NwJqNHU93J",
-    store:      "https://wedieyoung.base.shop/"
+    store:      "https://wedieyoungclothing.com/"
   },
 
   // ▼ Contactフォームの送信先（Formspree等のエンドポイントURL）
@@ -1662,8 +1662,7 @@ const NEWS = [
       "assets/images/uploads/DSC00784-scaled.webp"
     ],
     articleLinks: [
-      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/merch/we-die-young-vol-7-tee-2025" },
-      { label: "BASE", url: "https://wedieyoung.base.shop/" }
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/merch/we-die-young-vol-7-tee-2025" }
     ]
   },
   {
