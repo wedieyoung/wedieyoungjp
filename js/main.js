@@ -99,6 +99,7 @@
       "view-report": "レポートを見る",
       "read-more": "もっと読む →",
       "tickets": "チケット",
+      "tickets-under18": "チケット（UNDER18）",
       "aftermovie": "▶ アフタームービー",
       "sent-ok": "送信しました。返信をお待ちください。",
       "sent-fail": "送信に失敗しました。時間をおいて再度お試しください。",
@@ -133,6 +134,7 @@
       "view-report": "VIEW REPORT",
       "read-more": "READ MORE →",
       "tickets": "Tickets",
+      "tickets-under18": "Tickets (Under 18)",
       "aftermovie": "▶ AFTERMOVIE",
       "sent-ok": "Message sent. We'll be in touch soon.",
       "sent-fail": "Failed to send. Please try again later.",
@@ -295,6 +297,7 @@
         <div class="event-meta"><span><b>VENUE</b> — ${esc(t(e, "venue"))}</span></div>
         <div class="event-lineup">${(e.lineup || []).map((n) => `<span>${esc(n)}</span>`).join("")}</div>
         ${!isPast && e.ticketUrl ? `<a class="btn" href="${esc(e.ticketUrl)}" target="_blank" rel="noopener">${ui("tickets")}</a>` : ""}
+        ${!isPast && e.ticketUrlUnder18 ? `<a class="btn ghost" href="${esc(e.ticketUrlUnder18)}" target="_blank" rel="noopener">${ui("tickets-under18")}</a>` : ""}
         ${(e.report && e.report.length) || (e.gallery && e.gallery.length) ? `<button class="btn ghost event-report-btn" data-event="${esc(e.name)}">${ui("view-report")}</button>` : ""}
       </div>
     </article>`;

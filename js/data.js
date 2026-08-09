@@ -732,7 +732,8 @@ const EVENTS = [
       "(X)PIDER"
     ],
     flyer: "assets/images/uploads/WDY-OUTDOORTRACKERS-Seoul-2026.jpg",
-    ticketUrl: "",
+    ticketUrl: "https://www.2tm.co.kr/ticket/10545",
+    ticketUrlUnder18: "https://docs.google.com/forms/d/e/1FAIpQLSecUGcDnXhqr_0KnQHn_jxV21XUT9RD46ICVIngIaFwnc-3-A/viewform?usp=header",
     videoUrl: "",
     report_en: [],
     report: [],
@@ -1190,7 +1191,13 @@ const NEWS = [
       "会場：XIMXIM Seoul（SFactory B 308 / 연무장 15길 11 B동 308호）",
       "Venue: XIMXIM Seoul (SFactory B 308, 11 Yeonmujang 15-gil, B-dong 308, Seongdong-gu, Seoul)",
       "開催日時：2026年8月28日（金）20:00〜翌2:00",
-      "Date: Friday, August 28, 2026, 8:00 PM – 2:00 AM"
+      "Date: Friday, August 28, 2026, 8:00 PM – 2:00 AM",
+      "チケット発売中。18歳以下の方は専用フォームからのお申し込みが必要です。",
+      "Tickets on sale now. Attendees under 18 must apply via the dedicated form."
+    ],
+    articleLinks: [
+      { label: "TICKET", url: "https://www.2tm.co.kr/ticket/10545" },
+      { label: "UNDER18", url: "https://docs.google.com/forms/d/e/1FAIpQLSecUGcDnXhqr_0KnQHn_jxV21XUT9RD46ICVIngIaFwnc-3-A/viewform?usp=header" }
     ]
   },
   {
