@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "Best In Da Scene",
+    artist: "MTGD, Exodynamix",
+    type: "SINGLE",
+    date: "2026-08-22",
+    cover: "https://f4.bcbits.com/img/a1404172615_10.jpg",
+    description: "台湾拠点のMTGDとカナダ拠点のExodynamixによるコラボレーションシングル。フェスティバルTrapとHard Technoの二軸で攻めるハイブリッドな一曲。",
+    description_en: "A collaborative single by Taiwan-based MTGD and Canada-based Exodynamix. A hybrid track that strikes on two fronts: festival trap and hard techno.",
+    links: {
+      stream:   "https://www.submithub.com/link/mtgd-exodynamix-best-in-da-scene",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/best-in-da-scene"
+    }
+  },
+  {
     title: "JUMP!",
     artist: "CRUX",
     type: "SINGLE",
@@ -1175,6 +1188,36 @@ const EVENTS = [
    ------------------------------------------------------------ */
 const NEWS = [
   {
+    date: "2026-08-22",
+    category: "RELEASE",
+    title: "MTGD, Exodynamix – Best In Da Scene 配信開始",
+    title_en: "MTGD, Exodynamix – Best In Da Scene Out Now",
+    body: "台湾拠点のMTGDとカナダ拠点のExodynamixによるコラボレーションシングル「Best In Da Scene」をデジタルリリース。フェスティバルTrapとHard Technoの二軸で攻めるハイブリッドな一曲。",
+    body_en: "\"Best In Da Scene,\" a collaborative single by Taiwan-based MTGD and Canada-based Exodynamix, is out digitally. A hybrid track that strikes on two fronts: festival trap and hard techno.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a1404172615_10.jpg",
+    article: [
+      "2026年8月22日、MTGDとExodynamixによるコラボレーションシングル「Best In Da Scene」がWE DIE YOUNGからデジタルリリースされました。",
+      "On August 22, 2026, MTGD and Exodynamix released their collaborative single “Best In Da Scene” digitally from WE DIE YOUNG.",
+      "台湾とカナダ、それぞれの拠点で活動する二人が組んだ一曲。フェスティバルTrapとHard Technoの二軸で攻めるハイブリッドな仕上がりです。",
+      "A track born from a pairing across Taiwan and Canada. It strikes on two fronts at once: festival trap and hard techno.",
+      "【プロフィール】MTGD",
+      "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フェスティバル直系のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
+      "【BIOGRAPHY】MTGD",
+      "A Taiwan-based DJ/producer. Under the banner “All About The Bass,” he makes aggressive, festival-grade bass music. He has many solo works, starting with the EP DEFINED.",
+      "【プロフィール】Exodynamix",
+      "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
+      "【BIOGRAPHY】Exodynamix",
+      "A Canada-based producer who crosses diverse genres such as Future Garage, Wave, Hardwave and Trance, unfolding an atmospheric, refined sound."
+    ],
+    articleLinks: [
+      { label: "STREAM", url: "https://www.submithub.com/link/mtgd-exodynamix-best-in-da-scene" },
+      { label: "BANDCAMP", url: "https://wedieyoung.bandcamp.com/track/best-in-da-scene" },
+      { label: "MTGD / X", url: "https://x.com/_mtgd24" },
+      { label: "Exodynamix / X", url: "https://x.com/exodynamix" }
+    ]
+  },
+  {
     date: "2026-08-07",
     category: "EVENT",
     title: "【LINE UP発表】WE DIE YOUNG × OUTDOOR TRACKERS（ソウル）",
@@ -2029,8 +2072,8 @@ const ARTISTS = {
     },
     {
       name: "Exodynamix",
-      works: "6作品参加",
-      works_en: "6 releases",
+      works: "7作品参加",
+      works_en: "7 releases",
       location: "Canada",
       bio: "カナダ拠点のプロデューサー。Future Garage / Wave / Hardwave / Tranceなど多彩なジャンルを横断し、アトモスフェリックで洗練されたサウンドを展開。",
       bio_en: "A Canada-based producer who crosses diverse genres such as Future Garage, Wave, Hardwave and Trance, unfolding an atmospheric, refined sound.",
@@ -2046,8 +2089,8 @@ const ARTISTS = {
     },
     {
       name: "MTGD",
-      works: "6作品参加",
-      works_en: "6 releases",
+      works: "7作品参加",
+      works_en: "7 releases",
       location: "Taiwan",
       bio: "台湾拠点のDJ/Producer。“All About The Bass”を掲げ、フェスティバル直系のアグレッシブなベースミュージックを制作。EP『DEFINED』をはじめソロ作も多数。",
       bio_en: "A Taiwan-based DJ/producer. Under the banner “All About The Bass,” he makes aggressive, festival-grade bass music. He has many solo works, starting with the EP DEFINED.",
