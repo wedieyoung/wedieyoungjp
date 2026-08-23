@@ -267,7 +267,7 @@ const RELEASES = [
     description: "台湾拠点のMTGDとカナダ拠点のExodynamixによるコラボレーションシングル。フェスティバルTrapとHard Technoの二軸で攻めるハイブリッドな一曲。",
     description_en: "A collaborative single by Taiwan-based MTGD and Canada-based Exodynamix. A hybrid track that strikes on two fronts: festival trap and hard techno.",
     links: {
-      stream:   "https://www.submithub.com/link/mtgd-exodynamix-best-in-da-scene",
+      stream:   "https://www.submithub.com/link/best-in-da-scene",
       bandcamp: "https://wedieyoung.bandcamp.com/track/best-in-da-scene"
     }
   },
@@ -1211,7 +1211,7 @@ const NEWS = [
       "A Canada-based producer who crosses diverse genres such as Future Garage, Wave, Hardwave and Trance, unfolding an atmospheric, refined sound."
     ],
     articleLinks: [
-      { label: "STREAM", url: "https://www.submithub.com/link/mtgd-exodynamix-best-in-da-scene" },
+      { label: "STREAM", url: "https://www.submithub.com/link/best-in-da-scene" },
       { label: "BANDCAMP", url: "https://wedieyoung.bandcamp.com/track/best-in-da-scene" },
       { label: "MTGD / X", url: "https://x.com/_mtgd24" },
       { label: "Exodynamix / X", url: "https://x.com/exodynamix" }
