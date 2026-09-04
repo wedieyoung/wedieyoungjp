@@ -1220,7 +1220,8 @@ const NEWS = [
     articleLinks: [
       { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/areg-make-me-feel" },
       { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/make-me-feel" },
-      { label: "Instagram", url: "https://instagram.com/listenareg" }
+      { label: "Instagram", url: "https://instagram.com/listenareg" },
+      { label: "SoundCloud", url: "https://soundcloud.com/imareg" }
     ]
   },
   {
