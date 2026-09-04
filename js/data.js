@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "MAKE ME FEEL",
+    artist: "areg",
+    type: "SINGLE",
+    date: "2026-09-04",
+    cover: "https://f4.bcbits.com/img/a0535533704_10.jpg",
+    description: "タイ拠点のプロデューサーaregによるシングル。",
+    description_en: "A single by areg, a Thailand-based producer.",
+    links: {
+      stream:   "https://www.submithub.com/link/areg-make-me-feel",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/make-me-feel"
+    }
+  },
+  {
     title: "Best In Da Scene",
     artist: "MTGD, Exodynamix",
     type: "SINGLE",
@@ -1187,6 +1200,29 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-09-04",
+    category: "RELEASE",
+    title: "areg – MAKE ME FEEL 配信開始",
+    title_en: "areg – MAKE ME FEEL Out Now",
+    body: "タイ拠点のプロデューサーaregのシングル「MAKE ME FEEL」をデジタルリリース。",
+    body_en: "\"MAKE ME FEEL,\" a single by Thailand-based producer areg, is out digitally.",
+    link: "",
+    image: "assets/images/uploads/areg-photo.jpg",
+    article: [
+      "2026年9月4日、aregによるシングル「MAKE ME FEEL」がWE DIE YOUNGからデジタルリリースされました。",
+      "On September 4, 2026, areg released the single “MAKE ME FEEL” digitally from WE DIE YOUNG.",
+      "【プロフィール】areg",
+      "タイ拠点のプロデューサー。",
+      "【BIOGRAPHY】areg",
+      "A producer based in Thailand."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/areg-make-me-feel" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/make-me-feel" },
+      { label: "Instagram", url: "https://instagram.com/listenareg" }
+    ]
+  },
   {
     date: "2026-08-22",
     category: "RELEASE",
@@ -2254,6 +2290,7 @@ const ARTISTS = {
     { name: "TRYDENY",        note: "2作品" },
     { name: "SiZZ",           note: "2作品（旧SIZ）" },
     { name: "yosumi",         note: "2作品" },
+    { name: "areg",           note: "MAKE ME FEEL" },
     { name: "CRUX",           note: "JUMP!" },
     { name: "Save Me The Trouble", note: "MODE" },
     { name: "AKLA",           note: "HereItAgain" },
