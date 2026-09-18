@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "TOMA",
+    artist: "BINi, LESTONE",
+    type: "SINGLE",
+    date: "2026-09-18",
+    cover: "https://f4.bcbits.com/img/a0776529408_10.jpg",
+    description: "BINiとLESTONEによるコラボレーションシングル。",
+    description_en: "A collaborative single by BINi and LESTONE.",
+    links: {
+      stream:   "https://www.submithub.com/link/toma",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/toma"
+    }
+  },
+  {
     title: "MAKE ME FEEL",
     artist: "areg",
     type: "SINGLE",
@@ -1200,6 +1213,25 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-09-18",
+    category: "RELEASE",
+    title: "BINi, LESTONE – TOMA 配信開始",
+    title_en: "BINi, LESTONE – TOMA Out Now",
+    body: "BINiとLESTONEによるコラボレーションシングル「TOMA」をデジタルリリース。",
+    body_en: "\"TOMA,\" a collaborative single by BINi and LESTONE, is out digitally.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a0776529408_10.jpg",
+    article: [
+      "2026年9月18日、BINiとLESTONEによるコラボレーションシングル「TOMA」がWE DIE YOUNGからデジタルリリースされました。",
+      "On September 18, 2026, BINi and LESTONE released their collaborative single “TOMA” digitally from WE DIE YOUNG."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/toma" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/toma" },
+      { label: "Instagram (BINi)", url: "https://instagram.com/luvrminemu/" }
+    ]
+  },
   {
     date: "2026-09-04",
     category: "RELEASE",
@@ -2291,11 +2323,12 @@ const ARTISTS = {
     { name: "TRYDENY",        note: "2作品" },
     { name: "SiZZ",           note: "2作品（旧SIZ）" },
     { name: "yosumi",         note: "2作品" },
+    { name: "LESTONE",        note: "2作品" },
+    { name: "BINi",           note: "TOMA" },
     { name: "areg",           note: "MAKE ME FEEL" },
     { name: "CRUX",           note: "JUMP!" },
     { name: "Save Me The Trouble", note: "MODE" },
     { name: "AKLA",           note: "HereItAgain" },
-    { name: "LESTONE",        note: "HereItAgain" },
     { name: "Viticz",         note: "Rangda" },
     { name: "Namya",          note: "Rangda" },
     { name: "Voxelkana",      note: "digital[F10W]" },
