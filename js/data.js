@@ -259,6 +259,19 @@ const RELEASES = [
 
   /* ===== SINGLE / EP ===== */
   {
+    title: "Know Your Buff",
+    artist: "Systile",
+    type: "SINGLE",
+    date: "2026-10-09",
+    cover: "https://f4.bcbits.com/img/a4223497134_10.jpg",
+    description: "UK BassやUKGなどBreakbeatベースのサウンドを軸に活動するプロデューサー/DJ、Systileによるシングル。",
+    description_en: "A single by Systile, a producer/DJ working in breakbeat-based genres such as UK bass and UKG.",
+    links: {
+      stream:   "https://www.submithub.com/link/systile-know-your-buff",
+      bandcamp: "https://wedieyoung.bandcamp.com/track/know-your-buff"
+    }
+  },
+  {
     title: "TOMA",
     artist: "BINi, LESTONE",
     type: "SINGLE",
@@ -1213,6 +1226,34 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-10-09",
+    category: "RELEASE",
+    title: "Systile – Know Your Buff 配信開始",
+    title_en: "Systile – Know Your Buff Out Now",
+    body: "UK BassやUKGを軸に活動するプロデューサー/DJ、Systileのシングル「Know Your Buff」をデジタルリリース。",
+    body_en: "\"Know Your Buff,\" a single by producer/DJ Systile, who works in UK bass, UKG and other breakbeat-based genres, is out digitally.",
+    link: "",
+    image: "assets/images/uploads/systile-profile.webp",
+    article: [
+      "2026年10月9日、Systileによるシングル「Know Your Buff」がWE DIE YOUNGからデジタルリリースされました。",
+      "On October 9, 2026, Systile released the single “Know Your Buff” digitally from WE DIE YOUNG.",
+      "【プロフィール】Systile",
+      "UK Bass、UKG、Club TuneなどのBreakbeatベースのジャンルを主に扱うプロデューサー、DJ。HARDCORE UTOPIA、WE R MASSIVEなどのコンピレーションに参加し、branched world EPを含め、独自の個性を備えた曲を多数発表。",
+      "【BIOGRAPHY】Systile",
+      "A producer and DJ working primarily in breakbeat-based genres such as UK bass, UKG and club tunes. Systile has appeared on compilations including HARDCORE UTOPIA and WE R MASSIVE, and has released many tracks with a distinct individuality, including the branched world EP."
+    ],
+    articleLinks: [
+      { label: "LISTEN / STREAM", url: "https://www.submithub.com/link/systile-know-your-buff" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/track/know-your-buff" },
+      { label: "Website", url: "https://systile.github.io" },
+      { label: "Spotify", url: "https://open.spotify.com/artist/6g2SUxsP0nCtP4rEsSH1PI" },
+      { label: "SoundCloud", url: "https://soundcloud.com/gd-creatorsysl" },
+      { label: "X", url: "https://twitter.com/Sysl_8" },
+      { label: "Bandcamp (Systile)", url: "https://systile.bandcamp.com/" },
+      { label: "Instagram", url: "https://www.instagram.com/systil3/" }
+    ]
+  },
   {
     date: "2026-09-18",
     category: "RELEASE",
@@ -2324,6 +2365,7 @@ const ARTISTS = {
     { name: "SiZZ",           note: "2作品（旧SIZ）" },
     { name: "yosumi",         note: "2作品" },
     { name: "LESTONE",        note: "2作品" },
+    { name: "Systile",        note: "Know Your Buff" },
     { name: "BINi",           note: "TOMA" },
     { name: "areg",           note: "MAKE ME FEEL" },
     { name: "CRUX",           note: "JUMP!" },
