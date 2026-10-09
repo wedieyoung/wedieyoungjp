@@ -765,6 +765,26 @@ const RELEASES = [
    ------------------------------------------------------------ */
 const EVENTS = [
   {
+    name: "LIZDEK JAPAN DEBUT SHOW presented by WE DIE YOUNG",
+    date: "2026-11-22",
+    timeNote: "OPEN / START 14:00 ─ CLOSE 20:00 ／ 未成年入場OK",
+    timeNote_en: "OPEN / START 14:00 – CLOSE 20:00 / Minors welcome",
+    venue: "CIRCUS Tokyo（渋谷）",
+    venue_en: "CIRCUS Tokyo (Shibuya)",
+    lineup: [
+      "LIZDEK",
+      "and more… TBA"
+    ],
+    flyer: "assets/images/uploads/WDY-LIZDEK-JapanDebut-2026.jpg",
+    ticketUrl: "https://lizdek.peatix.com/",
+    videoUrl: "",
+    report_en: [],
+    report: [],
+    credits_en: [],
+    credits: [],
+    gallery: []
+  },
+  {
     name: "WE DIE YOUNG × OUTDOOR TRACKERS",
     date: "2026-08-28",
     timeNote: "20:00〜翌2:00",
@@ -1226,6 +1246,35 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-10-09",
+    category: "EVENT",
+    title: "【LIZDEK JAPAN DEBUT SHOW】2026.11.22 渋谷CIRCUS Tokyo 開催決定",
+    title_en: "[LIZDEK JAPAN DEBUT SHOW] 2026.11.22 at CIRCUS Tokyo, Shibuya",
+    body: "カナダ出身のプロデューサー/DJ、LIZDEKの待望の日本初公演をWE DIE YOUNG主催で開催。2026年11月22日(日)、渋谷CIRCUS Tokyoのメインフロアとラウンジの2フロアで14:00〜20:00。",
+    body_en: "WE DIE YOUNG presents the long-awaited Japan debut of Canadian producer/DJ LIZDEK. Sunday, November 22, 2026, 14:00–20:00 across two floors (Main Floor and Lounge) at CIRCUS Tokyo, Shibuya.",
+    link: "",
+    image: "assets/images/uploads/WDY-LIZDEK-JapanDebut-2026.jpg",
+    article: [
+      "WE DIE YOUNG presents「LIZDEK JAPAN DEBUT SHOW」の開催が決定しました。",
+      "WE DIE YOUNG presents “LIZDEK JAPAN DEBUT SHOW” has been announced.",
+      "【プロフィール】LIZDEK",
+      "カナダ出身のマルチジャンル・プロデューサー / DJ。Trap、Bass、Dubstepをルーツに、ハイブリッド・トラップからエレクトロ、オルタナティブまでを横断するサウンドで注目を集める。Sable Valleyの常連として頭角を現し、MonstercatからもHabstraktとのコラボ作をリリース。2022年のミックステープ『Gemini』に続き、2026年6月に初のスタジオアルバム『DUALITY』をMONTA Recordsから発表した。その楽曲はSkrillex、Martin Garrix、Marshmello、DJ Snake、RL Grime、Four Tetらにサポートされている。今回が待望の日本初公演。",
+      "【BIOGRAPHY】LIZDEK",
+      "A multi-genre producer and DJ from Canada, rooted in trap, bass and dubstep, with a sound that moves freely between hybrid trap, electro and alternative influences. A regular on Sable Valley, he has also released on Monstercat alongside Habstrakt. Following his 2022 mixtape “Gemini,” he released his first studio album “DUALITY” on MONTA Records in June 2026. His music has been supported by Skrillex, Martin Garrix, Marshmello, DJ Snake, RL Grime and Four Tet, among others. This is his long-awaited first show in Japan.",
+      "開催日時：2026年11月22日（日）OPEN / START 14:00 ─ CLOSE 20:00",
+      "Date: Sunday, November 22, 2026, OPEN / START 14:00 – CLOSE 20:00",
+      "会場：CIRCUS Tokyo（東京都渋谷区渋谷3-26-16 第5叶ビル／渋谷駅から徒歩8分）メインフロア＋ラウンジの2フロア",
+      "Venue: CIRCUS Tokyo (3-26-16 Shibuya, Shibuya-ku, Tokyo / 8 min walk from Shibuya Station) — Main Floor and Lounge",
+      "LINE UP：MAIN FLOOR — LIZDEK / and more… TBA ／ LOUNGE — TBA",
+      "LINE UP: MAIN FLOOR — LIZDEK / and more… TBA / LOUNGE — TBA",
+      "未成年入場OK。入場時に別途1ドリンク代が必要です。",
+      "Minors are welcome. A 1-drink charge is required at the door."
+    ],
+    articleLinks: [
+      { label: "TICKETS (Peatix)", url: "https://lizdek.peatix.com/" }
+    ]
+  },
   {
     date: "2026-10-09",
     category: "RELEASE",
