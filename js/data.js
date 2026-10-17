@@ -765,6 +765,32 @@ const RELEASES = [
    ------------------------------------------------------------ */
 const EVENTS = [
   {
+    name: "WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN",
+    date: "2026-10-30",
+    timeNote: "23:00〜翌5:00 ／ DOOR ¥2,900（別途1ドリンク）",
+    timeNote_en: "11:00 PM – 5:00 AM / DOOR ¥2,900 (+1 drink)",
+    venue: "PUBLIC PUBLIC（渋谷）",
+    venue_en: "PUBLIC PUBLIC (Shibuya, Tokyo)",
+    lineup: [
+      "KO3",
+      "Lactar1uz",
+      "rejection",
+      "Vishnu Okuno",
+      "X2lowline",
+      "iota",
+      "Mahorossa w/ idreamu",
+      "Noisyfloor w/ Chinon"
+    ],
+    flyer: "assets/images/uploads/WDY-OUTDOORTRACKERS-Japan-2026.jpg",
+    ticketUrl: "",
+    videoUrl: "",
+    report_en: [],
+    report: [],
+    credits_en: [],
+    credits: [],
+    gallery: []
+  },
+  {
     name: "LIZDEK JAPAN DEBUT SHOW presented by WE DIE YOUNG",
     date: "2026-11-22",
     timeNote: "OPEN / START 14:00 ─ CLOSE 20:00 ／ 未成年入場OK",
@@ -1246,6 +1272,37 @@ const EVENTS = [
    ★ link は関連ページのURL。""なら本文のみ表示
    ------------------------------------------------------------ */
 const NEWS = [
+  {
+    date: "2026-10-17",
+    category: "EVENT",
+    title: "【フルラインナップ公開】WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN 2026.10.30 渋谷",
+    title_en: "[Full Lineup] WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN — 2026.10.30, Shibuya",
+    body: "日韓合同イベント「WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN」の全出演者が決定。2026年10月30日(金)23:00〜翌5:00、渋谷PUBLIC PUBLICにて開催。",
+    body_en: "The full lineup for the Japan–Korea collab event “WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN” is out. Friday, October 30, 2026, 11:00 PM – 5:00 AM at PUBLIC PUBLIC, Shibuya.",
+    link: "",
+    image: "assets/images/uploads/WDY-OUTDOORTRACKERS-Japan-2026.jpg",
+    article: [
+      "日韓合同イベント「WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN」の全出演者が決定しました。",
+      "The full lineup has been announced for the Japan–Korea collab event “WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN.”",
+      "本公演は、8月28日にソウルで開催された公演の日本版です。共同開催するのは、音楽・ファッション・イベントの各分野で活動している韓国のクリエイターチーム。出演は日本から5組、韓国から3組の計8組となります。",
+      "This show is the Japan edition of the event held in Seoul on August 28. Our co-host is a Korean creator team active across music, fashion and events. Eight acts will perform — five from Japan and three from Korea.",
+      "LINE UP：",
+      "LINE UP:",
+      "JAPAN：KO3 / Lactar1uz / rejection / Vishnu Okuno / X2lowline",
+      "JAPAN: KO3 / Lactar1uz / rejection / Vishnu Okuno / X2lowline",
+      "KOREA：iota / Mahorossa w/ idreamu / Noisyfloor w/ Chinon",
+      "KOREA: iota / Mahorossa w/ idreamu / Noisyfloor w/ Chinon",
+      "開催日時：2026年10月30日（金）23:00〜翌5:00",
+      "Date: Friday, October 30, 2026, 11:00 PM – 5:00 AM",
+      "会場：PUBLIC PUBLIC（東京都渋谷区道玄坂1-13-2 宝ビルB1）",
+      "Venue: PUBLIC PUBLIC (Takara Bldg. B1, 1-13-2 Dogenzaka, Shibuya-ku, Tokyo)",
+      "料金：DOOR ¥2,900（別途1ドリンク）",
+      "Admission: DOOR ¥2,900 (+1 drink)"
+    ],
+    articleLinks: [
+      { label: "告知ポスト / Announcement", url: "https://x.com/WEDIEYOUNGrec/status/2111442105906430137" }
+    ]
+  },
   {
     date: "2026-10-09",
     category: "EVENT",
