@@ -1273,6 +1273,30 @@ const EVENTS = [
    ------------------------------------------------------------ */
 const NEWS = [
   {
+    date: "2026-10-21",
+    category: "RELEASE",
+    title: "RAVEMODE vol.2 リリース決定＆予約開始（CD）",
+    title_en: "RAVEMODE vol.2 Announced — Pre-orders Open (CD)",
+    body: "WE DIE YOUNGが送る次世代RAVEコンピ第2弾「RAVEMODE vol.2」が2026年10月25日リリース決定。全11曲を収録。CDはDiverse Direct / TANO*C STOREで予約受付中、Bandcampではデジタル予約を開始。",
+    body_en: "\"RAVEMODE vol.2,\" the second installment of WE DIE YOUNG's next-generation RAVE compilation series, is set for release on October 25, 2026. 11 tracks. CD pre-orders are open at Diverse Direct / TANO*C STORE, and digital pre-orders are open on Bandcamp.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a0331094160_10.jpg",
+    article: [
+      "2026年10月25日、WE DIE YOUNGからコンピレーションアルバム「RAVEMODE vol.2」がリリースされることが決定し、予約受付を開始しました。",
+      "WE DIE YOUNG announces the compilation album “RAVEMODE vol.2,” set for release on October 25, 2026. Pre-orders are now open.",
+      "価格：CD 2,500円（Diverse Direct / TANO*C STORE）／ Bandcampデジタル予約 2,000円〜\nDiverse Directでの発送は2026年10月26日以降の予定です。",
+      "Price: CD ¥2,500 (Diverse Direct / TANO*C STORE) / Bandcamp digital pre-order from ¥2,000.\nDiverse Direct plans to begin shipping on or after October 26, 2026.",
+      "RAVE LIVES WITHIN\n秘められた全ての衝動を解放せよ！WE DIE YOUNGが送る次世代RAVEコンピ第2弾",
+      "RAVE LIVES WITHIN\nUnleash every hidden impulse! The second installment of WE DIE YOUNG's next-generation RAVE compilation series.",
+      "🎧 TRACKLIST\n01. Lactar1uz – Autograph\n02. SMWLAYY – Dread\n03. YUKIYANAGI – Parallel Motion\n04. crp. – knockin\n05. NGHTHYP – wh!stle\n06. Autodepth – DON'T CARE\n07. rejection – Ritual\n08. Vishnu Okuno – SUETALO\n09. The Herb Shop – LCDB\n10. ZiXS – FREE YOUR MIND\n11. NECROSiS – BADMAN\n\nARTWORK – kyasya\nMASTERING – rejection\nPRODUCER – rejection"
+    ],
+    articleLinks: [
+      { label: "Diverse Direct", url: "https://www.diverse.direct/we-die-young/wdy-048/" },
+      { label: "TANO*C STORE", url: "https://www.tanocstore.net/shopdetail/000000004708" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/ravemode-vol-2" }
+    ]
+  },
+  {
     date: "2026-10-20",
     category: "RELEASE",
     title: "WE DIE YOUNG vol.9 リリース決定＆予約開始（CD）",
