@@ -1273,6 +1273,30 @@ const EVENTS = [
    ------------------------------------------------------------ */
 const NEWS = [
   {
+    date: "2026-10-20",
+    category: "RELEASE",
+    title: "WE DIE YOUNG vol.9 リリース決定＆予約開始（CD）",
+    title_en: "WE DIE YOUNG vol.9 Announced — Pre-orders Open (CD)",
+    body: "アジア最大のBass Musicコンピレーション第9弾「WE DIE YOUNG vol.9」が2026年10月25日リリース決定。原点に立ち返り再構築された全17曲を収録。CDはDiverse Direct / TANO*C STOREで予約受付中、Bandcampではデジタル予約を開始。",
+    body_en: "The 9th installment of Asia's biggest bass music compilation series, \"WE DIE YOUNG vol.9,\" is set for release on October 25, 2026. 17 tracks, rebuilt from the ground up. CD pre-orders are open at Diverse Direct / TANO*C STORE, and digital pre-orders are open on Bandcamp.",
+    link: "",
+    image: "https://f4.bcbits.com/img/a1957999801_10.jpg",
+    article: [
+      "2026年10月25日、WE DIE YOUNGからコンピレーションアルバム「WE DIE YOUNG vol.9」がリリースされることが決定し、予約受付を開始しました。",
+      "WE DIE YOUNG announces the compilation album “WE DIE YOUNG vol.9,” set for release on October 25, 2026. Pre-orders are now open.",
+      "価格：CD 3,500円（Diverse Direct / TANO*C STORE）／ Bandcampデジタル予約 3,000円〜\nDiverse Directでの発送は2026年10月26日以降の予定です。",
+      "Price: CD ¥3,500 (Diverse Direct / TANO*C STORE) / Bandcamp digital pre-order from ¥3,000.\nDiverse Direct plans to begin shipping on or after October 26, 2026.",
+      "Same soul, New body\n原点に立ち返り再構築された17曲。アジア最大のBass Musicコンピレーション第9弾！",
+      "Same soul, New body\n17 tracks, rebuilt from the ground up. The 9th installment of Asia's biggest bass music compilation series.",
+      "🎧 TRACKLIST\n01. rejection – Dive\n02. ECLAIR – Hyperactive\n03. Vishnu Okuno – Rudeboy Rules\n04. Lactar1uz – Louder\n05. Douji Wiix – BLARE.\n06. sSlowly – MAZE\n07. ZiXS – YOUR LOVE\n08. SMWLAYY – SAVE ME\n09. Save Me The Trouble – Finally\n10. KO3 – Higher Place\n11. Xeno & PHRYG – Get Back\n12. crp. – FUTC\n13. ARKI – FALLING\n14. The Herb Shop – Maniac\n15. NEON – Sunrise\n16. Rizpect & phosxdraw – got u\n17. rejection & sh0wtime & idreamu – DON'T GO\n\nARTWORK – kyasya\nMASTERING – rejection\nPRODUCER – rejection"
+    ],
+    articleLinks: [
+      { label: "Diverse Direct", url: "https://www.diverse.direct/we-die-young/wdy-047/" },
+      { label: "TANO*C STORE", url: "https://www.tanocstore.net/shopdetail/000000004707/" },
+      { label: "Bandcamp", url: "https://wedieyoung.bandcamp.com/album/we-die-young-vol-9" }
+    ]
+  },
+  {
     date: "2026-10-17",
     category: "EVENT",
     title: "【フルラインナップ公開】WE DIE YOUNG × OUTDOOR TRACKERS IN JAPAN 2026.10.30 渋谷",
